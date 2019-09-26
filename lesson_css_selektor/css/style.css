@@ -86,11 +86,11 @@ text-align: left;
 	background-color: #F0525B;
 }
 
-.main-form__item:nth-child(odd) {
+.main-form__item:nth-child(odd) label {
 	background-color: #787a90;
 }
 
-.main-form__item:nth-child(even) {
+.main-form__item:nth-child(even) label {
 	background-color: #686986;
 }
 
