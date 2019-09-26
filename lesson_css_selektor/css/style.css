@@ -64,7 +64,7 @@ header {
 .main-form__item {
 width: 100%;
 list-style-type: none;
-text-align: left;
+
 }
 
 .main-form__label {
@@ -72,11 +72,13 @@ display: inline-block;
 padding-left: 15px;
 width: 100%;
 padding: 10px;
+border: 2px groove transparent;
+text-align: left;
 }
 
 .main-form__label:hover {
-	border-top: 1px groove #fff;
-	border-bottom: 1px groove #fff;
+	border-top: 2px groove #fff;
+	border-bottom: 2px groove #fff;
 	background-color: #42435C;
 }
 
