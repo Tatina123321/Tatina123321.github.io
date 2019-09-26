@@ -76,13 +76,13 @@ border: 2px groove transparent;
 text-align: left;
 }
 
-.main-form__label:hover {
+.main-form__item .main-form__label:hover {
 	border-top: 2px groove #fff;
 	border-bottom: 2px groove #fff;
 	background-color: #42435C;
 }
 
-.main-form__label:active {
+.main-form__item .main-form__label:active {
 	background-color: #F0525B;
 }
 
