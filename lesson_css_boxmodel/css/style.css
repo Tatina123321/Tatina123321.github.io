@@ -24,7 +24,7 @@ body {
 
 header h2 {
 	text-transform: uppercase;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 }
 
 header h2 span {
