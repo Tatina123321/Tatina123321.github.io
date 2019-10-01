@@ -38,6 +38,7 @@ body {
 	display: flex;
    align-content: space-between;
    position: relative;
+   background-color: #fff;
 }
 
 .blog__link-first {
@@ -96,7 +97,7 @@ body {
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
-	line-height: 1.2;
+	line-height: 1.5;
 	margin-bottom: 20px;
 }
 
@@ -106,7 +107,7 @@ body {
 	bottom: 0;
 	padding: 25px;
 	width: 100%;
-	background-color: #fff;
+	/* background-color: #fff; */
 }
 
 .blog__footer-first {
@@ -120,7 +121,11 @@ body {
 }
 
 .blog__img {
-	margin-bottom: 40px;
+	
+}
+
+.blog__avatar {
+	margin-bottom: 20px;
 }
 
 .blog__date {
