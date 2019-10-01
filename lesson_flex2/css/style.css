@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	transition: all .3s ease;
+	transition: all 0.5s ease;
 }
 
 html, body {
@@ -29,17 +29,19 @@ body {
 .blog__list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: space-between;
 	margin-bottom: 30px;
+	height: 1100px;
 }
 
 .blog__item {
 	display: block;
-	display: flex;
+	flex-basis: 100px;
    align-content: space-between;
    position: relative;
-   background-color: #fff;
-}
+ }
 
 .blog__link-first {
 	display: block;
@@ -58,6 +60,7 @@ body {
 }
 
 .blog__link {
+	align-items: center;
 	display: block;
 	width: 100%;
 	min-width: 360px;
@@ -66,32 +69,22 @@ body {
 	text-decoration: none;
 	color: #000;
 	position: relative;
+	background-color: #fff;
 }
 
-
-/* .blog__link:hover {
+.blog__link:hover {
 	transform: translateY(-10px);
-}
- */
-/* .blog__link[data-img="first"] {
-	background: url("..//img/first.png") no-repeat;
-}
- */
-/* .blog__link[data-img="blog1"] {
-	background: url("../img/blog1.png") no-repeat;
+	
 }
 
-.blog__link[data-img="blog2"] {
-	background: url("../img/blog2.png") no-repeat;
+.blog__link-first:hover {
+	transform: translateY(-10px);
+	/* transition: all 1s ease; */
 }
 
-.blog__link[data-img="blog3"] {
-	background: url("../img/blog3.png") no-repeat;
+.blog-shadow {
+	box-shadow: 3px 3px 7px 1px rgba(0,0,0,0.5);
 }
-
-.blog__link[data-img="blog1"] {
-	background: url("../img/blog4.png") no-repeat;
-} */
 
 .blog__title {
 	font-size: 20px;
@@ -99,6 +92,7 @@ body {
 	text-transform: uppercase;
 	line-height: 1.5;
 	margin-bottom: 20px;
+	max-height: 300px;
 }
 
 .blog__footer {
@@ -107,7 +101,8 @@ body {
 	bottom: 0;
 	padding: 25px;
 	width: 100%;
-	/* background-color: #fff; */
+	max-width: 280px;
+	min-width: 280px;
 }
 
 .blog__footer-first {
@@ -116,18 +111,17 @@ body {
 	bottom: 0;
 	padding: 25px;
 	width: 100%;
-	/* background-color: #fff; */
 	color: #fff;
 }
 
 .blog__img {
-	
+	margin-bottom: 25px;
 }
 
-.blog__avatar {
-	margin-bottom: 20px;
-}
+
 
 .blog__date {
-	/* margin-bottom: 10px; */
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	display: inline-block;
 }
