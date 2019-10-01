@@ -74,12 +74,10 @@ body {
 
 .blog__link:hover {
 	transform: translateY(-10px);
-	
 }
 
 .blog__link-first:hover {
 	transform: translateY(-10px);
-	/* transition: all 1s ease; */
 }
 
 .blog-shadow {
@@ -103,7 +101,6 @@ body {
 	width: 100%;
 	max-width: 400px;
 	min-width: 280px;
-	max-height: 400px; 
 }
 
 .blog__footer-first {
@@ -118,8 +115,6 @@ body {
 .blog__img {
 	margin-bottom: 25px;
 }
-
-
 
 .blog__date {
 	text-transform: capitalize;
