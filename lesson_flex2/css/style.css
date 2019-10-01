@@ -92,7 +92,7 @@ body {
 	text-transform: uppercase;
 	line-height: 1.5;
 	margin-bottom: 20px;
-	max-height: 300px;
+
 }
 
 .blog__footer {
@@ -101,8 +101,9 @@ body {
 	bottom: 0;
 	padding: 25px;
 	width: 100%;
-	max-width: 280px;
+	max-width: 400px;
 	min-width: 280px;
+	max-height: 400px; 
 }
 
 .blog__footer-first {
