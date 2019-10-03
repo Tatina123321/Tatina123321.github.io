@@ -1,0 +1,52 @@
+ *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 100%;
+	color: #5c5c5c;
+	background-color: #464f54;
+	padding: 120px 0;
+}
+.container {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.editor {
+	position: relative;
+}
+
+.editor__main {
+	width: 100%;
+	min-width: 1060px;
+	background-color: #fff;
+	color: #000;
+	font-size: 26px;
+	margin: 0 auto;
+	padding: 200px 120px 50px 120px;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 1	);
+}
+
+.editor__main-hr {
+	transform: rotate(90deg);
+	color: #8f8f8f;
+	size: 2px;
+	/* float: left; */
+	padding-left: 100px;
+	height: 100%;
+	position: left;
+}
+
+.editor__main-author {
+	color: #8f8f8f;
+	font-family: 'Proxima Nova Regular', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 20px;
+}
+
