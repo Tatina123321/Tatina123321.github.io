@@ -1,0 +1,45 @@
+@font-face {
+	font-family: 'Proxima Nova Regular';
+	src: url("../font/Proxima Nova Regular.otf");
+}
+
+@font-face {
+	font-family: 'Open Sans Bold';
+	src: url("../font/OpenSans-Bold.ttf");
+}
+
+
+*{
+	margin:     0;
+	padding:    0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size:        100%;
+	color:            #5c5c5c;
+	background-color: #f6f6f6;
+	padding:          120px 0;
+}
+.container {
+	width:     100%;
+	max-width: 1200px;
+	margin:    0 auto;
+	padding:   0 15px;
+}
+
+
+.title::after {
+	content: 			"";
+	display:          block;
+	background-color: #dddbdb;
+	width:            45px;
+	height:           5px;
+ 	position:         absolute;
+	top:              20%;
+	/* left: 50%; */
+}
+
+.emploees-link:hover {
+	background-color: #18b5dc;
+}
