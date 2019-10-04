@@ -54,7 +54,7 @@ body {
 
 .editor__main {
 	width:            100%;
-	min-width:        1060px;
+	max-width:        1060px;
 	background-color: #fff;
 	margin:           0 auto;
 	padding: 200px 120px 70px 120px;
@@ -63,9 +63,9 @@ body {
 
 .editor__main-hr {
    width:    0.5px;
-   height:   850px;
+   height:   980px;
    position: absolute;
-   left:     60px;
+   left:     120px;
    top:      0px;
    color:    #c9c9c9;
 }
