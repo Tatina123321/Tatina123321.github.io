@@ -63,7 +63,7 @@ body {
 
 .editor__main-hr {
    width:    0.5px;
-   height:   980px;
+   height:   885px;
    position: absolute;
    left:     120px;
    top:      0px;
@@ -83,7 +83,7 @@ body {
 .editor__main-title {
 	font-family:    'Open Sans Bold';
 	text-transform: uppercase;
-	font-size:      90px;
+	font-size:      85px;
 	color:          #2a2a2a;
 	margin:         0 0 20px;
 }
