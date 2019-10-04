@@ -23,7 +23,7 @@ body {
 	font-size:        100%;
 	color:            #3c3c3c;
 	background-color: #f6f6f6;
-	font-family:      'Lato-Light';
+	font-family:      'Lato-Regular';
 	/* padding:          120px 0; */
 }
 .container {
@@ -59,7 +59,7 @@ max-width: 1165px;
 	background-color: #dddbdb;
 	width:            45px;
 	height:           5px;
-	margin:           10px auto 40px;
+	margin:           20px auto 30px;
 }
 
 .description {
@@ -68,6 +68,45 @@ max-width: 1165px;
 	line-height: 25px;
 }
 
-.emploees-link:hover {
+.employees {
+
+}
+
+.emploees__card {
+  display:         flex;
+  justify-content: space-between;
+ }
+
+.emploees__item {
+
+}
+
+.emploees__link {
+width: 100%;
+display: flex;
+text-decoration: none;
+position: relative;
+}
+
+.emploees__link:hover {
+	width: 100%;
 	background-color: #18b5dc;
+
+}
+
+.emploees__link-img {
+margin-bottom: 20px;
+transition: opacity 0.5s ease;
+}
+
+.name{
+font-family: 'Lato-Bold';
+text-transform: capitalize;
+font-size: 20px;
+margin-bottom: 5px;
+}
+
+.position {
+text-transform: capitalize;
+font-size: 16px;
 }

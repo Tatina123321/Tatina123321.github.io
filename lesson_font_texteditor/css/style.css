@@ -107,8 +107,8 @@ body {
 	font-family: 'Proxima Nova Regular Italic';
 }
 
-/* .editor__main:nth-child(5) {
-	margin-bottom: 40px;
+/* .editor:last-child {
+	margin: 0;
 } */
 
 .editor__input {
