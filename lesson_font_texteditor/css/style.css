@@ -104,11 +104,11 @@ body {
 }
 
 .editor__main-text span {
-	font-family: 'Proxima Nova Regular Italic';
+	font-family:   'Proxima Nova Regular Italic';
 }
 
  .editor__main-text:last-child {
-	margin: 0;
+	margin:         0;
 }
 
 .editor__text {
