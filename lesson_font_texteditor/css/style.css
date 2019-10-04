@@ -148,7 +148,6 @@ body {
 	height:           3px;
  	position:         absolute;
 	top:              75%;
-	/* left: 50%; */
 }
 
 .editor__tools {
@@ -163,7 +162,6 @@ body {
 	min-width:        870px;
 	background-color: #f1b82b;
 	display:          flex;
-	
 }
 
 .editor__tools-link {
