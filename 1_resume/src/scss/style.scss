@@ -1,0 +1,78 @@
+body {
+   font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	padding-bottom: 10px;
+	color: navy;
+}
+
+.main {
+	width: 100%;	
+	padding: 20px;
+	margin: 20px auto;
+}
+
+.header {
+	
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+
+.photo img {
+	border-radius: 100px;
+	box-shadow: 0 0 7px #666;
+  width: 200px; 
+
+}
+
+.photo {
+	border: 1px black;
+	width: 200px;
+	height: auto;
+	display: inline-block;
+}
+
+.about {
+	border: 1px black;
+	height: auto;
+	padding-left: 50px;
+	margin: 10px;
+	display: inline-block;
+	box-sizing: border-box;
+	max-width: 700px;
+}
+
+.experience {
+	margin-top: 30px;
+}
+
+.social-block {
+	height: 35px;
+	padding-top: 8px;
+}
+
+.social {
+	border-radius: 50%;
+	width: 31px;
+	height: 31px;
+	background: navy;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 31px;
+	margin-right: 25px;
+}
+
+
+.social:hover { 
+	background: #ffb400;
+	box-shadow: 0px 0px 0px 3px #ff6400;
+}
+
+
+
+
+
