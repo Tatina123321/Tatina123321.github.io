@@ -1,1 +1,0 @@
-[Fri Oct 04 2019 11:09:08 GMT+0300 (Финляндия (лето))] layer "G+": Expected end of input but "+" found.
