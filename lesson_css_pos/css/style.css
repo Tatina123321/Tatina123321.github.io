@@ -50,6 +50,7 @@ max-width: 1165px;
 	text-transform: uppercase;
 	font-family:    'Lato-Bold';
 	letter-spacing: 3px;
+	margin: 0;
 }
 
 .title::after {
