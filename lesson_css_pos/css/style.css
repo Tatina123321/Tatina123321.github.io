@@ -50,16 +50,20 @@ max-width: 1165px;
 	text-transform: uppercase;
 	font-family:    'Lato-Bold';
 	letter-spacing: 3px;
-	margin:          0;
+	margin-top:      0;
+	margin-bottom:  70px;
 }
 
 .title::after {
 	content: 			"";
-	display:          block;
+	position:         absolute;
 	background-color: #dddbdb;
 	width:            45px;
 	height:           5px;
-	margin:           20px auto 30px;
+	left:             49%;
+	top:              180px;
+	
+
 }
 
 .description {
