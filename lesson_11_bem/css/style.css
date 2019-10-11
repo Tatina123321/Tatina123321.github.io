@@ -15,12 +15,12 @@ body {
 	width:     100%;
 	max-width: 1200px;
 	margin:    0 auto;
-	padding:   0 15px;
+	/* padding:   0 15px; */
 }
 
 .first {
 	min-height: 1000px;
-	background: #f9f8fb url(../img/bg1.png) no-repeat center top / cover;
+	background: #f9f8fb url("../img/bg1.png") no-repeat center top / cover;
 	color:      #262626;
 }
 
@@ -29,13 +29,18 @@ body {
 	margin-bottom: 230px;
 }
 
-.main__logo {
+/* .main__logo {
 	float:         left;
-}
+} */
 
 .maine__nav {
 	float:           right;
 	justify-content: space-between;
+}
+
+.navigation__list {
+	width: 100%;
+	max-width: 500px;
 }
 
 .navigation__list-item {
@@ -55,43 +60,43 @@ body {
 
 
 
-.main-title {
-	font-size: 60px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 900;
+.main__title {
+	font-size:      60px;
+	font-family:    'Raleway', sans-serif;
+	font-weight:    900;
 	text-transform: capitalize;
 }
 
-.main-title__about {
-	font-size: 17px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	width: 400px;
-	line-height: 1.8em;
+.main__title-description {
+	font-size:     17px;
+	font-family:  'Raleway', sans-serif;
+	font-weight:   400;
+	width:         400px;
+	line-height:   1.8em;
 	margin-bottom: 30px;
 }
 
 .button {
-	float: left;
-	background: #ff6033;
-	color: #fff;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	font-size: 20px;
+	float:         left;
+	background:    #ff6033;
+	color:         #fff;
+	font-family:   'Raleway', sans-serif;
+	font-weight:    400;
+	font-size:      20px;
 	text-transform: uppercase;
-	text-align: center;
-	padding: 15px 20px;
+	text-align:     center;
+	padding:        15px 20px;
 	text-decoration: none;
-	margin: 0px auto 0px auto; 
-	display: block; 
-	width: 200px;
-	cursor: pointer;
-	box-shadow: 0px 3px 3px rgba(0,0,0,0.6);
+	margin:         0px auto 0px auto; 
+	display:        block; 
+	width:          200px;
+	cursor:         pointer;
+	box-shadow:     0px 3px 3px rgba(0,0,0,0.6);
 }	
 
 .button:hover {
 	background: #fff;
-	color: #ff6033;
+	color:      #ff6033;
 }
 
 /* .button:active {
@@ -100,5 +105,29 @@ body {
 
 
 .main__footer-img {
+   display: block;
+	margin: 0 auto;
+	padding-top: 780px;
+}
 
+.about {
+	min-width: 700px;
+	background: #00b4b4 url("../img/bg2.png") no-repeat /* cover */;
+	color: #fff;
+	font-family:    'Raleway', sans-serif;
+}
+
+.about__title {
+	font-size:      90px;
+	/* font-family:    'Raleway', sans-serif; */
+	font-weight:    900;
+	text-transform: capitalize;
+}
+
+.about__title-description {
+	font-size:     17px;
+	/* font-family:  'Raleway', sans-serif; */
+	font-weight:   400;
+	width:     510px;
+	line-height:   1.8em;
 }
