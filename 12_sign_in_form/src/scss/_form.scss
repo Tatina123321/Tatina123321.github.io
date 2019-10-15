@@ -1,0 +1,42 @@
+.c-form {
+	padding: px_to_em(100px) 0;
+	display: flex;
+
+
+	&__title {
+		width: 100%;
+		text-transform: capitalize;
+		font-weight: 700;
+		font-family: $main-font;
+		text-align: center;
+		color: $dark;
+		font-size: px_to_em(80px);
+		margin-bottom: 50px;
+	}
+
+	&__subtitle {
+		font-family: $main-font;
+		font-size: px_to_em(17px);
+		text-align: center;
+		line-height: px_to_em(20px);
+		margin-bottom: 50px;
+		max-width: px_to_em(350px);
+	}
+
+}
+
+.contactc-form {
+
+		
+		&__left {
+
+		}
+
+
+		&__right {
+
+		}
+
+}
+
+
