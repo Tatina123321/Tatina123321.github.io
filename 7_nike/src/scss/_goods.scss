@@ -18,7 +18,7 @@
         display: inline-flex;
     }
 
-    &__form {
+    &__add-form {
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -29,12 +29,22 @@
 
 .card {
     display: flex;
+    text-transform: capitalize;
 
     &__left {
-        padding-top: 60px;
+        padding: 60px 0 0 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    &__right {
+        padding: 15px 0 0 60px;
+
+
+        & > *:not(:last-child) {
+            margin-bottom: 15px;
+        }
     }
 
     &__img {
@@ -76,5 +86,90 @@
         background-color: currentColor;
     }
 
+    &__title {
+        text-transform: capitalize;
+        font-size: 24px;
+        color: $light;
+        font-weight: 300;
+    }
 
+    &__subtitle {
+        text-transform: capitalize;
+        font-size: 14px;
+        max-height: 20px;
+        overflow: hidden;
+    }
+
+
+}
+
+.rating {
+    display: flex;
+    list-style: none;
+
+
+    &__item {
+        font-size: 10px;
+        letter-spacing: 4px;
+
+        .fa-star{
+        color: $star-grey;
+
+             &.active {
+            color: $yellow;
+            }
+        }
+    }
+}
+
+.form {
+
+    &__selects {
+        display: flex;
+    }
+
+
+    &__label {
+        display: flex;
+        width: 100%;
+        max-width: 70px;
+        margin-right: 2px;
+        position: relative;
+        content: $dark;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        @include square(8px);
+        border: 1px solid transparent;
+        border-bottom-color: currentcolor;
+        border-right-color: currentcolor;
+        top: 25%;
+        right: 15px;
+        transform-origin: center;
+        transform: rotate(45deg);
+        pointer-events: none;
+
+        }
+    }
+
+    &__select {
+        background-color: transparent;
+        appearance: none;
+        text-transform: capitalize;
+        color: inherit;
+        padding: 5px;
+        width: 100%;
+        display: inline-flex;
+        border: 1px solid currentcolor;
+
+        option {
+            background-color: $dark-blue;
+        }
+    }
 }

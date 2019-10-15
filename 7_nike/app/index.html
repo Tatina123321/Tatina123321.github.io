@@ -5,6 +5,7 @@
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>Nike</title>
 	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.png">
+	<script src="https://kit.fontawesome.com/e90636d2ad.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,20 +21,64 @@
 				<div class="goods__card-body card">
 					<div class="card__left">
 						<img class="card__img" src="img/dark.png" alt="nike-blue">
-						<form id="goods-form">
-							<input type="radio" name="color" id="1" checked>
+						<div class="goods__add-form">
+							<input type="radio" name="color" id="1" checked form="goods-form">
 							<label class="card__label" for="1" data-color="dark"></label>
-							<input  type="radio" name="color" id="2">
+							<input  type="radio" name="color" id="2" form="goods-form">
 							<label class="card__label" for="2" data-color="white"></label>
-							<input type="radio" name="color" id="3">
+							<input type="radio" name="color" id="3" form="goods-form">
 							<label class="card__label" for="3" data-color="red"></label>
-							<input type="radio" name="color" id="4">
+							<input type="radio" name="color" id="4" form="goods-form">
 							<label class="card__label" for="4" data-color="blue"></label>
-						</form>
+						</div>
 					</div>
 
 					<div class="card__right">
-						
+						<h4 class="card__title">nike&nbsp;<span class="t-upper">sb</span>&nbsp;stefan janovsky max</h4>
+
+						<p class="card__subtitle">Unisex Skateboarding Shoe (Men's Sizing)</p>
+
+						<ul class="rating">
+							<li class="rating__item">
+								<i class="fas fa-star active"></i>
+							</li>
+							<li class="rating__item">
+								<i class="fas fa-star active"></i>
+							</li>
+							<li class="rating__item">
+								<i class="fas fa-star active"></i>
+							</li>
+							<li class="rating__item">
+								<i class="fas fa-star"></i>
+							</li>
+							<li class="rating__item">
+								<i class="fas fa-star"></i>
+							</li>
+						</ul>
+
+
+			<form id="goods-form" class="goods__form form">
+                            <input type="hidden" value="001-001">
+                            <div class="form__selects">
+                                <label for="size" class="form__label">
+                                    <select name="size" id="size" class="form__field">
+                                        <option value="Size" selected disabled>size</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+
+                                <label for="qty" class="form__label">
+                                    <select name="size" id="qty" class="form__field">
+                                        <option value="Qty" selected disabled>qty</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </form>
 					</div>
 				</div>
 			</div>
