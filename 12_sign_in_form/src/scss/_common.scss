@@ -5,12 +5,12 @@
 }
 
 html, body {
-	min-height: 100vh;
+	height: 100vh;
 }
 
 body {
 	color: $dark;
-	background: url("../img/bg_form.png");
+	background: url("../img/bg_form.png")  no-repeat 100%;
 	background-size: cover;
 	font-family: $main-font;
 
@@ -22,9 +22,11 @@ body {
 
 .container {
 	width: 100%;
-	max-width: 1200px;
+	min-width: 1200px;
 	margin: auto;
 	padding: 0 15px;
 
 }
+
+
 
