@@ -2,7 +2,6 @@
 	margin:     0;
 	padding:    0;
 	box-sizing: border-box;
-	transition: all 1s ease;
 }
 
 body {
@@ -16,6 +15,7 @@ body {
 	max-width: 1200px;
 	margin:    0 auto;
 	padding:   0 15px;
+	min-height: 100vh;
 }
 
 .first {
@@ -36,8 +36,12 @@ body {
 	padding:         40px 0 40px;
 }
 
-.logo {
-	display: flex;
+.header__logo {
+	font-family: "Pacifico";
+	font-size: 3.1rem;
+	text-decoration: none;
+	color: #3c3c3c;;
+	text-transform: capitalize;
 }
 
 .navigation__list {
@@ -57,18 +61,19 @@ body {
 	font-weight:     700;
 }
 
-.navigation__list-link::before {
-	content:          "";
-	position:         absolute;
-	background-color: #ff6033;
-	width:            0;
-	height:           3px;
-	transform:        translateY(-8px);
-	transition:       all .2s ease;
+.navigation__list-link:hover {
+	border-top: 3px solid #ff6033;
+	transition:      all 0.3s ease-in;
+  // transition-property: left right;
+  // transition-duration: 0.3s;
+  // transition-timing-function: ease-out;
 }
 
-.navigation__list-link:hover::before {
-	width: 55px;
+.f-screen__main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 550px;
 }
 
 .f-screen__content {
@@ -98,7 +103,6 @@ body {
 }
 
 .btn {
-	// float:          left;
 	background:     #ff6033;
 	color:          #fff;
 	font-family:   'Raleway', sans-serif;
@@ -121,9 +125,10 @@ body {
 }
 
 .f-screen__footer {
-	padding-top:     160px;
+	// padding-top:     160px;
 	display:         flex;
 	justify-content: center;
+	align-items: flex-end;
 	margin:          0 auto;
 	transition:      all 0.5s ease-in-out;
 }
