@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:400,700&display=swap');
+
 *{
 	margin:     0;
 	padding:    0;
@@ -15,18 +17,17 @@ body {
 	max-width: 1200px;
 	margin:    0 auto;
 	padding:   0 15px;
-	min-height: 100vh;
 }
 
 .first {
 	background: url("../img/bg1.png") no-repeat center top;
-	min-height: 100vh;
 }
 
 .f-screen {
 	display:         flex;
 	flex-direction:  column;
 	justify-content: space-between;
+	min-height:      100vh;
 }
 
 .f-screen__header {
@@ -37,10 +38,10 @@ body {
 }
 
 .header__logo {
-	font-family: "Pacifico";
-	font-size: 3.1rem;
+	font-family:     "Pacifico";
+	font-size:       3.1rem;
 	text-decoration: none;
-	color: #3c3c3c;;
+	color:           #3c3c3c;
 	text-transform: capitalize;
 }
 
@@ -59,30 +60,17 @@ body {
 	font-size:       16px;
 	font-family:     'Raleway', sans-serif;
 	font-weight:     700;
+	border: 3px solid transparent;
 }
 
 .navigation__list-link:hover {
 	border-top: 3px solid #ff6033;
-	transition:      all 0.3s ease-in;
-  // transition-property: left right;
-  // transition-duration: 0.3s;
-  // transition-timing-function: ease-out;
+	transition: all 0.8s ease-in-out;
 }
 
 .f-screen__main {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	min-height: 550px;
-}
-
-.f-screen__content {
-	display:         flex;
-	flex-direction:  column;
-	justify-content: space-between;
-	width:           100%;
-	max-height:      600px;
-	padding-top:     100px;
+	width:     100%;
+	max-width: 370px;
 }
 
 .f-screen__title {
@@ -125,12 +113,11 @@ body {
 }
 
 .f-screen__footer {
-	// padding-top:     160px;
 	display:         flex;
 	justify-content: center;
-	align-items: flex-end;
 	margin:          0 auto;
-	transition:      all 0.5s ease-in-out;
+	padding: 50px 0;
+	transition-duration: 0.8s  ease;
 }
 
 /*-------------------------------------*/
@@ -139,22 +126,22 @@ body {
 	color:       #fff;
 	font-family: 'Raleway', sans-serif;
 	min-height:  450px;
-	// display: flex;
-	// justify-content: center;
 }
 
 .about__common {
 	display:         flex;
 	justify-content: center;
-	align-content: center;
-	padding: 40px;
+	align-content:   center;
+	align-items:     center;
+	padding:         40px;
+	min-height:      100vh;
 }
 
 .f-screen__about {
-	flex-direction: column;
-	padding-top:    80px;
-	padding:        0 40px;
-	display:        flex;
+	flex-direction:  column;
+	padding-top:     80px;
+	padding:         0 40px;
+	display:         flex;
 	justify-content: center;
 }
 
