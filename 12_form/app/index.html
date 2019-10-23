@@ -24,7 +24,7 @@
 				<!------------------------------------->
 				<div class="tabs__body">
 					<div class="tabs__content" id="sign">
-						<form action="#" method="get">
+						<form action="#" method="get" class="form">
 							<div class="form">
 								<div class="form__controls">
 									<label class="form__label" for="username">Username</label>
@@ -33,20 +33,23 @@
 									<label class="form__label" for="password">Password</label>
 									<input class="form__input" minlength="8" required type="password" name="password" id="Password" required>
 									<div class="error"><span>min 8 symbols</span></div>
-									<div class="form__controls form__controls--checkbox">
-										<input checked type="checkbox" name="keep" id="keep">
-										<label class="form__label form__label--checkbox" for="keep">
-											<span class="form__checkbox"></span>
+									<!------------------------------------->
+									<div class="form__controls-checkbox">
+										<input class="form__input-checkbox" checked type="checkbox" name="keep" id="keep">
+										<label class="form__label-checkbox" for="keep">
 											Keep me signed in
 										</label>
 									</div>
-									<div class="form__controls form__controls--submit">
-										<button type="submit" class="btn btn--primary">Sign in</button>
-									</div>
-									<div class="form__advanced d-flex justify-content-between">
-										<a href="javascript:void(0)" class="form__link">Forgot password</a>
-										<a href="#join" class="form__link">Create an account</a>
-									</div>
+									<button type="submit" class="form__btn">Sign in</button>
+									<!------------------------------------->
+									<ul class="form__advanced">
+										<li class="form__advanced-item">
+											<a href="#" class="form__link">Forgot password</a>
+										</li>
+										<li class="form__advanced-item">
+											<a href="#join" class="form__link">Create an account</a>
+										</li>
+									</ul>
 								</form>
 							</div>
 							<div class="tabs__content" id="join">

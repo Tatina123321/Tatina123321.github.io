@@ -1,17 +1,17 @@
 .modal {
-	padding-top: 100px;
+	padding-top: 50px;
 	background-color: #f1f1f1;
 	min-height: 100vh;
 
    &__tabs {
  	background: url("../img/bg1.png") center top no-repeat;
- 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+ 	box-shadow: 0 10px 10px rgba(0,0,0,0.5);
  	padding:    50px 65px;
 
  		.tabs__nav {
  			display:       flex;
 			list-style:    none;
-			margin-bottom: 35px;
+			margin-bottom: 20px;
 
 			.tabs__link {
 			display: block;
@@ -30,10 +30,89 @@
         }
       }
  	}
-.error {
+	.error {
 	color: #e66a64;
 	visibility: hidden;
+	}
+
+	.form {
+	max-height: 320px;
+
+	  &__input {
+	  	display: block;
+		width: 100%;
+		background-color: transparent;
+		padding: 10px;
+		border: 2px solid $white-input;
+		color: #fff;
+	 	 }
+
+	 	&__input:focus {
+	   background-color: #7e47b4;
+	   }
+
+		&__label {
+		display: block;
+		width: 100%;
+	   text-transform: capitalize;
+	   margin-bottom: 5px;
+		}
+
+		&__controls-checkbox {
+		position: relative;
+		margin-bottom: 40px;
+		}
+
+		&__input-checkbox {
+			background: $green;
+		}
+
+		&__label-checkbox {
+			font-size: px_to_rem(13px);
+		}
+
+		&__btn {
+		display: block;
+		width: 100%;
+		background-color: $green;
+		border: none;
+		color: $white;
+		font-size: px_to_rem(18px);
+	   padding: 10px 0;
+	   margin-bottom: 30px;
+	   transition: all .2s ease;
+		}
+
+		&__btn:hover {
+		background-color: $white;
+		opacity: 0.5;
+		color: $green;
+		font-weight: bold;
+		}
+		&__advanced {
+			display:         flex;
+		flex-direction: row;
+		justify-content: space-between;
+		}
+
+
+		&__advanced-item {
+		// display:         flex;
+		// flex-direction: row;
+		list-style:      none;
+	   justify-content: space-between;
+		}
+
+		&__link {
+	display: block;
+	font-size: px_to_rem(13px);
+	color: $white-tr;
+	text-decoration: none;
+	position: relative;
+	border-bottom: 1px solid $white-tr;
+	opacity: 0.5;
 }
+	}
 
 }
 
