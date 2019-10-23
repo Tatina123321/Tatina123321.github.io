@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Form</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.png">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="modal">
+		<div class="container">
+			<!------------------------------------->			
+			<div class="modal__tabs">
+				<ul class="tabs__nav">
+					<li class="tabs__item">
+						<a href="index.html#sign" class="tabs__link">Sign in</a>
+					</li>
+					<li class="tabs__item">
+						<a href="#join" class="tabs__link">Join us</a>
+					</li>
+				</ul>
+				<!------------------------------------->
+				<div class="tabs__body">
+					<div class="tabs__content" id="join">
+						<form action="#" method="get">
+							<div class="form">
+								<div class="form__controls">
+									<label class="form__label" for="username">User name</label>
+									<input class="form__input" required type="text" name="username" id="username" minlength="8">
+									<label class="form__label" for="password">Password</label>
+									<input class="form__input" required type="password" name="password" id="password" minlength="8">
+									<label class="form__label" for="repeat_password">Repeat password</label>
+									<input class="form__input" required type="repeat_password" name="repeat_password" id="repeat_password" minlength="8">
+									<button type="submit" class="form__btn">Join us</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="js/bundle.js"></script>
+		</body>
+		</html>
