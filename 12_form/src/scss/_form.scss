@@ -1,0 +1,39 @@
+.modal {
+	padding-top: 100px;
+	background-color: #f1f1f1;
+	min-height: 100vh;
+
+   &__tabs {
+ 	background: url("../img/bg1.png") center top no-repeat;
+ 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+ 	padding:    50px 65px;
+
+ 		.tabs__nav {
+ 			display:       flex;
+			list-style:    none;
+			margin-bottom: 35px;
+
+			.tabs__link {
+			display: block;
+			text-decoration: none;
+			color: $white-tr;
+			font-weight: bold;
+			margin-right: 20px;
+			padding: 5px 0;
+			font-size: 1.1rem;
+			border-bottom: 2px solid transparent;
+			}
+        
+        .tabs__link:hover {
+        	color: #fff;
+	      border-bottom: 2px solid #e66a64;
+        }
+      }
+ 	}
+.error {
+	color: #e66a64;
+	visibility: hidden;
+}
+
+}
+
