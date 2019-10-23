@@ -1,5 +1,17 @@
-.c-form {
+ .contact {
+ 	background: url("../img/bg_form.png")  no-repeat ;
+ 	background-size: cover;
+ 	min-height: 100vh;
+}
+
+.lastscreen {
 	padding-top: px_to_em(50px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+ .c-form {
 	display: flex;
 	justify-content: center;
 
@@ -20,48 +32,44 @@
 		font-size: px_to_em(17px);
 		text-align: center;
 		line-height: px_to_em(20px);
-		margin-bottom: 15px;
+		margin-bottom: 100px;
 		max-width: px_to_em(350px);
 	}
 
 }
 
 .feedback {
-	display: flex;
-	
+	display:         flex;
 	justify-content: space-between;
-
-	padding: 20px;
-	max-width: 920px;
-
-
+	
 		&__left {
-			display: flex;
-			// justify-content: space-around;
+			display:         flex;
+			justify-content: space-around;
+			width:           50%;
 
 			.form {
-				display: flex;
-				flex-direction: column;
+				display:         flex;
+				flex-direction:  column;
 				justify-content: space-between;
-				min-height: 350px;
-				min-width: 400px;
+				min-height:  350px;
+				min-width:   400px;
 				font-family: $main-font;
-				color: $white;
+				color:       $white;
 				
 				&__input {
-					padding: 5px;
+					padding:         5px;
 					background-color: $aqua;
-					border: 4px solid $aqua;
-					font-family: $main-font;
-					color: $white;
-					font-size: px_to_em(15px);
+					border:          4px solid $aqua;
+					font-family:     $main-font;
+					color:           $white;
+					font-size:       px_to_em(15px);
 				}
 
 				&__input:hover {
-					border-left: 4px solid $dark-blue;
-					border-top: 4px solid $dark-aqua;
-					border-right: 4px solid $dark-aqua;
-					border-bottom: 4px solid $dark-aqua;
+					border-left:      4px solid $dark-blue;
+					border-top:       4px solid $dark-aqua;
+					border-right:     4px solid $dark-aqua;
+					border-bottom:    4px solid $dark-aqua;
 					background-color: $dark-aqua;
 					}
 
@@ -87,18 +95,17 @@
 :focus:-ms-input-placeholder      {color: transparent}
 
 		&__right {
-
-			// padding-right: 50px;
-			
+			width: 50%;
+						
 			.feedback__right-contact {
-				font-size: px_to_em(17px);
-				font-weight: 800;
+				font-size:      px_to_em(17px);
+				font-weight:    800;
 				text-transform: uppercase;
-				margin-bottom: 5px;
+				margin-bottom:  5px;
 			}
 
 			.feedback__right-description {
-				font-size: px_to_em(15px);
+				font-size:     px_to_em(15px);
 				margin-bottom: 20px;
 			}
 			.feedback__right-description:last-child {

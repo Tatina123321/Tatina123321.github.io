@@ -5,24 +5,18 @@
 }
 
 html, body {
-	height: 100vh;
+	min-height: 100vh;
 }
 
 body {
 	color: $dark;
-	background: url("../img/bg_form.png")  no-repeat 100%;
-	background-size: cover;
 	font-family: $main-font;
 
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-direction: column;
 }
 
 .container {
 	width: 100%;
-	min-width: 1200px;
+	max-width: 1200px;
 	margin: auto;
 	padding: 0 15px;
 
