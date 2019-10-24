@@ -32,7 +32,6 @@
 		font-size: px_to_em(17px);
 		text-align: center;
 		line-height: px_to_em(20px);
-		margin-bottom: 100px;
 		max-width: px_to_em(350px);
 	}
 
@@ -41,6 +40,7 @@
 .feedback {
 	display:         flex;
 	justify-content: space-between;
+	padding-top: 100px;
 	
 		&__left {
 			display:         flex;
@@ -74,16 +74,16 @@
 					}
 
 					.text {
-						min-height: 150px;
+						min-height:    150px;
 					}
 
 					.btn {
-						font-size: px_to_em(17px);
+						font-size:     px_to_em(17px);
 					}
 
 					.btn:hover {
 						background-color: $dark-aqua;
-						border-left: 4px solid $dark-aqua;
+						border-left:      4px solid $dark-aqua;
 					}
 			}
 
@@ -107,6 +107,10 @@
 			.feedback__right-description {
 				font-size:     px_to_em(15px);
 				margin-bottom: 20px;
+				text-decoration: none;
+				font-style: normal;
+				font-family: $main-font;
+				color: $dark;
 			}
 			.feedback__right-description:last-child {
 		 		margin: 0;
