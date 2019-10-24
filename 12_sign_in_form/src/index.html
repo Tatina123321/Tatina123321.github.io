@@ -11,24 +11,22 @@
 	<section class="contact">
 		<div class="container">
 			<div class="lastscreen">
-				<div class="c-form">
-					<header >
-						<h1 class="c-form__title">
-							Contact
-						</h1>
-						<p class="c-form__subtitle">
-							For new projects, ideas, business or anything you'd like to discuss, contact with me!
-						</p>
-					</header>
-				</div>
-				<!----------------------------------------->
+				<header class="c-form">
+					<h1 class="c-form__title">
+						Contact
+					</h1>
+					<p class="c-form__subtitle">
+						For new projects, ideas, business or anything you'd like to discuss, contact with me!
+					</p>
+				</header>
+				
 				<div class="feedback">
 					<div class="feedback__left">
 						<form class="left form">
-							<input type="text" id="username" placeholder="Your name..." class="form__input">
-							<input type="text" id="email" placeholder="Your email..." class="form__input">
-							<input type="text" id="phone" placeholder="Your phone number..." class="form__input">
-							<textarea class="form__input text" placeholder="Your messege..." ></textarea>
+							<input type="text" id="username" placeholder="Your name..." class="form__input" minlength="8" required>
+							<input type="text" id="email" placeholder="Your email..." class="form__input" minlength="8" required>
+							<input type="text" id="phone" placeholder="Your phone number..." class="form__input" minlength="8" required>
+							<textarea class="form__input text" placeholder="Your messege..." minlength="20" required></textarea>
 							<input class="form__input btn" type="submit" value="Send feedback">
 						</form>
 					</div>
@@ -43,39 +41,30 @@
 						<h4 class="feedback__right-contact">
 							email
 						</h4>
-						<p class="feedback__right-description">
-							<a class="feedback__right-description" href="mailto:cahee@domain">cahee@domain</a>
-						</p>
+						<a class="feedback__right-description" href="mailto:cahee@domain">cahee@domain</a>
 						<h4 class="feedback__right-contact">
 							phone
 						</h4>
-						<p class="feedback__right-description">
-							<a class="feedback__right-description" href="tel:+012 345 6789">+012 345 6789</a>
-						</p>
+						<a class="feedback__right-description" href="tel:+0123456789">+012 345 6789</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!----------------------------------------->
 	<footer class="footer">
 		<div class="container">
 			<div class="footer-items">
-				<div class="footer-items__right">
+				<p class="footer-items__right">
 					&#169;  2015 Company. All right reserved.
-				</div>
-				<div class="footer-items__logo">
-					<a href="#"><img src="img/logo-small.png" alt="logo"></a>
-				</div>
-				<div class="footer-items__made">
+				</p>
+				<a class="footer-items__logo" href="#"><img src="img/logo-small.png" alt="logo"></a>
+				<p class="footer-items__made">
 					Made with<span> love </span>by <a href="#" class="develop"> ITeam </a>
-				</div>
+				</p>
 			</div>
 		</div>
 	</footer>
-
-	<!----------------------------------------->
 
 	<script src="js/bundle.js"></script>
 </body>

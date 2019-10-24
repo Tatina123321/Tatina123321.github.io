@@ -11,7 +11,7 @@
 
 	<div class="modal">
 		<div class="container">
-			<!------------------------------------->			
+			
 			<div class="modal__tabs">
 				<ul class="tabs__nav">
 					<li class="tabs__item">
@@ -21,40 +21,35 @@
 						<a href="join.html#join" class="tabs__link">Join us</a>
 					</li>
 				</ul>
-				<!------------------------------------->
-				<div class="tabs__body">
-					<div class="tabs__content" id="sign">
-						<form action="#" method="get" class="form">
-							<div class="form">
-								<div class="form__controls">
-									<label class="form__label" for="username">User name</label>
-									<input class="form__input" minlength="8" type="text" name="username" id="username" required>
-									<label class="form__label" for="password">Password</label>
-									<input class="form__input" minlength="8" required type="password" name="password" id="Password" required>
-									<!------------------------------------->
-									<div class="form__controls-checkbox">
-										<input class="form__input-checkbox"  type="checkbox" name="keep" id="keep">
-										<label class="form__label-checkbox" for="keep">
-											Keep me signed in
-										</label>
-									</div>
-									<button type="submit" class="form__btn">Sign in</button>
-									<!------------------------------------->
-									<ul class="form__advanced">
-										<li class="form__advanced-item">
-											<a href="#" class="form__link">Forgot password</a>
-										</li>
-										<li class="form__advanced-item">
-											<a href="join.html#join" class="form__link">Create an account</a>
-										</li>
-									</ul>
-								</form>
-							</div>
-						</div>
+				
+				<form action="#" method="get" class="form">
+					<label class="form__label" for="username">User name</label>
+					<input class="form__input" minlength="8" type="text" name="username" id="username" required>
+					<label class="form__label" for="password">Password</label>
+					<input class="form__input" minlength="8" required type="password" name="password" id="Password">
+					
+					<div class="form__controls-checkbox">
+						<input class="form__input-checkbox"  type="checkbox" name="keep" id="keep">
+						<label class="form__label-checkbox" for="keep">
+							Keep me signed in
+						</label>
 					</div>
-				</div>
+					<button type="submit" class="form__btn">Sign in</button>
+					
+					<ul class="form__advanced">
+						<li class="form__advanced-item">
+							<a href="#" class="form__link">Forgot password</a>
+						</li>
+						<li class="form__advanced-item">
+							<a href="join.html#join" class="form__link">Create an account</a>
+						</li>
+					</ul>
+				</form>
+				
 			</div>
+		</div>
+	</div>
 
-			<script src="js/bundle.js"></script>
-		</body>
-		</html>
+	<script src="js/bundle.js"></script>
+</body>
+</html>
