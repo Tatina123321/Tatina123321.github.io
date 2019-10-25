@@ -1,1 +1,3 @@
-[Thu Oct 24 2019 08:12:27 GMT+0300 (Финляндия (лето))] layer "© 2014. All Rights Reserved Ellipsis.com": Unsupported extension: com
+[Fri Oct 25 2019 08:58:49 GMT+0300 (Финляндия (лето))] layer "© 2014. All Rights Reserved Ellipsis.com": Unsupported extension: com
+[Fri Oct 25 2019 10:28:40 GMT+0300 (Финляндия (лето))] layer "Layer 5 copy 4.png": Duplicate path: Layer 5 copy 4.png
+[Fri Oct 25 2019 10:28:46 GMT+0300 (Финляндия (лето))] layer "Layer 5 copy 4.png": Duplicate path: Layer 5 copy 4.png
