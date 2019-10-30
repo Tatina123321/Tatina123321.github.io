@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: $main-font;
+	font-size: 	100%;
+	background-color: #fff;
+	color: $dark;
+}
+
+@include lg-screen {
+	body {
+		font-size: px_to_em(14px);
+	}
+}
+@include sm-screen {
+	body {
+		font-size: px_to_em(12px);
+	}
+}
+
+.container {
+	width: 100%;
+	max-width: 1140px;
+	margin: auto;
+	padding: 0 15px;
+}
+
+.wrapper {
+	display: block;
+	border-bottom: 2px solid $dark;
+	border-left: 2px solid $dark;
+	border-right: 2px solid $dark;
+	padding: 60px 160px 40px;
+	text-align: center;
+	position: relative;
+
+	@include before {
+		@include lg-screen {
+			body {
+				width: 150px;
+			}
+		}
+
+		@include sm-screen {
+			body {
+				width: 50px;
+			}
+		}
+	}
+
+	@include after {
+		@include lg-screen {
+			body {
+				width: 150px;
+			}
+		}
+
+		@include sm-screen {
+			body {
+				width: 50px;
+			}
+		}
+	}
+
+}
+
+
+
+@include lg-screen {
+	.wrapper {
+		padding: 40px 100px 30px;
+	}
+}
+
+@include sm-screen {
+	.wrapper {
+		padding: 30px 20px 20px;
+	}
+}
+
+.oll-title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: px_to_em(30px);
+	font-weight: 800;
+	letter-spacing: 0.1em;
+	color: $dark;
+
+}

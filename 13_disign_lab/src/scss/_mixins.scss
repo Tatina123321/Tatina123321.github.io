@@ -1,0 +1,57 @@
+$base-size: 16px;
+
+@function px_to_rem($target, $context: $base-size) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0rem;
+}
+
+@function px_to_em($target, $context: $base-size) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0em;
+}
+
+@mixin lg-screen {
+	@media all and (max-width: 960px) {
+		@content;
+	}
+}
+
+@mixin sm-screen {
+	@media all and (max-width: 375px) {
+		@content;
+	}
+}
+
+
+ @mixin before {
+
+ 	&::before {
+		content: "";
+		display: block;
+		width: 240px;
+		height: 2px;
+		background-color: #3c3c3c;
+		left: 0;
+		top: 0;
+		position: absolute;
+		@content;
+	}
+
+}
+
+
+
+@mixin after {
+
+	&::after {
+		content: "";
+		display: block;
+		width: 240px;
+		height: 2px;
+		background-color: #3c3c3c;
+		right: 0;
+		top: 0;
+		position: absolute;
+		@content;
+	}
+}

@@ -5,35 +5,35 @@
 }
 
 .lastscreen {
-	padding-top: px_to_em(50px);
-	display: flex;
-	flex-direction: column;
+	padding-top:     px_to_em(50px);
+	display:         flex;
+	flex-direction:  column;
 	justify-content: space-between;
 }
 
  .c-form {
-	display: flex;
+	display:        flex;
 	flex-direction: column;
-   align-items: center;
+   align-items:    center;
 
 
 	&__title {
-		width: 100%;
+		width:          100%;
 		text-transform: capitalize;
-		font-weight: 700;
-		font-family: $main-font;
-		text-align: center;
-		color: $dark;
-		font-size: px_to_em(70px);
-		margin-bottom: 15px;
+		font-weight:    700;
+		font-family:    $main-font;
+		text-align:     center;
+		color:          $dark;
+		font-size:      px_to_em(70px);
+		margin-bottom:  15px;
 	}
 
 	&__subtitle {
 		font-family: $main-font;
-		font-size: px_to_em(17px);
-		text-align: center;
+		font-size:   px_to_em(17px);
+		text-align:  center;
 		line-height: px_to_em(20px);
-		max-width: px_to_em(350px);
+		max-width:   px_to_em(350px);
 	}
 
 }
@@ -41,7 +41,7 @@
 .feedback {
 	display:         flex;
 	justify-content: space-between;
-	padding-top: 100px;
+	padding-top:     100px;
 	
 		&__left {
 			display:         flex;
@@ -52,10 +52,10 @@
 				display:         flex;
 				flex-direction:  column;
 				justify-content: space-between;
-				min-height:  350px;
-				min-width:   400px;
-				font-family: $main-font;
-				color:       $white;
+				min-height:      350px;
+				min-width:       400px;
+				font-family:     $main-font;
+				color:           $white;
 				
 				&__input {
 					padding:         5px;
@@ -64,6 +64,7 @@
 					font-family:     $main-font;
 					color:           $white;
 					font-size:       px_to_em(15px);
+					resize: none;
 				}
 
 				&__input:hover {
@@ -97,12 +98,12 @@
 
 		&__right {
 			width: 50%;
-						
+
 			.feedback__right-contact {
 				font-size:      px_to_em(17px);
 				font-weight:    800;
 				text-transform: uppercase;
-				padding-top: 20px;
+				padding-top:    20px;
 				margin-bottom:  5px;
 			}
 
@@ -112,10 +113,10 @@
 				text-decoration: none;
 				font-style:      normal;
 				font-family:     $main-font;
-				color:             $dark;
+				color:           $dark;
 			}
 			.feedback__right-contact:first-child {
-		 		padding-top: 0;
+		 		padding-top:      0;
 			}
 			
 		}

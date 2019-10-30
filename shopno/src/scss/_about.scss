@@ -1,4 +1,46 @@
 .sh-about {
 	background-color: $light-bg;
 	
+	&__carousel {
+		display: flex;
+
+	}
+	
+	&__slides {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+
+.side {
+	flex-basis: 50%;
+}
+
+.img-wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 390px;
+	
+
+	@include padding-hack(485px)
+
+	img {
+		// width: 390px;
+
+	}
+
+	&:before {
+		content: "";
+		width: 100%;
+		max-width: 470px;
+		height: 410px;
+		position: absolute;
+		background-color: $grey-bg;
+		z-index: -1;
+
+	}
+
+}
+
 }
