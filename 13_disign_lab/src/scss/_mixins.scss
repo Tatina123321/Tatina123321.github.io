@@ -30,7 +30,7 @@ $base-size: 16px;
 		display: block;
 		width: 240px;
 		height: 2px;
-		background-color: #3c3c3c;
+		background-color: $dark;
 		left: 0;
 		top: 0;
 		position: absolute;
@@ -39,8 +39,6 @@ $base-size: 16px;
 
 }
 
-
-
 @mixin after {
 
 	&::after {
@@ -48,7 +46,38 @@ $base-size: 16px;
 		display: block;
 		width: 240px;
 		height: 2px;
-		background-color: #3c3c3c;
+		background-color: $dark;
+		right: 0;
+		top: 0;
+		position: absolute;
+		@content;
+	}
+}
+
+ @mixin before-white {
+
+ 	&::before {
+		content: "";
+		display: block;
+		width: 240px;
+		height: 2px;
+		background-color: $white;
+		left: 0;
+		top: 0;
+		position: absolute;
+		@content;
+	}
+
+}
+
+@mixin after-white {
+
+	&::after {
+		content: "";
+		display: block;
+		width: 240px;
+		height: 2px;
+		background-color: $white;
 		right: 0;
 		top: 0;
 		position: absolute;

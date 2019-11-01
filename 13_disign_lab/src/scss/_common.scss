@@ -28,13 +28,17 @@ body {
 
 .container {
 	width: 100%;
-	max-width: 1140px;
+	max-width: 930px;
 	margin: auto;
 	padding: 0 15px;
 }
 
 .wrapper {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	// display: block;
 	border-bottom: 2px solid $dark;
 	border-left: 2px solid $dark;
 	border-right: 2px solid $dark;
@@ -44,13 +48,13 @@ body {
 
 	@include before {
 		@include lg-screen {
-			body {
+			@include before {
 				width: 150px;
 			}
 		}
 
 		@include sm-screen {
-			body {
+			@include before {
 				width: 50px;
 			}
 		}
@@ -58,13 +62,52 @@ body {
 
 	@include after {
 		@include lg-screen {
-			body {
+			@include after {
 				width: 150px;
 			}
 		}
 
 		@include sm-screen {
-			body {
+			@include after {
+				width: 50px;
+			}
+		}
+	}
+
+}
+
+.wrapper-white {
+	display: block;
+	border-bottom: 2px solid $white;
+	border-left: 2px solid $white;
+	border-right: 2px solid $white;
+	padding: 60px 160px 40px;
+	text-align: center;
+	position: relative;
+
+	@include before-white {
+		@include lg-screen {
+			@include before-white {
+				width: 150px;
+			}
+		}
+
+		@include sm-screen {
+			@include before-white {
+				width: 50px;
+			}
+		}
+	}
+
+	@include after-white {
+		@include lg-screen {
+			@include after-white {
+				width: 150px;
+			}
+		}
+
+		@include sm-screen {
+			@include after-white {
 				width: 50px;
 			}
 		}
@@ -87,11 +130,29 @@ body {
 }
 
 .oll-title {
+	// position: absolute;
+	top: 0;
+	left: 40%;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: px_to_em(30px);
 	font-weight: 800;
 	letter-spacing: 0.1em;
 	color: $dark;
+	margin-bottom: 40px;
 
+}
+
+@include lg-screen {
+	.oll-title {
+		font-size: px_to_em(20px);
+		margin-bottom: 20px;
+	}
+}
+
+@include sm-screen {
+	.oll-title {
+		font-size: px_to_em(18px);
+		margin-bottom: 20px;
+	}
 }

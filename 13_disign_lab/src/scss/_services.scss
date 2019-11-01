@@ -1,0 +1,23 @@
+.services {
+	background: url("../img/services.jpg") center no-repeat;
+	padding: 120px 0 110px 0;
+	color: $white;
+
+	&__title {
+		color: $white;
+		transform: translatey(-220%);
+	}
+
+	&__description {
+		max-width: 560px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+
+
+	}
+}
+
+
+
+
