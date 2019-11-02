@@ -5,7 +5,7 @@
 
 	&__title {
 		color: $white;
-		transform: translatey(-220%);
+		transform: translatey(-50%);
 	}
 
 	&__description {
@@ -13,8 +13,7 @@
 		text-align: center;
 		display: flex;
 		justify-content: center;
-
-
+		line-height: 1.8rem;
 	}
 }
 

@@ -1,0 +1,30 @@
+.contact {
+		padding: 160px 0;
+
+	&__title {
+		transform: translatey(-50%);
+	}
+
+	&__description {
+		margin-bottom: 20px;
+		line-height: 1.8rem;
+	}
+
+	&__btn {
+  		display: block;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		padding: 20px 130px;
+		color: $white;
+		background-color: $dark;
+	}
+	&__btn:hover {
+		color: $dark;
+		background-color:  $white;
+		font-weight: 800;
+		box-shadow: 0 0 15px 2px $dark;
+		transition: all .3s ease;
+	}
+
+}

@@ -1,0 +1,15 @@
+.portfolio {
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-between;
+		max-height: 485px;
+	}
+
+	&__item {
+		list-style: none;
+
+	}
+}

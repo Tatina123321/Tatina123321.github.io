@@ -2,12 +2,15 @@
 		padding: 160px 0;
 
 	&__title {
-		margin-bottom: 30px;
-		transform: translatey(-220%);
+		transform: translatey(-50%);
 	}
 
 	&__description-first {
 		margin-bottom: 20px;
+		line-height: 1.8rem;
+	}
+	&__description-second {
+		line-height: 1.8rem;
 	}
 
 }
@@ -23,15 +26,6 @@
 	}
 }
 
-@include lg-screen {
-	.about__title {
-		margin-bottom: 20px;
-	}
-}
 
-@include sm-screen {
-	.about__title {
-		margin-bottom: 15px;
-	}
-}
+
 
