@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: $main-font;
+	font-size: 	100%;
+	background-color: #fff;
+	color: $dark;
+}
+
+.container {
+	width: 100%;
+	max-width: 1120px;
+	margin: auto;
+	padding: 0 15px;
+}
+
+ul {
+	// display: flex;
+	list-style: none;
+	li {
+		a {
+			// display: flex;
+			text-decoration: none;
+		}
+	}
+}
+
+.img-wrapper {
+	@include padding-hack();
+}
+
+.al-logo {
+	font-family: $title-font;
+	font-size: px_to_rem(60px);
+	text-transform: capitalize;
+	font-weight: 700;
+
+}

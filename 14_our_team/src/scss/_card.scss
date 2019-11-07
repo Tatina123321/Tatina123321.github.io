@@ -1,0 +1,236 @@
+.team-header {
+	padding: 110px 0 35px;
+	text-align: center;
+	text-transform: uppercase;
+
+	&__subtitle {
+		font-size: px_to_rem(18px);
+		font-weight: 500;
+	}
+
+	&__title {
+		position: relative;
+		font-size: px_to_rem(60px);
+		color: $yellow;
+		font-family: $title-font;
+		letter-spacing: .2rem;
+		font-weight: 900;
+		margin-bottom: 40px;
+	}
+
+	&__title:before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 450px;
+		height: 1px;
+		background-color: $yellow;
+		bottom: -50px;
+		left: 50%;
+	   transform: translate(-50%, -50%);
+		z-index: -1;
+	}
+}
+
+.team {
+	padding-bottom: 100px;
+}
+
+.team-card {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1005px;
+
+	&__item {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1005px;
+		display: flex;
+	   justify-content: space-between;
+      align-items: center;
+		min-height: 560px;
+		padding: 0 15px;
+	}
+
+	&__item::after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 1px;
+		height: 100%;
+		background-color: $yellow;
+		left: 50%;
+	   transform: translateX(-100%);
+		z-index: -1;
+	}
+
+	&__photo {
+		border: 1px solid $yellow;
+		position: relative;
+	}
+
+	&__photo::before {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 100px;
+		width: 100px;
+		border-top: 1px solid $yellow;
+		border-left: 1px solid $yellow;
+		top: -14px;
+		left: -14px;
+	}
+
+	&__photo::after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 100px;
+		width: 100px;
+		border-top: 1px solid $yellow;
+		border-right: 1px solid $yellow;
+		top: -14px;
+		right: -14px;
+	}
+
+	&__img {
+		position: relative;
+	}
+
+	&__img::before {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 100px;
+		width: 100px;
+		border-bottom: 1px solid $yellow;
+		border-left: 1px solid $yellow;
+		bottom: -14px;
+		left: -14px;
+	}
+
+	&__img::after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 100px;
+		width: 100px;
+		border-bottom: 1px solid $yellow;
+		border-right: 1px solid $yellow;
+		bottom: -14px;
+		right: -14px;
+	}
+
+	&__description {
+		width: 100%;
+		max-width: 420px;
+		display: flex;
+	   flex-direction: column;
+      align-items: center;
+
+      &-name {
+			font-size: px_to_rem(36px);
+			text-transform: capitalize;
+			color: $dark;
+			font-family: $title-font;
+			font-weight: 900;
+			margin-bottom: 60px;
+			position: relative;
+		}
+
+		&-name:after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 100px;
+			height: 1px;
+			background-color: $yellow;
+			bottom: -30px;
+			left: 50%;
+	      transform: translateX(-50%);
+		}
+
+		&-position {
+			font-size: px_to_rem(24px);
+			text-transform: capitalize;
+			color: $dark;
+			margin-bottom: 25px;
+		}
+
+		&-text {
+			color: $dark;
+			font-size: px_to_rem(14px);
+			text-align: center;
+			line-height: 1.6em;
+			position: relative;
+			margin-bottom: 50px;
+		}
+
+		&-text:after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 50px;
+			height: 4px;
+			background-color: $yellow;
+			bottom: -20px;
+			left: 50%;
+	      transform: translateX(-50%);
+			z-index: 2;
+		}
+
+		&-text:before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 20px;
+			height: 4px;
+			border-left: 5px solid $white;
+			border-right: 5px solid $white;
+			background-color: $yellow;
+			bottom: -20px;
+			left: 50%;
+	      transform: translateX(-50%);
+			z-index: 3;
+		}
+
+		&-btn {
+			display: block;
+			text-decoration: none;
+			font-size: px_to_rem(14px);
+			color: $dark;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-family: $title-font;
+			padding: 5px 15px;
+			border: 1px solid $yellow;
+	      transition: all .3s ease;
+		}
+
+		&-btn:hover {
+			color: $white;
+			background-color: $yellow;
+	      box-shadow: 0 0 5px 3px $grey;
+		}
+
+	}
+
+	.social__list {
+		display: flex;
+		width: 100%;
+		max-width: 135px;
+	    justify-content: space-between;
+		margin-bottom: 30px;
+	}
+
+	.social__link {
+		display: block;
+		border: 2px solid #ccc;
+		border-radius: 50px;
+	}
+
+	.social__link:hover {
+		border-color: #fc0;
+	}
+
+}
