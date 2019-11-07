@@ -18,7 +18,22 @@
 		padding: 20px 130px;
 		color: $white;
 		background-color: $dark;
+
 	}
+@include lg-screen {
+	.contact__btn {
+		padding: 20px 80px;
+		letter-spacing: 2px;
+	}
+}
+@include sm-screen {
+	.contact__btn {
+		padding: 15px 15px;
+		letter-spacing: 1px;
+	}
+}
+
+
 	&__btn:hover {
 		color: $dark;
 		background-color:  $white;

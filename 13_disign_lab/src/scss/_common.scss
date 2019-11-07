@@ -46,33 +46,32 @@ body {
 	text-align: center;
 	position: relative;
 
-	@include before {
-		@include lg-screen {
+	@include before;
+	@include after;
+
+	@include lg-screen {
 			@include before {
 				width: 150px;
 			}
 		}
 
-		@include sm-screen {
+		@include md-screen {
 			@include before {
-				width: 50px;
+				width: 80px;
 			}
 		}
-	}
 
-	@include after {
 		@include lg-screen {
 			@include after {
 				width: 150px;
 			}
 		}
 
-		@include sm-screen {
+		@include md-screen {
 			@include after {
-				width: 50px;
+				width: 80px;
 			}
 		}
-	}
 
 }
 
@@ -85,46 +84,44 @@ body {
 	text-align: center;
 	position: relative;
 
-	@include before-white {
+	@include before-white;
+	@include after-white;
+
 		@include lg-screen {
 			@include before-white {
 				width: 150px;
 			}
 		}
 
-		@include sm-screen {
+		@include md-screen {
 			@include before-white {
-				width: 50px;
+				width: 80px;
 			}
 		}
-	}
 
-	@include after-white {
 		@include lg-screen {
 			@include after-white {
 				width: 150px;
 			}
 		}
 
-		@include sm-screen {
+		@include md-screen {
 			@include after-white {
-				width: 50px;
+				width: 80px;
 			}
 		}
-	}
-
 }
 
-
-
 @include lg-screen {
-	.wrapper {
-		padding: 40px 100px 30px;
+	.wrapper,
+	.wrapper-white {
+		padding: 40px 40px 30px;
 	}
 }
 
 @include sm-screen {
-	.wrapper {
+	.wrapper,
+	.wrapper-white {
 		padding: 30px 20px 20px;
 	}
 }
@@ -140,7 +137,6 @@ body {
 	letter-spacing: 0.1em;
 	color: $dark;
 	margin-bottom: 40px;
-
 }
 
 @include lg-screen {

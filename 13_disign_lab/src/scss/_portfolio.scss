@@ -5,11 +5,58 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-content: space-between;
-		max-height: 485px;
+		max-height: 480px;
 	}
 
 	&__item {
 		list-style: none;
-
+		flex-basis: 29%;
 	}
+
+	&__item:nth-child(2),
+	&__item:nth-child(5) {
+	    flex-basis: 41%;
+	}
+
+	&__link {
+		position: relative;
+		display: block;
+		min-height: 235px;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing:  3px;
+		color: $white;
+		font-size: px_to_em(30px)
+	}
+
+	&__link span {
+		position: absolute;
+		left: 30px;
+		bottom: 30px;
+	}
+
+	.first {
+	background: url("../img/layer1.png") no-repeat;
+	}
+
+	.second {
+	background: url("../img/layer2.png") no-repeat;
+	}
+
+	.three {
+	background: url("../img/layer3.png") no-repeat;
+	}
+
+	.four {
+	background: url("../img/layer4.png") no-repeat;
+	}
+
+	.five {
+	background: url("../img/layer5.png") no-repeat;
+	}
+
+	.six {
+	background: url("../img/layer6.png") no-repeat;
+	}
+
 }

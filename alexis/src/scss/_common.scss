@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-size: $base-size;
+	font-family: $main-font;
+	color: $text-color;
+}
+
+.al-dark-bg {
+	background-color: $dark-bg;
+
+	& + .al-section {
+		background-color: $white-bg;
+
+		& + .al-section {
+		background-color: $grey-bg;
+		}
+	}
+}
+
+ul {
+	display: flex;
+	list-style: none;
+
+	li {
+		a {
+			display: flex;
+			text-decoration: none;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $text-color;
+}
+
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.al-logo {
+	font-family: $sign-font;
+	font-size: px_to_rem(35px);
+	text-transform: capitalize;
+	font-weight: 700;
+
+	 &::first-letter {
+	 	color: $orange-logo;
+	 	text-transform: uppercase;
+	 }
+}
+
+.flex-container {
+	display: flex;
+}
+
+.al-section {
+
+}
