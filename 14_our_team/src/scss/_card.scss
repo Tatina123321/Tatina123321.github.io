@@ -1,11 +1,13 @@
 .team-header {
-	padding: 110px 0 35px;
+	padding: 70px 0 35px;
 	text-align: center;
 	text-transform: uppercase;
+
 
 	&__subtitle {
 		font-size: px_to_rem(18px);
 		font-weight: 500;
+		color: $grey;
 	}
 
 	&__title {
@@ -25,11 +27,20 @@
 		width: 450px;
 		height: 1px;
 		background-color: $yellow;
-		bottom: -50px;
+		bottom: -60px;
 		left: 50%;
 	   transform: translate(-50%, -50%);
 		z-index: -1;
 	}
+
+	&__logo {
+		position: relative;
+		border: 50%;
+		padding: 10px;
+		background-color: #fff;
+	}
+
+
 }
 
 .team {
@@ -57,7 +68,7 @@
 		display: block;
 		position: absolute;
 		width: 1px;
-		height: 100%;
+		height: 550px;
 		background-color: $yellow;
 		left: 50%;
 	   transform: translateX(-100%);

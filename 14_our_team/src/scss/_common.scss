@@ -37,10 +37,3 @@ ul {
 	@include padding-hack();
 }
 
-.al-logo {
-	font-family: $title-font;
-	font-size: px_to_rem(60px);
-	text-transform: capitalize;
-	font-weight: 700;
-
-}
