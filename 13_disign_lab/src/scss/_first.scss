@@ -4,7 +4,7 @@
 		color:$white;
 
 		min-height: 100vh;
-		padding:200px 0 100px;
+		padding:150px 0 100px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -61,6 +61,17 @@
 			// display: block;
 			width: 80px;
 			height: 80px;
+		}
+
+		&__footer-scroll {
+			position: absolute;
+			left: 50%;
+	      transform: translateX(-50%);
+			bottom: 70px;
+			font-size: 0;
+		}
+		&__footer-scroll:hover .cls-10 {
+			fill: $dark;
 		}
 
 		&__footer-scroll {

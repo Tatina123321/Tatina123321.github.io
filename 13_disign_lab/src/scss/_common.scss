@@ -76,7 +76,10 @@ body {
 }
 
 .wrapper-white {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 	border-bottom: 2px solid $white;
 	border-left: 2px solid $white;
 	border-right: 2px solid $white;
@@ -129,14 +132,13 @@ body {
 .oll-title {
 	position: absolute;
 	top: 0;
-	left: 40%;
+	// left: 50%;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: px_to_em(30px);
 	font-weight: 800;
 	letter-spacing: 0.1em;
 	color: $dark;
-	margin-bottom: 40px;
 }
 
 @include lg-screen {

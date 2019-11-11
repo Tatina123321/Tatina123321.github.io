@@ -1,11 +1,15 @@
 .services {
 	background: url("../img/services.jpg") center no-repeat;
+	background-size: cover;
 	padding: 120px 0 110px 0;
 	color: $white;
 
 	&__title {
 		color: $white;
 		transform: translatey(-50%);
+		// left: 40%;
+
+
 	}
 
 	&__description {
@@ -14,6 +18,18 @@
 		display: flex;
 		justify-content: center;
 		line-height: 1.8rem;
+	}
+}
+
+@include lg-screen {
+	.services {
+		padding: 80px 0 75px 0;
+	}
+}
+
+@include md-screen {
+	.services {
+		padding: 50px 0 45px 0;
 	}
 }
 
