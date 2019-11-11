@@ -226,22 +226,59 @@
 
 	}
 
+	.team-card-carusel {
+		display: flex;
+		justify-content: center;
+		padding: 10px 0;
+
+		&__bullets {
+			display: flex;
+			justify-content: space-between;
+			list-style: none;
+			width: 52px;
+
+		&-link {
+			display: flex;
+			width: 10px;
+			height: 10px;
+			border-radius: 5px;
+			background-color: $yellow;
+		}
+	}
+}
+
 	.social__list {
 		display: flex;
+		justify-content: space-between;
 		width: 100%;
 		max-width: 135px;
-	    justify-content: space-between;
 		margin-bottom: 30px;
 	}
 
 	.social__link {
-		display: block;
-		border: 2px solid #ccc;
-		border-radius: 50px;
-	}
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		padding: 5px;
+		cursor: pointer;
+		border: 2px solid $grey;
+		color: $grey;
+		font-size: 10px;
+		transition: all .3s ease;
+		}
+
+	.social__link.fb {
+		padding: 5px 7px;
+		}
 
 	.social__link:hover {
-		border-color: #fc0;
+		border-color: $yellow;
+		color: $white;
+		background-color: $yellow;
+		box-shadow: 0 0 5px 3px $grey;
+		transition: all .3s ease;
 	}
 
 }
+
+
