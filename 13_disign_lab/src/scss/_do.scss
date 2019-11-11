@@ -35,16 +35,10 @@
 	.do {
 		padding: 80px 0;
 	}
-	.do__item-description {
-		margin-bottom: 60px;
-	}
 }
 
 @include md-screen {
 	.do {
 		padding: 50px 0;
-	}
-	.do__item-description {
-		margin-bottom: 50px;
 	}
 }
