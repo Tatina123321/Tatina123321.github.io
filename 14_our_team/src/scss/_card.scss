@@ -1,5 +1,8 @@
+.team {
+	min-height: 100vh;
+}
 .team-header {
-	padding: 70px 0 35px;
+	padding: 50px 0 35px;
 	text-align: center;
 	text-transform: uppercase;
 
@@ -39,12 +42,6 @@
 		padding: 10px;
 		background-color: #fff;
 	}
-
-
-}
-
-.team {
-	padding-bottom: 100px;
 }
 
 .team-card {
@@ -280,5 +277,6 @@
 	}
 
 }
+
 
 
