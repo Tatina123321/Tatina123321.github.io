@@ -1,0 +1,34 @@
+$base-size: 16px;
+
+@function px_to_rem($target, $context: $base-size) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0rem;
+}
+
+@function px_to_em($target, $context: $base-size) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0em;
+}
+
+@mixin lg-screen {
+	@media all and (max-width: 960px) {
+		@content;
+	}
+}
+
+@mixin md-screen {
+	@media all and (max-width:576px) {
+		@content;
+	}
+}
+
+@mixin sm-screen {
+	@media all and (max-width: 375px) {
+		@content;
+	}
+}
+
+
+
+
+
