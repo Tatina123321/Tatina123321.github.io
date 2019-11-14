@@ -134,7 +134,8 @@
    border-bottom: 1px solid $orange;
 }
 
-.navigation-submenu__list-item:hover .navigation-subsubmenu__list {
+.navigation-submenu__list-item:hover
+.navigation-subsubmenu__list {
     display: block;
 }
 
@@ -153,7 +154,7 @@
 		opacity:         1;
 		display:         flex;
 		justify-content: flex-start;
-		// z-index: 2;
+		z-index: 2;
 	}
 
 	.navigation__list-item {

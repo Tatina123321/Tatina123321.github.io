@@ -10,7 +10,7 @@
 //   document.querySelector('.navigation__list').classList.toggle('db');
 // });
 
-// $('.navigation__btn').on('click', function(e) {
-//   e.preventDefault;
-//   $(this).toggleClass(''navigation__btn'_active');
-// });
+$('.navigation__btn').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass(''navigation__btn'_active');
+});
