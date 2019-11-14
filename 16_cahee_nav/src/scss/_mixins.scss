@@ -10,20 +10,44 @@ $base-size: 16px;
   @return $target / $context + 0em;
 }
 
-@mixin lg-screen {
-	@media all and (max-width: 960px) {
-		@content;
+@mixin media-hidden {
+	@media only screen and (max-width: 319px) {
+		display: none;
 	}
 }
 
-@mixin md-screen {
-	@media all and (max-width:576px) {
+@mixin xs-screen {
+	@media only screen and (max-width: 575px) {
 		@content;
 	}
 }
 
 @mixin sm-screen {
-	@media all and (max-width: 375px) {
+	@media only screen and (min-width: 576px) {
+		@content;
+	}
+}
+
+@mixin md-screen {
+	@media only screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin md-screen-max {
+	@media only screen and (max-width: 991px) {
+		@content;
+	}
+}
+
+@mixin lg-screen {
+	@media only screen and (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin xl-screen {
+	@media only screen and (min-width: 1200px) {
 		@content;
 	}
 }
