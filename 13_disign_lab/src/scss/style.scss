@@ -17,3 +17,24 @@
 @import 'contact';
 
 @import 'footer';
+
+// DELETE THIS ON PRODUCTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+html {
+	@include media-hidden;
+}
+
+.f-screen,
+.about,
+.services,
+.do,
+.portfolio,
+.contact,
+.footer
+{
+	// display: none;
+}
+
+.about {
+	// display: block;
+}

@@ -1,5 +1,5 @@
 .contact {
-		padding: 160px 0;
+		padding: 120px 0;
 
 	&__title {
 		transform: translatey(-50%);
@@ -8,6 +8,8 @@
 	&__description {
 		margin-bottom: 20px;
 		line-height: 1.8rem;
+		display: flex;
+		justify-content: center;
 	}
 
 	&__btn {
@@ -26,7 +28,7 @@
 		letter-spacing: 2px;
 	}
 }
-@include sm-screen {
+@include md-screen {
 	.contact__btn {
 		padding: 15px 15px;
 		letter-spacing: 1px;
