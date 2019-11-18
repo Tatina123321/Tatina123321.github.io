@@ -1,11 +1,11 @@
 .team {
 	min-height: 100vh;
-}
+
 .team-header {
-	padding: 50px 0 35px;
+	padding: 100px 0 0;
 	text-align: center;
 	text-transform: uppercase;
-
+	position: relative;
 
 	&__subtitle {
 		font-size: px_to_rem(18px);
@@ -20,34 +20,16 @@
 		font-family: $title-font;
 		letter-spacing: .2rem;
 		font-weight: 900;
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 	}
 
-	&__title:before {
-		content: "";
-		display: block;
-		position: absolute;
-		width: 450px;
-		height: 1px;
-		background-color: $yellow;
-		bottom: -60px;
-		left: 50%;
-	   transform: translate(-50%, -50%);
-		z-index: -1;
-	}
-
-	&__logo {
-		position: relative;
-		border: 50%;
-		padding: 10px;
-		background-color: #fff;
-	}
 }
 
 .team-card {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1005px;
+	position: relative;
 
 	&__item {
 		margin: 0 auto;
@@ -65,7 +47,7 @@
 		display: block;
 		position: absolute;
 		width: 1px;
-		height: 550px;
+		height: 515px;
 		background-color: $yellow;
 		left: 50%;
 	   transform: translateX(-100%);
@@ -223,27 +205,6 @@
 
 	}
 
-	.team-card-carusel {
-		display: flex;
-		justify-content: center;
-		padding: 10px 0;
-
-		&__bullets {
-			display: flex;
-			justify-content: space-between;
-			list-style: none;
-			width: 52px;
-
-		&-link {
-			display: flex;
-			width: 10px;
-			height: 10px;
-			border-radius: 5px;
-			background-color: $yellow;
-		}
-	}
-}
-
 	.social__list {
 		display: flex;
 		justify-content: space-between;
@@ -253,6 +214,7 @@
 	}
 
 	.social__link {
+		display: block;
 		justify-content: center;
 		align-items: center;
 		border-radius: 50%;
@@ -275,8 +237,96 @@
 		box-shadow: 0 0 5px 3px $grey;
 		transition: all .3s ease;
 	}
+}
+
+	.team-card-carusel {
+		display: flex;
+		justify-content: center;
+		padding: 10px 0;
+
+		&__bullets {
+			display: flex;
+			justify-content: space-between;
+			list-style: none;
+			width: 52px;
+
+		&-link {
+			display: flex;
+			width: 10px;
+			height: 10px;
+			border-radius: 5px;
+			border: 1px solid $yellow;
+			background-color: $yellow;
+		}
+
+		&-link:hover,
+		&-link:active,
+		&-link:focus {
+			background-color: $white;
+			transition: .3s;
+		}
+	}
 
 }
 
+.wrapper {
+	display: flex;
+	align-items: center;
+}
 
+.arrow-left {
+	display: block;
+	width: 15px;
+	height: 15px;
+	border-top: 2px solid #fc0;
+	border-left: 2px solid #fc0;
+	transform: rotate(-44deg);
+	cursor: pointer;
+}
+
+.arrow-left:hover {
+	border-top: 4px solid #fc0;
+	border-left: 4px solid #fc0;
+	transition: .5s;
+}
+
+.arrow-right {
+	display: block;
+	width: 15px;
+	height: 15px;
+	border-top: 2px solid #fc0;
+	border-left: 2px solid #fc0;
+	transform: rotate(136deg);
+	cursor: pointer;
+}
+
+.arrow-right:hover {
+	border-top: 4px solid #fc0;
+	border-left: 4px solid #fc0;
+	transition: .5s;
+}
+
+}
+
+.team-header:before {
+	display: block;
+	content: "";
+	width: 210px;
+	height: 1px;
+	background: $yellow;
+	position: absolute;
+	bottom: 5px;
+	left: 315px;
+}
+
+.team-header:after {
+	display: block;
+	content: "";
+	width: 210px;
+	height: 1px;
+	background: $yellow;
+	position: absolute;
+	bottom: 5px;
+	left: 585px;
+}
 
