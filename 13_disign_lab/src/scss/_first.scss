@@ -58,6 +58,7 @@
 			// display: block;
 			width: 80px;
 			height: 80px;
+			margin: 0;
 		}
 
 		&__footer-scroll {
@@ -76,7 +77,7 @@
 			// font-size: 0;
 		}
 
-		@include sm-screen {
+		@include lg-screen {
 			.f-screen__footer-scroll {
 				display: none;
 			}
