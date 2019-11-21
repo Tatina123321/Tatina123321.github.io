@@ -17,19 +17,17 @@ html {
 	@include media-hidden;
 }
 
-.sh-first-screen,
-.sh-about,
-.sh-works,
-.sh-services,
-.sh-team,
-.sh-testimonials,
-.sh-partners,
-.sh-contacts,
-.sh-footer
+.first,
+.about,
+.services,
+.subscribe,
+.blog,
+.contact,
+.footer
 {
 	// display: none;
 }
 
-.sh-testimonials {
+.about {
 	// display: block;
 }

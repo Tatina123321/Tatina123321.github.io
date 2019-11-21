@@ -12,44 +12,74 @@
 	<section class="first">
 		<div class="container">
 			<div class="f-screen">
-				<header class="f-screen__header">
+				<nav class="nav">
 					<!---logo---->
-					<a href="#" class="header__logo">cahee</a>
+					<a href="#" class="nav__logo">cahee</a>
 					<!---nav---->
-					<ul class="navigation__list">
-						<li class="navigation__list-item">
-							<a class="navigation__list-link" href="#">home</a>
-						</li>
-						<li class="navigation__list-item">
-							<a class="navigation__list-link" href="#">about</a>
-						</li>
-						<li class="navigation__list-item">
-							<a class="navigation__list-link" href="#">services</a>
-						</li>
-						<li class="navigation__list-item">
-							<a class="navigation__list-link" href="#">gallery</a>
-						</li>
-						<li class="navigation__list-item">
-							<a class="navigation__list-link" href="#">blog</a>
-						</li>
-						<li class="navigation__list-item">
-							<a class="navigation__list-link" href="#">contact</a>
-						</li>
-					</ul>
-				</header>
-				<div class="f-screen__main">
-					<h1 class="f-screen__title">fresh life</h1>
-					<p class="f-screen__title-description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-					<a class="btn" href="#">GET FREE NOW</a>
-				</div>
-				<div class="f-screen__footer">
-					<a href="#about">
-						<img src="img/scroll.png" alt="scroll">
-					</a>
+					<!-- <div class="navigation"> -->
+
+						<div class="burger_icon">
+
+							<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 burger" width="35" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+						</div>
+
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a class="nav__link" href="#">home</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">about</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">services</a>
+								<ul class="nav-submenu__list">
+									<li class="nav-submenu__item">
+										<a href="#" class="nav-submenu__link">Lorem ipsum</a>
+									</li>
+									<li class="nav-submenu__item">
+										<a href="#" class="nav-submenu__link">Lorem ipsum</a>
+									</li>
+									<li class="nav-submenu__item">
+										<a href="#" class="nav-submenu__link">Lorem ipsum</a>
+										<ul class="nav-subsubmenu__list">
+											<li class="nav-subsubmenu__item">
+												<a href="#" class="nav-subsubmenu__link">Lorem ipsum</a>
+											</li>
+											<li class="nav-subsubmenu__item">
+												<a href="#" class="nav-subsubmenu__link">Lorem ipsum</a>
+											</li>
+											<li class="nav-subsubmenu__item">
+												<a href="#" class="nav-subsubmenu__link">Lorem ipsum</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">gallery</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">blog</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">contact</a>
+							</li>
+						</ul>
+						<!-- </div> -->
+					</nav>
+					<div class="f-screen__main">
+						<h1 class="f-screen__title">fresh life</h1>
+						<p class="f-screen__title-description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+						<a class="btn" href="#">GET FREE NOW</a>
+					</div>
+					<div class="f-screen__footer">
+						<a href="#about">
+							<img class="f-screen__footer-scroll" src="img/scroll.png" alt="scroll">
+						</a>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
 	<section id="about" class="about">
 		<div class="container">
@@ -169,7 +199,7 @@
 				Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 			</p>
 			<div class="subscribe-form">
-				<input class="subscribe-form__input" type="text" id="email" placeholder="Your email address..." minlength="8" required>
+				<input class="subscribe-form__input" type="text" id="email_subscribe" placeholder="Your email address..." minlength="8" required>
 				<input class="btn-subscribe" type="submit" value="SUBSCRIBE">
 				<!-- <a type="submit" class="btn-subscribe" href="#">SUBSCRIBE</a> -->
 			</div>
@@ -180,12 +210,14 @@
 <section class="blog">
 	<div class="container">
 		<div class="blog-wrapper">
-			<h2 class="blog__title">
-					blog
-			</h2>
-			<p class="blog__description">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere illo neque dolores qui minima ad nobis, animi sunt explicabo! Lorem ipsum dolor sit amet, consectetur adipisicing.
-			</p>
+			<div class="blog-header">
+				<h2 class="blog-header__title">
+						blog
+				</h2>
+				<p class="blog-header__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere illo neque dolores qui minima ad nobis, animi sunt explicabo! Lorem ipsum dolor sit amet, consectetur adipisicing.
+				</p>
+			</div>
 				<ul class="blog-card__list">
 					<li class="blog-card__item">
 						<a href="#" class="blog-card__link"  data-img="lemon">
@@ -270,7 +302,7 @@
 				<p class="footer-items__right">
 					&#169;  2015 Company. All right reserved.
 				</p>
-				<a class="footer-items__logo" href="#"><img src="img/logo-small.png" alt="logo"></a>
+				<a href="#" class="footer-items__logo">cahee</a>
 				<p class="footer-items__made">
 					Made with<span> love </span>by <a href="#" class="develop"> ITeam </a>
 				</p>
@@ -278,6 +310,11 @@
 		</div>
 	</footer>
 
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script> -->
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 <script src="js/bundle.js"></script>
 </body>
 </html>

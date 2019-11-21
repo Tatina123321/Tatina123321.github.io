@@ -10,7 +10,13 @@
 		display:         flex;
 		justify-content: space-between;
 		align-items:     center;
-		min-height:      100vh;
+		// min-height:      100vh;
+
+		@include lg-screen {
+			flex-direction: column;
+			justify-content: center;
+			padding: 50px 0 50px 0;
+		}
 	}
 
 	&__list {
@@ -45,6 +51,10 @@
 			color:            $dark;
 			font-weight:      600;
 			font-size:        px_to_rem(20px);
+
+			@include md-screen {
+			padding:          15px 30px;
+			}
 		}
 
 		picture {
@@ -63,6 +73,16 @@
 		font-size:      px_to_rem(90px);
 		font-weight:    900;
 		text-transform: capitalize;
+
+		@include lg-screen {
+			order: -1;
+			font-size: px_to_rem(70px);
+			margin-bottom: 20px;
+		}
+
+		@include md-screen {
+			font-size: px_to_rem(50px);
+		}
 	}
 
 }

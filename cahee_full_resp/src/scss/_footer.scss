@@ -9,6 +9,10 @@
 	bottom:           0;
 	margin:           0;
 	border-bottom:    6px ridge #3e3e3e;
+
+	@include md-screen {
+		padding:     10px 0 5px 0;
+	}
 }
 
 .footer-items {
@@ -16,19 +20,35 @@
 	flex-direction:  row;
 	justify-content: space-between;
 
+	@include md-screen {
+		flex-direction:  column;
+		justify-content: center;
+		align-items:     center;
+	}
+
 		&__right {
 		display:         flex;
-		justify-content: space-between;
+		justify-content: center;
 		opacity:         0.5;
-   	min-width:       360px;
+   	max-width:       360px;
 		}
 
 		&__logo {
-		transform: translateX(-81px);
+			font-family:     $logo-font;
+			font-size:       px_to_em(20px);
+			text-decoration: none;
+			color:           $white;
+			text-transform: capitalize;
+			opacity:         0.7;
+			transform:       translateX(-81px);
+
+			@include lg-screen {
+				transform: none;
+			}
 		}
 
 		&__made {
-		opacity:           0.5;
+		opacity:      0.5;
 
 			span {
 				color:       $pink;

@@ -1,24 +1,31 @@
 .about {
 	background-color:  $bg-aqua-about;
 	color:             $white;
-	// min-height:        450px;
 
 	&__wrapper {
-		background:      url("../img/bg2.png") center left no-repeat;
-		padding:         100px 0 150px 0;
-		display:         flex;
-		justify-content: space-between;
-		align-items:     center;
-		min-height:      100vh;
-
-	.about-content {
+		background:      url("../img/bg2.png") left top no-repeat;
+		padding:         100px 0 200px 0;
 		display:         flex;
 		justify-content: flex-end;
-		flex-direction:  column;
-		transform:       translateX(120%);
-		padding-top:     80px;
-		padding:         0 40px;
+		align-items:     center;
 
+
+		@include lg-screen {
+			padding:        50px 0 50px 0;
+		}
+		@include md-screen {
+			flex-direction: column;
+		}
+	}
+		&-content {
+			max-width: 500px;
+			width: 100%;
+
+			@include xl-screen {
+			background-color: rgba(0, 0, 0, .3);
+			border-radius: 15px;
+			padding: 20px;
+			}
 
 		&__title {
 			font-size:      px_to_rem(90px);
@@ -26,13 +33,23 @@
 			text-transform: capitalize;
 			margin:         0 0 30px 0;
 
+				@include md-screen {
+					font-size:      px_to_rem(50px);
+					padding: 20px;
+				}
+
 			&-description {
 			font-size:    px_to_rem(17px);
 			font-weight:  400;
-			width:        505px;
+			max-width:        505px;
 			line-height:  1.8em;
+
+			@include md-screen {
+					line-height:  1.2em;
+				}
 			}
+
 		}
 	}
-	}
+
 }

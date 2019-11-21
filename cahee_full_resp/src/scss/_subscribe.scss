@@ -1,16 +1,17 @@
 .subscribe {
-	background: url("../img/bg_subscr.jpg") right no-repeat;
-	background-size: cover;
+	// background-size: cover;
 	background-color: $white;
 
 	.subscribe-wrapper {
-		padding:         100px 0 150px 0;
-		// display:         flex;
-		// flex-direction: column;
-		// justify-content: space-between;
-		// align-items:     center;
-		width: 100%;
-		min-width: 600px;
+		background: url("../img/bg_subscr.jpg") right no-repeat;
+		padding:    100px 0 150px 0;
+		width:      100%;
+		min-width:  600px;
+
+		@include md-screen {
+			padding:   50px 0 50px 0;
+			min-width: 300px;
+		}
 	}
 
 	&__title {
@@ -25,16 +26,31 @@
 		max-width:     545px;
 		line-height:   1.8em;
 		margin-bottom: 30px;
+
+		@include lg-screen {
+			max-width:        550px;
+			background-color: rgba(0, 0, 0, .3);
+			border-radius:    15px;
+			padding:          20px;
+			color:            $white;
+		}
+		@include md-screen {
+			max-width:     450px;
+		}
 	}
 
 	&-form {
-		display: flex;
+		display:         flex;
 		justify-content: space-between;
-		width: 100%;
-		max-width: 775px;
-		// @include md-screen {
-		// max-width: 450px;
-		// }
+		width:           100%;
+		max-width:        775px;
+
+		@include md-screen {
+			max-width:      450px;
+			flex-direction: column;
+			min-height:     100px;
+		}
+
 
 	&__input {
 		width:      100%;
@@ -45,12 +61,24 @@
    	color:      $dark;
 		font-size:  px_to_rem(15px);
 
+		@include md-screen {
+			background-color: rgba(0, 0, 0, .3);
+			color:            $white;
+		}
+
 	}
 
 	input[type="text"]::-webkit-input-placeholder { color: $light-grey; }
 	input[type="text"]:-ms-input-placeholder { color: $light-grey; }
 	input[type="text"]::-ms-input-placeholder { color: $light-grey; }
 	input[type="text"]::placeholder { color: $light-grey; }
+
+@include md-screen {
+	input[type="text"]::-webkit-input-placeholder { color: $white; }
+	input[type="text"]:-ms-input-placeholder { color: $white; }
+	input[type="text"]::-ms-input-placeholder { color: $white; }
+	input[type="text"]::placeholder { color: $white; }
+		}
 
 		.btn-subscribe {
 			@extend .btn;

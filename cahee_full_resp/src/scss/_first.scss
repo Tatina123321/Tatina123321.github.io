@@ -1,79 +1,228 @@
 .first {
-	background: url("../img/bg1.png") no-repeat center top;
+	background: url("../img/bg1.png") no-repeat;
 	background-size: cover;
-	background-color: $bg-white-first;
+	// min-height: 100vh;
+	height: 100%;
+}
 
-	.f-screen {
-		display:         flex;
-		flex-direction:  column;
-		justify-content: space-between;
-		min-height:      100vh;
-
-		&__header {
-			display:         flex;
-			justify-content: space-between;
-			align-items:     center;
-			padding:         40px 0 40px;
-
-			.navigation__list {
-				display:         flex;
-				justify-content: space-between;
-				width:           100%;
-				max-width:       500px;
-				list-style:      none;
-
-				&-link {
-					text-decoration: none;
-					color:           $dark;
-					text-transform:  uppercase;
-					font-size:       px_to_rem(16px);
-					font-weight:     700;
-					outline: 3px solid transparent;
-				}
-
-				&-link:hover {
-					border-top: 3px solid $orang;
-					transition: all 0.1s ease-in-out;
-				}
-			}
-		}
-
-	&__main {
-		width:     100%;
-		max-width: 370px;
-	}
-
-	&__title {
-		font-size:       px_to_rem(60px);
-		font-weight:     900;
-		text-transform:  capitalize;
-		margin:          0 0 20px 0;
-
-		&-description {
-			font-size:     px_to_rem(17px);
-			font-weight:   400;
-			max-width:     400px;
-			line-height:   1.8em;
-			margin-bottom: 30px;
-		}
-	}
-
-	&__footer {
+.f-screen {
 	display:         flex;
-	justify-content: center;
-	margin:          0 auto;
-	transition:      all 0.8s ease;
-	}
+	flex-direction:  column;
+	justify-content: space-between;
+	min-height:      100vh;
+}
+
+.nav {
+	display:         flex;
+	justify-content: space-between;
+	align-items:     center;
+	padding:         40px 0 40px;
+
+	@include md-screen {
+		padding:   5px;
 	}
 }
 
-.header__logo {
-				font-family:     $logo-font;
-				font-size:       px_to_rem(50px);
-				text-decoration: none;
-				color:           $text-first;
-				text-transform: capitalize;
-			}
+.nav__logo {
+	font-family:     $logo-font;
+	font-size:       3.1rem;
+	text-decoration: none;
+	color:           $dark;
+	text-transform: capitalize;
+}
+
+.nav__list {
+	display:         flex;
+	justify-content: space-between;
+	width:           100%;
+	max-width:       500px;
+	list-style:      none;
+
+	@include md-screen {
+		position:       absolute;
+		right:           0;
+		top:             12vh;
+		background:      $aqua;
+		display:         flex;
+		flex-direction:  column;
+		height:          40vh;
+		justify-content: space-around;
+		align-items:     left;
+		min-width:       100%;
+		transition:      all .7s ease;
+		left:            -100%;
+	}
+}
+
+
+.nav__link {
+	display:         block;
+	text-decoration: none;
+	color:           $dark;
+	text-transform:  uppercase;
+	font-size:       px_to_rem(16px);
+	font-family:     $main-font;
+	font-weight:     700;
+	border-left:     3px solid transparent;
+
+	@include md-screen {
+		color: $white;
+		padding: 5px 0 5px 15px;
+		margin: 0;
+
+	}
+}
+
+.nav__link:before {
+	background-color: $orang;
+	display:          block;
+	content:          "";
+	height:            3px;
+	width: 0;
+	transition: width .4s ease;
+	margin-bottom: 5px;
+
+	}
+.nav__link:hover:before,
+.nav__link:focus:before {
+	width: 100%;
+
+	@include md-screen {
+		width: 0;
+	}
+}
+
+.nav__link:hover {
+	@include md-screen {
+	border-left:      3px solid $orang;
+	background-color: $dark-aqua;
+	transition:       all 0.3s ease;
+	}
+}
+
+.nav-submenu__list {
+	 position:    absolute;
+    display:     none;
+    margin-left: -5px;
+    padding-top: 15px;
+
+    @include md-screen {
+		margin-left: 60px;
+		padding-top: 0;
+	}
+}
+
+.nav-submenu__item {
+	list-style:    none;
+}
+
+.nav-submenu__link {
+   display:         block;
+   padding:         5px;
+   text-decoration: none;
+   color:           $dark;
+   border:          1px solid transparent;
+   line-height:     1.5;
+   text-transform:  uppercase;
+	font-size:       px_to_rem(15px);
+	font-family:     $main-font;
+	font-weight:     600;
+   background-color: $bg-white-first;
+
+   @include md-screen {
+		margin-left:      60px;
+		padding-top:      0;
+		background-color: $aqua;
+		color:            $white;
+	}
+}
+
+.nav-submenu__link:hover {
+    color:         $dark;
+    border-bottom: 1px solid $orang;
+
+     @include md-screen {
+		border-left:      1px solid $orang;
+		border-bottom:    none;
+		color:            $white;
+		background-color: $dark-aqua;
+	}
+}
+
+.nav__item:hover .nav-submenu__list {
+    display:       block;
+   }
+
+
+.nav-subsubmenu__list {
+	 position:    absolute;
+    display:     none;
+    margin-left: 115px;
+    margin-top:  -2em;
+}
+
+.nav-subsubmenu__item {
+	list-style: none;
+}
+
+.nav-subsubmenu__link {
+   display:         block;
+   padding:         5px;
+   text-decoration: none;
+   color:           $dark;
+   border:          1px solid transparent;
+   line-height:     1.5;
+   text-transform:  uppercase;
+	font-size:       px_to_rem(15px);
+	font-family:     $main-font;
+	font-weight:     600;
+   background-color: $bg-white-first;
+   min-width:        120px;
+
+    @include md-screen {
+		margin-left:      60px;
+		padding-top:      0;
+		background-color: $aqua;
+		color:            $white;
+	}
+ }
+
+.nav-subsubmenu__link:hover {
+   color:         $dark;
+   border-bottom: 1px solid $orang;
+
+   @include md-screen {
+		border-left:      1px solid $orang;
+		border-bottom:    none;
+		color:            $white;
+		background-color: $dark-aqua;
+	}
+}
+
+.nav-submenu__item:hover
+.nav-subsubmenu__list {
+    display: block;
+}
+
+.f-screen__main {
+	width:     100%;
+	// max-width: 370px;
+}
+
+.f-screen__title {
+	font-size:       px_to_rem(60px);
+	font-weight:     900;
+	text-transform:  capitalize;
+	margin:          0 0 20px 0;
+}
+
+.f-screen__title-description {
+	font-size:     px_to_rem(17px);
+	font-weight:   400;
+	max-width:     400px;
+	line-height:   1.8em;
+	margin-bottom: 30px;
+}
 
 .btn {
 	background:     $orang;
@@ -89,11 +238,45 @@
 	width:          200px;
 	cursor:         pointer;
 	box-shadow:     0px 3px 10px rgba(0,0,0,0.6);
+
+	@include md-screen {
+		width:      200px;
+	}
+	@include sm-screen {
+		width: 100%;
+	}
 }
 
 .btn:hover {
 	background: $white;
 	color:      $orang;
-	font-weight:    600;
-	transition: all 0.8s ease;
+	box-shadow:     0px 3px 15px rgba(0,0,0,0.7);
 }
+
+.f-screen__footer {
+	display:         flex;
+	justify-content: center;
+	margin:          0 auto;
+	transition:      all 0.8s ease;
+}
+
+.f-screen__footer-scroll {
+	@include md-screen {
+		display: none;
+	}
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+	@include md-screen {
+		display: block;
+	}
+}
+
+.nav-active {
+	left: 0;
+}
+
+
+
