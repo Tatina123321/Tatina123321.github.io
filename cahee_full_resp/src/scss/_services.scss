@@ -1,0 +1,68 @@
+.services {
+	// background: $bg-aqua-strvices url("../img/tomato.png") center right no-repeat;
+	background-color: $bg-aqua-services;
+	color: $white;
+
+
+	&__wrapper {
+		background:      url("../img/tomato.png") center right no-repeat;
+		padding:         100px 0 150px 0;
+		display:         flex;
+		justify-content: space-between;
+		align-items:     center;
+		min-height:      100vh;
+	}
+
+	&__list {
+		list-style: none;
+
+	}
+
+	&__item {
+		margin-bottom: 20px;
+	}
+
+	&__item:last-child {
+	 margin-bottom: 0;
+   }
+
+	&__link {
+		display:          flex;
+		align-items:      center;
+		text-decoration:  none;
+		background-color: $white;
+		transition:       all .3s ease;
+		box-shadow:       0px 1px 3px rgba(0,0,0,0.6);
+
+		&-text {
+			display:          block;
+			width:            100%;
+			max-width:        400px;
+			background-color: $white;
+			padding:          35px 65px;
+			text-transform:   capitalize;
+			text-align:       center;
+			color:            $dark;
+			font-weight:      600;
+			font-size:        px_to_rem(20px);
+		}
+
+		picture {
+			padding: 25px;
+			border-left: 1px solid $light-grey;
+		}
+	}
+
+	&__link:hover {
+		box-shadow:    0px 3px 15px rgba(0,0,0,0.6);
+	}
+
+	&__title {
+		margin-bottom: 0;
+		text-align:     center;
+		font-size:      px_to_rem(90px);
+		font-weight:    900;
+		text-transform: capitalize;
+	}
+
+}

@@ -1,0 +1,46 @@
+.footer {
+	display:          flex;
+	width:            100%;
+	max-height:       85px;
+	color:            $white;
+	font-size:        px_to_em(15px);
+	background-color: $dark;
+	padding:          20px 0 10px 0;
+	bottom:           0;
+	margin:           0;
+	border-bottom:    6px ridge #3e3e3e;
+}
+
+.footer-items {
+	display:         flex;
+	flex-direction:  row;
+	justify-content: space-between;
+
+		&__right {
+		display:         flex;
+		justify-content: space-between;
+		opacity:         0.5;
+   	min-width:       360px;
+		}
+
+		&__logo {
+		transform: translateX(-81px);
+		}
+
+		&__made {
+		opacity:           0.5;
+
+			span {
+				color:       $pink;
+				font-weight: 800;
+				opacity:     1;
+			}
+
+			.develop {
+				text-decoration: none;
+				color:           $white;
+			}
+		}
+
+
+}

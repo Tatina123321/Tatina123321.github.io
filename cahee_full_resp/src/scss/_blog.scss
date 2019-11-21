@@ -1,0 +1,122 @@
+.blog {
+	background-color: $bg-violet-blog;
+	color: $white;
+
+	&-wrapper {
+		padding:         80px 0 100px 0;
+		display:         flex;
+		flex-direction:  column;
+		justify-content: space-between;
+		align-items:     center;
+		min-height:      100vh;
+	}
+
+	&__title {
+		font-size:      px_to_rem(90px);
+		font-weight:    bold;
+		text-align:     center;
+		text-transform: capitalize;
+		margin-bottom:  40px;
+	}
+
+	&__description {
+		font-size:      px_to_rem(17px);
+		font-weight:   300;
+		width:         100%;
+		max-width:     570px;
+		margin:        auto;
+		text-align:    center;
+		line-height:   1.4;
+		margin-bottom: 50px;
+	}
+
+	&-card__list {
+		width:           100%;
+		max-width:       1200px;
+		display:         flex;
+		justify-content: space-between;
+		margin-bottom:   30px;
+		list-style:      none;
+	}
+
+	&-card__link {
+		display:         block;
+		width:           100%;
+		min-width:       368px;
+		max-width:       368px;
+		height:          310px;
+		padding:         30px;
+		text-decoration: none;
+		color:           $white;
+		position:        relative;
+		box-shadow: 3px 3px 7px 1px rgba(0,0,0,0.5);
+	}
+
+	&-card__link:hover {
+		transform: translateY(-10px);
+		transition: all 0.8s ease;
+	}
+
+	&-card__link[data-img="lemon"] {
+		background: url("../img/1.png") no-repeat;
+	}
+
+	&-card__link[data-img="soup"] {
+		background: url("../img/2.png") no-repeat 0 100%;
+	}
+
+	&-card__link[data-img="raspberry"] {
+		background: url("../img/3.png") no-repeat;
+	}
+
+	&-card__date {
+		display:          inline-block;
+		width:            60px;
+		height:           60px;
+		font-size:        px_to_rem(32px);
+		font-weight:      700;
+		text-align:       center;
+		padding:          10px;
+		line-height:      .5;
+		text-transform:   uppercase;
+		border-radius:    5px;
+		background-color: rgba(0,0,0,.4);
+	}
+
+	&-card__month {
+		display:     block;
+		font-size:   px_to_rem(18px);
+		font-weight: 900;
+		line-height: 1;
+		transform:   translateY(7px);
+	}
+
+	&-card__title {
+		font-size:      px_to_rem(20px);
+		font-weight:    700;
+		text-transform: capitalize;
+		line-height:    1.1;
+		margin-bottom:  20px;
+	}
+
+	&-card__author {
+	  font-size:   px_to_rem(17px);
+	  font-weight: 300;
+	}
+
+	&-card__footer {
+	  position:  absolute;
+	  left:      0;
+	  bottom:    0;
+	  padding:   30px;
+	  width:     100%;
+	background: -webkit-linear-gradient(rgba(125,185,232,0) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(rgba(125,185,232,0) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(rgba(125,185,232,0) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,1) 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}
+
+	.btn-blog {
+		@extend .btn;
+	}
+}
+
