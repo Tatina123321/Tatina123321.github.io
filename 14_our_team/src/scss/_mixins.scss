@@ -45,6 +45,14 @@ $z-index: (
 	height: $size;
 }
 
+@mixin circle($size) {
+	width: $size;
+	height: $size;
+	border-radius: 50%;
+	background-color: transparent;
+	 border: 2px solid $grey;
+}
+
 @mixin overlay {
 
 	&::before {

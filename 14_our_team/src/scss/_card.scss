@@ -128,7 +128,7 @@
 			position: relative;
 		}
 
-		&-name:after {
+		&-name::after {
 			content: "";
 			display: block;
 			position: absolute;
@@ -156,7 +156,7 @@
 			margin-bottom: 50px;
 		}
 
-		&-text:after {
+		&-text::after {
 			content: "";
 			display: block;
 			position: absolute;
@@ -169,7 +169,7 @@
 			z-index: 2;
 		}
 
-		&-text:before {
+		&-text::before {
 			content: "";
 			display: block;
 			position: absolute;
@@ -208,29 +208,35 @@
 	.social__list {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		width: 100%;
 		max-width: 135px;
 		margin-bottom: 30px;
 	}
 
 	.social__link {
-		display: block;
+		display: flex;
 		justify-content: center;
 		align-items: center;
-		border-radius: 50%;
-		padding: 5px;
 		cursor: pointer;
-		border: 2px solid $grey;
 		color: $grey;
-		font-size: 10px;
+		font-size: 1rem;
 		transition: all .3s ease;
+		width: 30px;
+		height: 30px;
+		display: block;
+		border-radius: 50px;
+		border: 2px solid $grey;
+		background-color: transparent;
 		}
 
-	.social__link.fb {
-		padding: 5px 7px;
+		.fab {
+			display: flex;
+			justify-content: center;
+			transform: translateY(5px);
 		}
 
-	.social__link:hover {
+	 .social__link:hover {
 		border-color: $yellow;
 		color: $white;
 		background-color: $yellow;
@@ -260,7 +266,7 @@
 		}
 
 		&-link:hover,
-		&-link:active,
+		&-link.active,
 		&-link:focus {
 			background-color: $white;
 			transition: .3s;
@@ -308,25 +314,28 @@
 
 }
 
-.team-header:before {
-	display: block;
-	content: "";
-	width: 210px;
-	height: 1px;
-	background: $yellow;
-	position: absolute;
-	bottom: 5px;
-	left: 315px;
+.team-header-logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	&__img {
+		padding: 0 10px;
+	}
+
 }
 
-.team-header:after {
-	display: block;
+.team-header-logo::before {
 	content: "";
+	display: block;
 	width: 210px;
 	height: 1px;
-	background: $yellow;
-	position: absolute;
-	bottom: 5px;
-	left: 585px;
+	background-color: #fc0;
 }
-
+.team-header-logo::after {
+	content: "";
+	display: block;
+	width: 210px;
+	height: 1px;
+	background-color: #fc0;
+}
