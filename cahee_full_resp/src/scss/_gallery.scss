@@ -5,73 +5,176 @@
 	&__wrapper {
 
 		padding:         50px 0;
-		text-align: center;
-		display:         flex;
-		flex-direction:  column;
-		justify-content: space-between;
-		align-items:     center;
-		min-height:      100vh;
+		text-align:      center;
 
-		@include lg-screen {
-			padding:     100px 0;
+		@include md-screen {
+			padding:     25px 0;
 		}
 	}
 
+		&-header {
+			margin-bottom: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 
-	&__title {
-		color: $dark;
-		margin-bottom:  0;
-		text-align:     center;
-		font-size:      px_to_rem(90px);
-		font-weight:    900;
-		text-transform: capitalize;
+			@include md-screen {
+				margin-bottom: 25px;
+			}
 
-		&-discription{
-			color: $dark;
-			font-size:    px_to_rem(17px);
-			width: 100%;
-			max-width: 585px;
-			text-align: center;
+			&__title {
+				color: $dark;
+				margin-bottom:  20px;
+				text-align:     center;
+				font-size:      px_to_rem(90px);
+				font-weight:    900;
+				text-transform: capitalize;
+
+					@include md-screen {
+						font-size: px_to_rem(70px);
+					}
+
+				&-discription{
+					color: $dark;
+					font-size:    px_to_rem(17px);
+					width: 100%;
+					max-width: 585px;
+					text-align: center;
+					line-height: 1.5;
+
+						@include md-screen {
+							line-height: 1.1;
+							max-width: 300px;
+						}
+				}
+			}
 		}
-	}
 
 	&-content {
 
 
 		&__list {
-			list-style: none;
-			display: flex;
-			flex-wrap: wrap;
+			list-style:      none;
+			display:         flex;
+			flex-wrap:       wrap;
 			justify-content: space-between;
-			align-items: space-between;
-			height: 100%;
-			max-height: 1000px;
+			align-content:   space-between;
+			margin-bottom:   50px;
+			height:          980px;
+
+				@include md-screen {
+					flex-direction: column;
+					flex-wrap: nowrap;
+					height: 2000px;
+					margin-bottom: 20px;
+				}
 		}
 
 		&__item {
-
+			// height:         fit-content;
+			@include md-screen {
+				margin-bottom: 20px;
+			}
 		}
 
-		&__link {
+		.sm {
+			display:         flex;
+	      flex-direction:  column;
+	      justify-content: space-between;
+			height:          550px;
+         flex-basis:      32%;
+
+        		@include sm-screen {
+         		flex-basis: inherit;
+         	}
+		}
+
+		.lg {
+			flex-basis: 66%;
+
+				@include sm-screen {
+         		flex-basis: inherit;
+         	}
+		}
+
+		.md {
+			flex-basis: 49%;
+
+				@include sm-screen {
+         		flex-basis: inherit;
+         	}
+		}
+
+		&__link-lg {
+			position: relative;
+			display: flex;
+			transition: all 0.5s ease;
+			width: 100%;
+			max-width: 760px;
+	      height: 550px;
+	      padding-top: 540px;
+	       flex-basis: 66%;
+		}
+
+		&__link-lg > img {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		   object-fit: cover;
+		}
+
+		&__link-sm {
 			position: relative;
 			display: flex;
 			width: 100%;
-
+			transition: all 0.5s ease;
+			padding-top: 260px;
 		}
 
-		// .gallery-content__link > img {
-		// 	position: absolute;
-		// 	top: 0;
-		// 	right: 0;
-		// 	bottom: 0;
-		// 	left: 0;
-		// 	width: 100%;
-		// 	height: 100%;
-		//    object-fit: cover;
+		&__link-sm > img {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		   object-fit: cover;
+		}
 
-		// }
+		&__link-md {
+			position: relative;
+			display: flex;
+			width: 100%;
+			max-width: 570px;
+			min-height: 400px;
+			transition: all 0.5s ease;
+			padding-top: 400px;
+			flex-basis: 49%;
+		}
 
+		&__link-md > img {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		   object-fit: cover;
+		}
 
+		&__link-lg:hover,
+		&__link-md:hover,
+		&__link-sm:hover {
+			transform: translateY(-10px);
+			transition: all 0.8s ease;
+			box-shadow: 3px 3px 7px 1px rgba(0,0,0,0.5);
+		}
 	}
 
 }
@@ -79,4 +182,18 @@
 .btn-gallery {
 		@extend .btn;
 		background-color: $btn-bg-gallery;
+		display: inline-flex;
+		justify-content: center;
 }
+
+.gallery-content__link > img {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		   object-fit: cover;
+
+		}

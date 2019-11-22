@@ -45,12 +45,13 @@
 		background:      $aqua;
 		display:         flex;
 		flex-direction:  column;
-		height:          40vh;
+		height:          250px;
 		justify-content: space-around;
 		align-items:     left;
 		min-width:       100%;
 		transition:      all .7s ease;
 		left:            -100%;
+		font-size:       px_to_rem(20px);
 	}
 }
 
