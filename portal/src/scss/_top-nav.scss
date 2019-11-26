@@ -1,0 +1,34 @@
+.top-nav {
+	min-height:       60px;
+	background-color: $top-nav-bg;
+	padding:          15px 0;
+
+	.nav-link {
+		padding:       0 15px;
+		min-width: 100px;
+	}
+
+	.nav-pills {
+		width:           100%;
+		max-width:       470px;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.social-nav {
+	display: flex;
+
+		&__link {
+			@include square(55px);
+			display:         flex;
+			justify-content: center;
+			align-items:     center;
+			border-left: 1px solid $grey-border;
+
+
+			&:not(::last-child) {
+				border-right: none;
+			}
+		}
+}

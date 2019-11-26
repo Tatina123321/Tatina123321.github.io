@@ -19,7 +19,8 @@
 	padding:         40px 0 40px;
 
 	@include md-screen {
-		padding:   5px;
+		padding:   none;
+		// position: sticky;
 	}
 }
 
