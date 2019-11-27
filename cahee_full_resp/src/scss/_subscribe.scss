@@ -1,15 +1,18 @@
 .subscribe {
 	// background-size: cover;
 	background-color: $white;
+	padding:    100px 0 150px 0;
+
+		@include md-screen {
+			padding:   50px 0 50px 0;
+		}
 
 	.subscribe-wrapper {
 		background: url("../img/bg_subscr.jpg") right no-repeat;
-		padding:    100px 0 150px 0;
 		width:      100%;
 		min-width:  600px;
 
 		@include md-screen {
-			padding:   50px 0 50px 0;
 			min-width: 300px;
 		}
 	}

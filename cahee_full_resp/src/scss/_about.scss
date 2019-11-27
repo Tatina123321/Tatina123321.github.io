@@ -1,18 +1,18 @@
 .about {
 	background-color:  $bg-aqua-about;
+	padding:         100px 0 200px 0;
 	color:             $white;
+
+	@include lg-screen {
+			padding:        50px 0 50px 0;
+		}
 
 	&__wrapper {
 		background:      url("../img/bg2.png") left top no-repeat;
-		padding:         100px 0 200px 0;
 		display:         flex;
 		justify-content: flex-end;
 		align-items:     center;
 
-
-		@include lg-screen {
-			padding:        50px 0 50px 0;
-		}
 		@include md-screen {
 			flex-direction: column;
 		}

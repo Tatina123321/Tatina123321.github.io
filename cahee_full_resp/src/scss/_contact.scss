@@ -129,7 +129,6 @@
 :focus:-ms-input-placeholder      {color: transparent}
 
 		&__right {
-			
 			width:           50%;
 			padding-left:    20px;
 
@@ -143,6 +142,15 @@
 			align-items:     center;
 			}
 
+			.feedback__right-item {
+				list-style: none;
+				margin-bottom: 15px;
+			}
+
+			.feedback__right-item:last-child {
+	      margin-bottom: 0;
+      }
+
 			.feedback__right-contact {
 				font-size:      px_to_em(17px);
 				font-weight:    800;
@@ -153,7 +161,7 @@
 
 			.feedback__right-description {
 				font-size:       px_to_em(15px);
-				margin-bottom:   20px;
+				// margin-bottom:   20px;
 				text-decoration: none;
 				font-style:      normal;
 				font-family:     $main-font;

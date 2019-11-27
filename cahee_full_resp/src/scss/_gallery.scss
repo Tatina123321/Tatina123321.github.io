@@ -1,15 +1,14 @@
 .gallery {
 	background-color: $bg-yellow-gallery;
-	color: $white;
-
-	&__wrapper {
-
-		padding:         50px 0;
-		text-align:      center;
+	color:            $white;
+	padding:          50px 0;
 
 		@include md-screen {
 			padding:     25px 0;
 		}
+
+	&__wrapper {
+		text-align:     center;
 	}
 
 		&-header {
@@ -76,6 +75,10 @@
 				margin-bottom: 20px;
 			}
 		}
+
+		&__item:last-child {
+	      margin-bottom: 0;
+      }
 
 		.sm {
 			display:         flex;
