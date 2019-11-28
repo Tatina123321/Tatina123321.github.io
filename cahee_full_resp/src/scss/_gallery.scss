@@ -50,7 +50,7 @@
 		}
 
 	&-content {
-
+		margin-bottom:   50px;
 
 		&__list {
 			list-style:      none;
@@ -58,10 +58,10 @@
 			flex-wrap:       wrap;
 			justify-content: space-between;
 			align-content:   space-between;
-			margin-bottom:   50px;
+			// margin-bottom:   50px;
 			height:          980px;
 
-				@include md-screen {
+				@include sm-screen {
 					flex-direction: column;
 					flex-wrap: nowrap;
 					height: 2000px;
@@ -70,7 +70,6 @@
 		}
 
 		&__item {
-			// height:         fit-content;
 			@include md-screen {
 				margin-bottom: 20px;
 			}

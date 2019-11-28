@@ -1,5 +1,6 @@
 .services {
 	// background: $bg-aqua-strvices url("../img/tomato.png") center right no-repeat;
+	background:      url("../img/tomato.png") center right no-repeat;
 	background-color: $bg-aqua-services;
 	color:            $white;
 	padding:          100px 0 150px 0;
@@ -9,7 +10,6 @@
 		}
 
 	&__wrapper {
-		background:      url("../img/tomato.png") center right no-repeat;
 		display:         flex;
 		justify-content: space-between;
 		align-items:     center;

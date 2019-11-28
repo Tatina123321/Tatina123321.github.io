@@ -1,6 +1,7 @@
 .about {
+	background:      url("../img/bg2.png")no-repeat;
 	background-color:  $bg-aqua-about;
-	padding:         100px 0 200px 0;
+	padding:           100px 0 200px 0;
 	color:             $white;
 
 	@include lg-screen {
@@ -8,7 +9,6 @@
 		}
 
 	&__wrapper {
-		background:      url("../img/bg2.png") left top no-repeat;
 		display:         flex;
 		justify-content: flex-end;
 		align-items:     center;
