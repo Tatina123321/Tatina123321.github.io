@@ -1,0 +1,28 @@
+.first {
+	background-color: $bg-expert-home;
+
+
+
+}
+
+
+.nav-link {
+	text-align: center;
+	text-transform: capitalize;
+	color: $grey-menu;
+}
+
+.nav-link {
+	
+}
+
+
+
+@media (min-width: 992px) {
+	.navbar-expand-lg {
+    display: none;
+	}
+}
+
+
+

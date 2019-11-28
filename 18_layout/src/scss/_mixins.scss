@@ -1,0 +1,44 @@
+@mixin media-hidden {
+	@media only screen and (max-width: 319px) {
+		display: none;
+	}
+}
+
+@mixin square($size) {
+	width: $size;
+	height: $size;
+}
+
+@function px_to_rem($target, $context: $base-size) {
+	@if $target == 0 { @return 0 }
+	@return $target / $context + 0rem;
+}
+
+@function px_to_em($target, $context: $base-size) {
+	@if $target == 0 { @return 0 }
+	@return $target / $context + 0em;
+}
+
+@mixin sm-screen {
+	@media only screen and (min-width: 576px) {
+		@content;
+	}
+}
+
+@mixin md-screen {
+	@media only screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin lg-screen {
+	@media only screen and (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin xl-screen {
+	@media only screen and (min-width: 1200px) {
+		@content;
+	}
+}
