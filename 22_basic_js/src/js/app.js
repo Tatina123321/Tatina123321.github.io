@@ -23,7 +23,7 @@ alert(`Необходимая скорость: ${Math.ceil(distance / time)} к
 }
 
 let dollars = prompt('Сколько долларов вы хотите обменять?', '');
-const rate = 1.1;
+const rate = 0.91;
 alert(`Вы получите ${Math.round(dollars * rate * 100) / 100} евро`);
 
 let flashMemory = prompt('Укажите обьем флешки в Гб', '');
