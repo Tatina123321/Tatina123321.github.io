@@ -1,6 +1,4 @@
-
-let name = prompt('Как Вас зовут?', '');
-alert(`Привет, ${name}!`);
+alert('Добро пожаловать, '+prompt('Как Вас зовут?',''));
 
 let birthYear = parseInt(prompt('Введите год вашего рождения', ''));
 const currentYear = 2019;
