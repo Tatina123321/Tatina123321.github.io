@@ -1,0 +1,21 @@
+.about {
+	padding: 50px 0;
+	height: 100%;
+	max-height: 250px;
+	text-align: center;
+
+	@include sm-screen {
+		padding: 100px 0;
+		max-height: 500px;
+	}
+
+	&__description {
+		text-align: center;
+		line-height: 1.2;
+		color:$dark;
+
+		@include sm-screen {
+			line-height: 1.8;
+		}
+	}
+}

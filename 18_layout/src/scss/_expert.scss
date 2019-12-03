@@ -1,0 +1,70 @@
+.expert {
+	background-color: $bg-expert-clients;
+	padding:          50px 0;
+	min-height:       100vh;
+
+
+	@include sm-screen {
+		padding: 100px 0;
+	}
+
+	.expert-card {
+		padding:       15px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+
+
+		&__link {
+			padding:         15px;
+			border-radius:   10px;
+			display:         flex;
+			flex-direction:  column;
+			justify-content: center;
+			align-items:     center;
+			text-decoration: none;
+		}
+
+		&__link:hover {
+			box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+			transition: all 0.3s ease;
+		}
+
+		&__img {
+			margin-right:  25px;
+			flex-shrink:   0;
+			margin-bottom: 50px;
+			margin:        0 0 25px 0;
+		}
+
+	// &__img::before {
+	// 	content: "";
+	// 	position: absolute;
+	// 	display: block;
+	// 	border: 1px solid red;
+	// 	border-radius: 50px;
+	// 	background: transparent;
+	// 	width: 150px;
+	// 	height: 150px;
+
+	// }
+
+	&__title {
+		font-size:     px_to_em(24px);
+		color: $blue;
+		font-weight: bold;
+		text-transform: uppercase;
+		// text-align: center;
+	}
+
+	&__subtitle {
+		font-size:     px_to_em(16px);
+		line-height: 2;
+		color: $dark;
+		font-weight: 300;
+		text-align: center;
+		margin: 0;
+	}
+}
+}

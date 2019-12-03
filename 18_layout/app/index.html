@@ -5,78 +5,315 @@
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>Graphic Designer</title>
 	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.png">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/e90636d2ad.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-	<section class="first">
+	<div class="scrollup">
+		<i class="fa fa-chevron-up"></i>
+	</div>
+	<section class="home">
 		<div class="container">
-
-
 			<div class="row">
 				<div class="col">
-
-					<nav class="navbar  navbar-light bg-light sticky-top" >
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarNav">
-							<ul class="navbar-nav">
-								<li class="nav-item">
-									<a class="nav-link" href="#">about me</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">services</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">my works</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">clients</a>
-								</li>
-							</ul>
-							<ul class="nav__socials-list">
-								<li class="nav__socials-item">
-									<a href="#" class="nav__socials-link">
-										<i class="fab fa-behance"></i>
-									</a>
-								</li>
-								<li class="nav__socials-item">
-									<a href="#" class="nav__socials-link">
-										<i class="fab fa-twitter"></i>
-									</a>
-								</li>
-								<li class="nav__socials-item">
-									<a href="#" class="nav__socials-link">
-										<i class="fab fa-instagram"></i>
-									</a>
-								</li>
-								<li class="nav__socials-item">
-									<a href="#" class="nav__socials-link">
-										<i class="fab fa-google-plus-g"></i>
-									</a>
-								</li>
-							</ul>
+					<button class="nav-bars float-sm-right">
+						<i class="fas fa-bars nav-bars__icon"></i>
+					</button>
+					<div id="modal" class="modal1">
+						<div class="modal1__overlay">
+							<div class="modal1__body">
+								<button type="button" class="close" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<div class="nav">
+									<ul class="nav__list">
+										<li class="nav__item">
+											<a class="nav__link" href="#about">about me</a>
+										</li>
+										<li class="nav__item">
+											<a class="nav__link" href="#expert">services</a>
+										</li>
+										<li class="nav__item">
+											<a class="nav__link" href="#works">my works</a>
+										</li>
+										<li class="nav__item">
+											<a class="nav__link" href="#clients">clients</a>
+										</li>
+									</ul>
+									<ul class="nav__socials-list">
+										<li class="nav__socials-item">
+											<a href="#" class="nav__socials-link">
+												<i class="fab fa-behance"></i>
+											</a>
+										</li>
+										<li class="nav__socials-item">
+											<a href="#" class="nav__socials-link">
+												<i class="fab fa-twitter"></i>
+											</a>
+										</li>
+										<li class="nav__socials-item">
+											<a href="#" class="nav__socials-link">
+												<i class="fab fa-instagram"></i>
+											</a>
+										</li>
+										<li class="nav__socials-item">
+											<a href="#" class="nav__socials-link">
+												<i class="fab fa-google-plus-g"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-					</nav>
-
+					</div>
 				</div>
 			</div>
-
-			<div class="row">
-				<div class="col">
-					<div class="img"></div>
+			<div class="row home-block">
+				<div class="col-md-12">
+					<span class="home-block__logo"></span>
+				</div>
+				<div class="col-md-10">
+					<h1 class="home-block__title">
+						free portfolio PSD template  FOR GRAPHIC designerS
+					</h1>
+				</div>
+				<div class="col-md-8">
+					<p class="home-block__subtitle">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+				</div>
+				<div class="col-md-6">
+					<button class="btn mb-50">
+						hire me
+					</button>
+					<div id="modal2" class="modal2">
+						<div class="modal2__overlay">
+							<div class="modal2__body">
+								<button type="button" class="close" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<form class="form-hire">
+									<h3 class="form-hire__title">
+										hire me
+									</h3>
+									<input type="text" id="username" placeholder="Your Name" class="form-hire__input" minlength="8" required>
+									<input type="text" id="email" placeholder="Your E-Mail" class="form-hire__input" minlength="8" required>
+									<textarea class="form-hire__input text" placeholder="Your Messege" minlength="20" required></textarea>
+									<input class="btn" type="submit" value="SEND MESSEGE">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 ">
+					<a href="#about" class="home-block__arrow-link ">
+						<i class="fas fa-arrow-down"></i>
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
+	<section id="about" class="about">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-11">
+					<h2 class="about__title tl">
+						about me
+					</h2>
+					<p class="about__description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste itaque enim, saepe. Nisi accusantium beatae iste ad hic, rem facilis commodi tempora et aliquid qui laboriosam quos molestiae doloribus facere aspernatur minus corporis assumenda cum obcaecati? Laborum praesentium doloremque, nemo, omnis modi rerum dolorem assumenda soluta id in adipisci velit debitis ab at, delectus quos.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="expert" class="expert">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="about__title tl text-center">
+							expetr in
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="expert-card">
+							<a href="#" class="expert-card__link">
+								<img class="expert-card__img" src="img/phone.png" alt="phone">
+								<h4 class="expert-card__title text-center">
+									MOBILE APP DESIGN
+								</h4>
+								<p class="expert-card__subtitle text-center">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis omnis harum consequatur officiis ea ut!
+								</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="expert-card">
+							<a href="#" class="expert-card__link">
+								<img class="expert-card__img" src="img/disign.png" alt="phone">
+								<h4 class="expert-card__title text-center">
+									WEB DESIGN
+								</h4>
+								<p class="expert-card__subtitle">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis omnis harum consequatur officiis ea ut!
+								</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="expert-card">
+							<a href="#" class="expert-card__link">
+								<img class="expert-card__img" src="img/web.png" alt="phone">
+								<h4 class="expert-card__title text-center">
+									WEB DEVELOPMENT
+								</h4>
+								<p class="expert-card__subtitle">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis omnis harum consequatur officiis ea ut!
+								</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="expert-card">
+							<a href="#" class="expert-card__link">
+								<img class="expert-card__img" src="img/bag.png" alt="phone">
+								<h4 class="expert-card__title text-center">
+									PRODUCT DESIGN
+								</h4>
+								<p class="expert-card__subtitle">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis omnis harum consequatur officiis ea ut!
+								</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="expert-card">
+							<a href="#" class="expert-card__link">
+								<img class="expert-card__img" src="img/layout.png" alt="phone">
+								<h4 class="expert-card__title text-center">
+									UX & UI
+								</h4>
+								<p class="expert-card__subtitle">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis omnis harum consequatur officiis ea ut!
+								</p>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="expert-card">
+							<a href="#" class="expert-card__link">
+								<img class="expert-card__img" src="img/cam.png" alt="phone">
+								<h4 class="expert-card__title text-center">
+									ANIMATIONS
+								</h4>
+								<p class="expert-card__subtitle">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis omnis harum consequatur officiis ea ut!
+								</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="works" class="works">
+		<div class="container">
+			<div class="row content ">
+				<div class="col-md-12">
+					<h2 class="works__title tl">
+						Latest Works
+					</h2>
+				</div>
+				<div class="col-lg-4  works-item">
+					<a href="#" class="works__link">
+						<img src="img/work1.png" alt="" class="works__img">
+					</a>
+				</div>
+				<div class="col-lg-4 works-item">
+					<a href="#" class="works__link">
+						<img src="img/work2.png" alt="" class="works__img">
+					</a>
+				</div>
+				<div class="col-lg-4 works-item">
+					<a href="#" class="works__link">
+						<img src="img/work3.png" alt="" class="works__img">
+					</a>
+				</div>
+				<div class="col-lg-4 works-item">
+					<a href="#" class="works__link">
+						<img src="img/work4.png" alt="" class="works__img">
+					</a>
+				</div>
+				<div class="col-lg-4 works-item">
+					<a href="#" class="works__link">
+						<img src="img/work5.png" alt="" class="works__img">
+					</a>
+				</div>
+				<div class="col-lg-4 works-item">
+					<a href="#" class="works__link">
+						<img src="img/work6.png" alt="" class="works__img">
+					</a>
+				</div>
+			</div>
+		</section>
+		<section id="clients" class="clients">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-11">
+						<h2 class="about__title tl">
+							clients
+						</h2>
+						<ul class="clients__list">
+							<li class="clients__item">
+								<a href="#" class="clients__link">
+									<img src="img/microsoft.jpg" alt="microsoft" class="clients__img">
+								</a>
+							</li>
+							<li class="clients__item">
+								<a href="#" class="clients__link">
+									<img src="img/samsung.jpg" alt="samsung" class="clients__img">
+								</a>
+							</li>
+							<li class="clients__item">
+								<a href="#" class="clients__link">
+									<img src="img/ibm.jpg" alt="ibm" class="clients__img">
+								</a>
+							</li>
+							<li class="clients__item">
+								<a href="#" class="clients__link">
+									<img src="img/google.jpg" alt="google" class="clients__img">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="footer-items">
+								<p class="footer__text">
+									Need a graphic designer?<span> Ready to work!</span>
+								</p>
+								<button class="btn">
+									hire me
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
 
+			
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="js/bundle.js"></script>
-</body>
-</html>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+			<script src="js/bundle.js"></script>
+		</body>
+		</html>

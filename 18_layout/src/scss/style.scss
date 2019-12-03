@@ -7,3 +7,24 @@
 @import "works";
 @import "clients";
 @import "footer";
+
+
+// DELETE THIS ON PRODUCTION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+html {
+	@include media-hidden;
+}
+
+.home,
+.about,
+.expert,
+.works,
+.clients,
+.footer
+{
+	// display: none;
+}
+
+.home {
+	// display: block;
+}

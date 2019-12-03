@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: $main-font;
+	font-size: 100%;
+	background-color: $white;
+}
+
+.container {
+	width: 100%;
+	max-width: 1115px;
+	padding: 0 15px;
+	margin: auto;
+}
+
+.mb-100 {
+	margin-bottom: 100px;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.show {
+	display: block !important;
+}
+
+.modal1__body {
+	text-decoration: none;
+	padding: 20px;
+	width: 100%;
+	max-width: 300px;
+	max-height: 300px;
+	position: fixed;
+	left: 65%;
+	top: 25%;
+	background: $white;
+	margin-left: -200px;
+	margin-top:  -100px;
+	border-radius: 5px;
+	box-shadow: 0px 2px 30px rgba(0,0,0,0.5);
+
+	@include sm-screen {
+		max-width:   400px;
+		left: 50%;
+		top: 25%;
+	}
+}
+
+.modal1__overlay {
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.modal1 {
+	display: none;
+	z-index: 1000;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.close:hover {
+	color: $blue
+}
+
+ul {
+	list-style: none;
+	li {
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.tl {
+	font-size:  px_to_em(30px);
+	color: $blue;
+	text-transform: capitalize;
+	font-weight: 500;
+	margin-bottom: 30px;
+	text-align: center;
+
+
+	@include sm-screen {
+		font-size:  px_to_em(50px);
+		margin-bottom: 60px;
+	}
+}
+
+.btn {
+	width:            100%;
+	max-width:        100px;
+	border-radius:    30px;
+	text-transform:   uppercase;
+	font-size:        px_to_em(12px);
+	font-weight:      bold;
+	color:            $blue;
+	background-color: $white;
+	border:           1px solid $white;
+	padding:          10px 10px;
+
+	@include md-screen {
+		padding:          10px 50px;
+		font-size:        px_to_em(16px);
+		max-width:        200px;
+	}
+}
+
+.btn:hover {
+	transform:  scale(1.2);
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+	transition: all 0.3s ease;
+}
+
+.scrollup {
+  position: fixed;
+  color: #fff;
+  background-color: $blue;
+  right: 20px;
+  bottom: 0px;
+  padding: 4px 10px;
+  font-size: 20px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+
+  @include md-screen {
+  	 display: block;
+  }
+}
+.scrollup:hover {
+  background-color: $grey-menu;
+}

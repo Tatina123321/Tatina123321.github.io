@@ -1,0 +1,36 @@
+.footer {
+	background: rgb(109,179,242);
+	background: -moz-linear-gradient(45deg,  rgba(109,179,242,1) 0%, rgba(54,144,240,1) 41%, rgba(84,163,238,1) 46%, rgba(84,163,238,1) 46%, rgba(30,105,222,1) 73%, rgba(30,105,222,1) 73%);
+	background: -webkit-linear-gradient(45deg,  rgba(109,179,242,1) 0%,rgba(54,144,240,1) 41%,rgba(84,163,238,1) 46%,rgba(84,163,238,1) 46%,rgba(30,105,222,1) 73%,rgba(30,105,222,1) 73%);
+	background: linear-gradient(45deg,  rgba(109,179,242,1) 0%,rgba(54,144,240,1) 41%,rgba(84,163,238,1) 46%,rgba(84,163,238,1) 46%,rgba(30,105,222,1) 73%,rgba(30,105,222,1) 73%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=1 );
+
+	padding:         20px;
+
+		@include md-screen {
+			padding:         40px;
+		}
+
+	.footer-items {
+		display:         flex;
+		flex-direction:  row;
+		justify-content: space-between;
+		align-items:     center;
+	}
+
+	&__text {
+		font-size:   px_to_em(20px);
+		font-weight: 300;
+		color:       $white;
+
+		@include md-screen {
+			font-size:   px_to_em(40px);
+		}
+
+	}
+
+	&__text span {
+		font-weight: 700;
+	}
+
+}

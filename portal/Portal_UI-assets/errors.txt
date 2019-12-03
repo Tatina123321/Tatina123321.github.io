@@ -1,0 +1,2 @@
+[Sat Nov 30 2019 14:40:21 GMT+0200 (Финляндия (зима))] layer "g+": Expected end of input but "+" found.
+[Sat Nov 30 2019 14:40:21 GMT+0200 (Финляндия (зима))] layer "g+": Expected end of input but "+" found.

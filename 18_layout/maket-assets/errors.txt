@@ -1,7 +1,7 @@
-[Wed Nov 27 2019 13:47:17 GMT+0200 (Финляндия (зима))] layer "www.symu.co": Unsupported extension: co
-[Wed Nov 27 2019 13:47:17 GMT+0200 (Финляндия (зима))] layer "work1.png": Duplicate path: work1.png
-[Wed Nov 27 2019 13:47:17 GMT+0200 (Финляндия (зима))] layer "work2.png": Duplicate path: work2.png
-[Wed Nov 27 2019 13:47:17 GMT+0200 (Финляндия (зима))] layer "work3.png": Duplicate path: work3.png
-[Wed Nov 27 2019 13:47:17 GMT+0200 (Финляндия (зима))] layer "work4.png": Duplicate path: work4.png
-[Wed Nov 27 2019 13:47:17 GMT+0200 (Финляндия (зима))] layer "work5.png": Duplicate path: work5.png
-[Wed Nov 27 2019 13:47:17 GMT+0200 (Финляндия (зима))] layer "work6.png": Duplicate path: work6.png
+[Tue Dec 03 2019 09:33:06 GMT+0200 (Финляндия (зима))] layer "www.symu.co": Unsupported extension: co
+[Tue Dec 03 2019 09:33:05 GMT+0200 (Финляндия (зима))] layer "work1.png": Duplicate path: work1.png
+[Tue Dec 03 2019 09:33:05 GMT+0200 (Финляндия (зима))] layer "work2.png": Duplicate path: work2.png
+[Tue Dec 03 2019 09:33:06 GMT+0200 (Финляндия (зима))] layer "work3.png": Duplicate path: work3.png
+[Tue Dec 03 2019 09:33:06 GMT+0200 (Финляндия (зима))] layer "work4.png": Duplicate path: work4.png
+[Tue Dec 03 2019 09:33:06 GMT+0200 (Финляндия (зима))] layer "work5.png": Duplicate path: work5.png
+[Tue Dec 03 2019 09:33:06 GMT+0200 (Финляндия (зима))] layer "work6.png": Duplicate path: work6.png
