@@ -13,10 +13,11 @@
 		margin-bottom: 0;
 		display:         flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 
-		@include sm-screen {
+		@include md-screen {
+			justify-content: center;
 			flex-direction: row;
 			flex-wrap: wrap;
 		}
@@ -28,7 +29,7 @@
 	}
 
 	&__link:hover {
-		transform:    scale(1.2);
+		transform:    scale(1.1);
 		transition:   all 0.5s ease;
 	}
 
