@@ -61,11 +61,13 @@
 		text-transform:  capitalize;
 		font-size:       px_to_em(20px);
 		color:           $grey-menu;
+
+		&:hover {
+			color: $blue;
+			text-decoration: none;
+		}
 	}
 
-	&__link:hover {
-		color: $blue
-	}
 
 
 	// 	&::before {
@@ -103,6 +105,10 @@
 		border-radius:    50px;
 		border: 2px solid $grey-menu;
 		background-color: $grey-menu;
+
+		&:hover {
+			text-decoration: none;
+		}
 	}
 
 	.fab {
