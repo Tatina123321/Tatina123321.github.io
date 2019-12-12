@@ -1,0 +1,122 @@
+.services-plans {
+	padding: 20px 0px 15px;
+
+	@include sm-screen  {
+		padding: 50px 0px 30px;
+	}
+
+	@include lg-screen  {
+		padding: 100px 0px 60px;
+	}
+
+	&__title {
+		text-align: center;
+		font-size: px_to_rem(30px);
+		font-family: $logo-font;
+		text-transform: uppercase;
+		line-height: 2;
+	}
+
+	&__subtitle {
+		text-align: center;
+		font-size: px_to_rem(14px);
+		font-family: $sec-font;
+		line-height: 1.8;
+		margin-bottom: 0;
+	}
+
+	&__block {
+		padding: 30px 0 0;
+
+		@include sm-screen  {
+			padding: 50px 0 0;
+		}
+
+		@include md-screen  {
+			padding: 100px 0 0;
+		}
+
+		&-list {
+			list-style: none;
+			font-size: px_to_rem(14px);
+			font-family: $sec-font;
+			line-height: 1.8;
+			margin-bottom: 0;
+		}
+
+		&-item p {
+			margin: 0;
+			line-height: 2.5;
+		}
+
+		&-img {
+			vertical-align: baseline;
+			width: 12px;
+			height: 12px;
+
+		}
+	}
+
+	.card {
+		height: 100%;
+		min-height: 500px;
+		border-top: 7px solid $turquoise;
+		border: none;
+		border-top: 7px solid $turquoise;
+		border-right: 7px solid $turquoise 15%;
+		position: relative;
+
+
+
+		&-title {
+			font-size: px_to_rem(25px);
+			font-family: $logo-font;
+			text-transform: uppercase;
+			margin: 0;
+
+			@include lg-screen  {
+				font-size: px_to_rem(30px);
+			}
+		}
+
+		&-subtitle {
+			font-size: px_to_rem(14px);
+			font-family: $logo-font;
+			text-transform: uppercase;
+			color: $white;
+			background-color: $turquoise;
+			padding: 10px 15px;
+			width: 100%;
+			max-width: 160px;
+			margin: 0;
+		}
+
+		&-link {
+			font-size: px_to_rem(14px);
+			font-family: $logo-font;
+			text-transform: uppercase;
+			color: $white;
+			background-color: $turquoise;
+			padding: 15px 20px;
+			width: 100%;
+			max-width: 160px;
+		}
+
+		&:hover {
+			box-shadow: 0px 3px 20px rgba(0,0,0,0.6);
+		}
+
+
+	}
+
+	// .card::before {
+	// 	$size: 10px;
+	// 	display: block;
+	// 	position: absolute;
+	// 	bottom: 0;
+	// 	border: $size solid transparent;
+	// 	border-right-width: $size * 1.5;
+	// 	border-left-width: $size * 1.5;
+	// 	border-bottom-color: currentcolor;
+	// }
+}

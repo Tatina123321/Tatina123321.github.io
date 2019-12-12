@@ -1,0 +1,65 @@
+.about-partners {
+	height: 100%;
+	min-height: 450px;
+	padding: 10px 0px 15px;
+	position: relative;
+
+	@include sm-screen  {
+		padding: 20px 0px 30px;
+	}
+
+	@include lg-screen  {
+		padding: 30px 0px 60px;
+	}
+
+
+	&__text {
+		font-size: px_to_rem(14px);
+		font-family: $sec-font;
+		line-height: 1.9;
+		margin: 0;
+	}
+
+	&__name {
+		font-size: px_to_rem(14px);
+		font-family: $logo-font;
+		margin: 0;
+		text-transform: uppercase;
+		background-color: $turquoise;
+		width: 100%;
+		max-width: 100px;
+		display: inline-block;
+		padding: 5px;
+		color: $white;
+	}
+
+	&__indicators {
+		fill: $turquoise;
+		position: absolute;
+		transform: translateY(250%);
+
+	}
+
+	&__indicators li.active {
+		background-color:  $turquoise;
+	}
+
+	&__indicators li {
+		background-color:  $dark;
+	}
+
+	&__wrap {
+		display: none;
+
+		@include sm-screen  {
+			display: block;
+			padding-top: 3rem;
+		}
+	}
+
+	&__brand {
+		border: 1px solid $bg-quote;
+		padding: 10px;
+	}
+
+}

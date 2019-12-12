@@ -55,12 +55,22 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-direction: column;
+
+		@include sm-screen  {
+			flex-direction: row;
+		}
 
 		&-text {
 			font-size: px_to_rem(18px);
 			font-family: $sec-font;
 			margin-bottom: 0;
 			font-style: italic;
+			padding: 10px;
+
+			@include sm-screen  {
+				padding: 0;
+			}
 		}
 
 		&-btn {
