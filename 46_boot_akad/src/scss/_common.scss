@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: $main-font;
+	font-size: 100%;
+	background-color: $white;
+	color: $dark;
+}
+
+// .container {
+// 	width: 100%;
+// 	max-width: 1150px;
+// 	padding: 0 15px;
+// 	margin: auto;
+// }
+
+.logo,
+.navbar-brand {
+	font-weight: 900;
+	font-family: $logo-font;
+	color: $dark !important;
+	font-size: 18px;
+}
+
+.navbar {
+	font-family: $logo-font;
+}
+
+.navbar-toggler {
+	border: $white;
+}
+

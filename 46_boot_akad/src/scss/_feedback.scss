@@ -1,0 +1,102 @@
+.feedback {
+	height: 100%;
+	min-height: 330px;
+	background-color: $turquoise;
+	padding: 20px 0;
+
+	@include sm-screen  {
+		padding: 30px 0;
+	}
+
+	@include lg-screen  {
+		padding: 50px 0;
+	}
+
+	&__title {
+		font-size: px_to_rem(30px);
+		font-family: $logo-font;
+		text-transform: uppercase;
+		line-height: 1.5;
+		color: $white;
+	}
+
+	&__btn {
+		text-decoration: none;
+		font-family: $logo-font;
+		font-weight: 600;
+		font-size: px_to_rem(14px);
+		text-transform: uppercase;
+		color: $turquoise;
+		border: 1px solid $white;
+		background-color: $white;
+		padding: 10px 35px;
+	}
+
+	&__btn:hover {
+		text-decoration: none;
+		color: $white;
+		background-color: $turquoise;
+	}
+
+	&__window {
+		background-color: $white;
+		padding: 20px;
+
+		&-title {
+			font-size: px_to_rem(24px);
+			font-family: $logo-font;
+			text-transform: uppercase;
+			line-height: 1.5;
+		}
+
+		&-description {
+			font-size: px_to_rem(16px);
+			font-family: $sec-font;
+			line-height: 1.8;
+			color:  $dark-light;
+		}
+
+		&-form {
+			display:         flex;
+			min-width:    100%;
+			flex-direction: column;
+
+			@include sm-screen  {
+				flex-direction: row;
+			}
+
+		}
+
+		&-input {
+			padding:         10px 20px;
+			border:          1px solid $dark-light;
+			font-family:     $main-font;
+			font-size:       px_to_rem(12px);
+			resize: none;
+			width:           100%;
+			min-width:       200px;
+			text-transform: uppercase;
+			font-family: $logo-font;
+		}
+
+		::-webkit-input-placeholder {color:  $dark-light;}
+		::-moz-placeholder          {color:  $dark-light;}
+		:-moz-placeholder           {color:  $dark-light;}
+		:-ms-input-placeholder      {color:  $dark-light;}
+
+
+		&-submit {
+			@extend .feedback__btn;
+			background-color: $turquoise;
+			border: 1px solid $turquoise;
+			color: $white;
+			padding: 10px 50px;
+		}
+
+		&-submit:hover {
+			background-color: $white;
+			color: $turquoise;
+		}
+	}
+
+}

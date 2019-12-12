@@ -6,12 +6,12 @@
 	background: linear-gradient(45deg,  rgba(109,179,242,1) 0%,rgba(54,144,240,1) 41%,rgba(84,163,238,1) 46%,rgba(84,163,238,1) 46%,rgba(30,105,222,1) 73%,rgba(30,105,222,1) 73%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=1 );
 
-      padding:         20px 20px;
-		display:         flex;
-		flex-direction:  column;
-		justify-content: space-between;
-		align-items:     center;
-		min-height:       100vh;
+	padding:         20px 20px;
+	display:         flex;
+	flex-direction:  column;
+	justify-content: space-between;
+	align-items:     center;
+	min-height:       100vh;
 
 	@include sm-screen {
 		padding:         40px 50px;
@@ -23,10 +23,10 @@
 	display:          block;
 	border:           none;
 	background-color: transparent;
-	margin-bottom:    50px;
+	margin: 0;
 
 	@include sm-screen {
-		margin-bottom:    100px;
+		// margin-bottom:    100px;
 	}
 
 	&__icon {
@@ -138,7 +138,7 @@
 	text-align:     center;
 
 	&__logo {
-		margin-bottom: 	50px;
+		
 		display:          inline-block;
 		width:            90px;
 		height:           90px;
@@ -151,19 +151,18 @@
 		@include sm-screen {
 			width:            145px;
 			height:           145px;
-			margin-bottom: 	50px;
+			// margin-bottom: 	50px;
 		}
 	}
 
 	&__title {
 		word-spacing:  5px;
 		font-weight:   bold;
-		margin-bottom: 20px;
 		font-size:     px_to_em(30px);
+		margin: 0;
 
 		@include sm-screen {
 			font-size:     px_to_em(40px);
-			margin-bottom: 40px;
 			word-spacing:  10px;
 		}
 	}
@@ -171,12 +170,11 @@
 	&__subtitle {
 		word-spacing:  5px;
 		font-size:     px_to_em(14px);
-		margin-bottom: 30px;
 		line-height:   1.5;
+		margin: 0;
 
 		@include sm-screen {
 			font-size:     px_to_em(16px);
-			margin-bottom: 40px;
 			line-height:   2;
 		}
 	}
@@ -269,7 +267,7 @@
 			background: linear-gradient(45deg,  rgba(109,179,242,1) 0%,rgba(54,144,240,1) 41%,rgba(84,163,238,1) 46%,rgba(84,163,238,1) 46%,rgba(30,105,222,1) 73%,rgba(30,105,222,1) 73%);
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=1 );
 
-          max-width:    150px;
+			max-width:    150px;
 
 			@include sm-screen {
 				max-width:    200px;
@@ -277,11 +275,11 @@
 		}
 
 		.btn:hover {
- 				background: $white;
- 				color:      $blue;
- 				border:     1px solid $blue;
- 				transform:  scale(1);
- 				transition: all 0.5s ease;
+			background: $white;
+			color:      $blue;
+			border:     1px solid $blue;
+			transform:  scale(1);
+			transition: all 0.5s ease;
 		}
 
 	}
@@ -292,11 +290,11 @@
 }
 
 .home-block__arrow-link {
-	 	display: inline-block;
-		text-align:      center;
-		font-weight:     400;
-		color:           $white;
-		transition:      all 0.5s ease;
-		text-decoration: none;
+	display: inline-block;
+	text-align:      center;
+	font-weight:     400;
+	color:           $white;
+	transition:      all 0.5s ease;
+	text-decoration: none;
 }
 

@@ -1,0 +1,27 @@
+.about-first {
+	background-image: url("../img/about-ferst-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: $logo-font;
+	height: 100%;
+	min-height: 600px;
+
+	&__title-wrapper {
+		padding: 150px 0 80px;
+	}
+
+	&__title {
+		font-size: px_to_rem(36px);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.1;
+		margin-bottom: 50px;
+	}
+
+	&__title-description {
+		font-size: px_to_rem(14px);
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 0;
+	}
+}

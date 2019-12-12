@@ -1,0 +1,37 @@
+.about-common {
+	padding: 20px 0px 15px;
+
+	@include sm-screen  {
+		padding: 50px 0px 30px;
+	}
+
+	@include lg-screen  {
+		padding: 100px 0px 60px;
+	}
+
+	&__title {
+		font-size: px_to_rem(30px);
+		font-family: $logo-font;
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.1;
+		margin-bottom: 30px;
+	}
+
+	&__subtitle {
+		font-size: px_to_rem(14px);
+		font-family: $sec-font-eb;
+		// font-weight: extrabold;
+		text-transform: uppercase;
+		line-height: 1.1;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		font-size: px_to_rem(14px);
+		font-family: $sec-font;
+		line-height: 1.9;
+		margin: 0;
+	}
+
+}

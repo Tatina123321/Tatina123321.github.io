@@ -1,0 +1,88 @@
+.home {
+	background-image: url("../img/bg_home1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 90%;
+	font-family: $logo-font;
+	// padding: 20px 100px;
+	min-height: 100vh;
+
+	&__title-wrapper {
+		padding: 150px 0 80px;
+	}
+
+	&__title-inscription {
+		font-size: px_to_rem(18px);
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 0;
+
+	}
+
+	&__title-inscription-wrapper {
+
+		width: 100%;
+		max-width: 80px;
+		padding: 5px 10px;
+		background-color: $turquoise;
+		// border: 1px solid $turquoise;
+
+	}
+
+	&__title {
+		font-size: px_to_rem(48px);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.1;
+		padding: 5px 10px;
+		border: 1px solid $dark;
+		box-shadow: 0 0 0 5px $dark;
+		margin-bottom: 50px;
+	}
+
+	&__title-description {
+		font-family: $sec-font;
+		margin: 0;
+	}
+}
+
+.history {
+
+	&__img {
+		display: none;
+		@include sm-screen  {
+			display: block;
+		}
+	}
+
+	&__title {
+		font-size: px_to_rem(30px);
+		font-family: $logo-font;
+		text-transform: uppercase;
+		line-height: 2;
+	}
+
+	&__text {
+		font-size: px_to_rem(16px);
+		font-family: $sec-font;
+		line-height: 1.8;
+		margin-bottom: 50px;
+	}
+
+	&__btn {
+		text-decoration: none;
+		font-family: $logo-font;
+		font-weight: 600;
+		font-size: px_to_rem(14px);
+		text-transform: uppercase;
+		color: $white;
+		border: 1px solid $turquoise;
+		background-color: $turquoise;
+		padding: 15px 35px;
+	}
+
+	&__btn:hover {
+		text-decoration: none;
+		color: $turquoise;
+		background-color: $white;
+	}
+}

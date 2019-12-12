@@ -1,0 +1,47 @@
+@font-face {
+	font-family: "Montserrat-Light";
+	src: url(assets/fonts/Montserrat-Light.ttf);
+}
+@font-face {
+	font-family: "Montserrat-Regular";
+	src: url(assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+	font-family: "Montserrat-Bold";
+	src: url(../assets/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+	font-family: "Montserrat-ExtraBold";
+	src: url(../assets/fonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+	font-family: "OpenSans-Light";
+	src: url(../assets/fonts/OpenSans-Light.ttf);
+}
+@font-face {
+	font-family: "OpenSans-Regular";
+	src: url(../assets/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+	font-family: "OpenSans-Bold";
+	src: url(../assets/fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+	font-family: "OpenSans-ExtraBold";
+	src: url(../assets/fonts/OpenSans-ExtraBold.ttf);
+}
+
+$main-font: "Montserrat-Regular";
+$logo-font: "Montserrat-Bold";
+$sec-font: "OpenSans-Regular";
+$sec-font-eb: "OpenSans-ExtraBold";
+
+$base-size: 16px;
+
+// COLOR
+
+$dark:       #60606e;
+$dark-light: #999999;
+$white:      #ffffff;
+$turquoise:  #7beec7;
+$bg-quote:   #efeff0;

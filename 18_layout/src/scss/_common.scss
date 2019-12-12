@@ -6,6 +6,7 @@
 
 html, body {
 	min-height: 100vh;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -96,13 +97,12 @@ ul {
 	color: $blue;
 	text-transform: capitalize;
 	font-weight: 500;
-	margin-bottom: 30px;
 	text-align: center;
+	margin: 0;
 
 
 	@include sm-screen {
 		font-size:  px_to_em(50px);
-		margin-bottom: 60px;
 	}
 }
 
