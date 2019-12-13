@@ -1,0 +1,78 @@
+.contact-details {
+	padding: 50px 0px;
+
+	@include sm-screen  {
+		padding: 80px 0px;
+	}
+
+	@include lg-screen  {
+		padding: 120px 0px;
+	}
+}
+
+.form {
+
+	&__input {
+		background-color: $bg-form;
+		font-size: px_to_rem(12px);
+		font-family: $logo-font;
+		text-transform: uppercase;
+		color: $text-form;
+		border: 1px solid $text-form;
+	}
+
+	.text {
+		height: 100%;
+		min-height: 250px;
+
+	}
+
+	.btn {
+		text-decoration: none;
+		font-family: $logo-font;
+		font-weight: 600;
+		font-size: px_to_rem(14px);
+		text-transform: uppercase;
+		color: $white;
+		border: 1px solid $turquoise;
+		background-color: $turquoise;
+		padding: 10px 50px;
+	}
+
+	.btn:hover {
+		text-decoration: none;
+		color: $turquoise;
+		background-color: $white;
+	}
+}
+
+.contact__info {
+
+	&-title {
+		font-size: px_to_rem(18px);
+		font-family: $logo-font;
+		text-transform: uppercase;
+		line-height: 2;
+	}
+
+	&-text {
+		font-size: px_to_rem(14px);
+		font-family: $sec-font;
+		line-height: 1.8;
+		margin-bottom: 0;
+		color: $info-text;
+	}
+
+	&-list {
+		list-style: none;
+	}
+
+	&-link {
+		color: $info-text;
+		font-size: px_to_rem(14px);
+		font-family: $sec-font;
+		line-height: 2.5;
+	}
+
+
+}
