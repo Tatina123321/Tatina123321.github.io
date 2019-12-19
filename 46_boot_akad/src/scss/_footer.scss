@@ -8,13 +8,15 @@
 
 	&__nav {
 		display: flex;
-		justify-content: space-around;
 		flex-wrap: wrap;
 		margin: 0;
 		list-style: none;
+		flex-direction: column;
 
 		@include sm-screen  {
 			flex-direction: row;
+			justify-content: space-around;
+
 		}
 
 		&-item::before {
@@ -26,6 +28,7 @@
 			font-family: $sec-font;
 			text-transform: uppercase;
 			color: $dark-light;
+			display: block;
 		}
 
 		&-link:hover,
@@ -41,6 +44,7 @@
 		font-family: $sec-font;
 		text-transform: uppercase;
 		color: $dark-light;
+		margin: 0;
 	}
 
 	&__socials {

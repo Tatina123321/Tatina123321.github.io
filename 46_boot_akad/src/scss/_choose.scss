@@ -14,10 +14,15 @@
 
 	&__title {
 		text-align: center;
-		font-size: px_to_rem(30px);
+		font-size: px_to_rem(25px);
 		font-family: $logo-font;
 		text-transform: uppercase;
 		line-height: 2;
+		margin: 0;
+
+		@include md-screen  {
+			font-size: px_to_rem(30px);
+		}
 	}
 
 	&__subtitle {
