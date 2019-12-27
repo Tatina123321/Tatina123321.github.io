@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Lessons #23 JS</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 justify-content-center">
+				<h1 class="main-title text-center m-0">Урок №23</h1>
+			</div>
+		</div>
+		<div class="row">
+			<form>
+
+				<div class="form-row py-3">
+					<div class="form-group col-lg-12 m-0">
+						<h2 class="title m-0 pb-3">Задача 1</h2>
+						<div class="input-group  mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									Введите свой возраст
+								</span>
+							</div>
+							<input class="form__input form-control" id="age" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+							<div class="input-group-append">
+								<button type="submit" class="form__button btn btn-primary" id="first__button">Определить</button>
+							</div>
+						</div>
+						<p class="form__out m-0" id="first__out">...</p>
+					</div>
+				</div>
+
+				<div class="form-row py-3">
+					<div class="form-group col-lg-12 m-0">
+						<h2 class="title m-0 pb-3">Задача 2</h2>
+						<div class="input-group  mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									Введите число от 0 до 9
+								</span>
+							</div>
+							<input class="form__input form-control" id="num1" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+							<div class="input-group-append">
+								<button type="submit" class="form__button btn btn-primary" id="second__button">Определить</button>
+							</div>
+						</div>
+						<p class="form__out m-0" id="second__out">...</p>
+					</div>
+				</div>
+
+				<div class="form-row py-3">
+					<div class="form-group col-lg-12 m-0">
+						<h2 class="title m-0 pb-3">Задача 3</h2>
+						<div class="input-group  mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									Введите трехзначное число
+								</span>
+							</div>
+							<input class="form__input form-control" id="num2" aria-label="Default" aria-describedby="inputGroup-sizing-default" minlength="3" required>
+							<div class="input-group-append">
+								<button type="submit" value="Проверить" class="form__button btn btn-primary" id="third__button">Определить</button>
+							</div>
+						</div>
+						<p class="form__out m-0" id="third__out">...</p>
+					</div>
+				</div>
+
+				<div class="form-row py-3">
+					<div class="form-group col-lg-12 m-0">
+						<h2 class="title m-0 pb-3">Задача 4</h2>
+						<div class="input-group  mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									Введите год
+								</span>
+							</div>
+							<input class="form__input form-control" id="year" aria-label="Default" aria-describedby="inputGroup-sizing-default" minlength="4" required>
+							<div class="input-group-append">
+								<button type="submit" value="Проверить" class="form__button btn btn-primary" id="year__button">Определить</button>
+							</div>
+						</div>
+						<p class="form__out m-0" id="year__out">...</p>
+					</div>
+				</div>
+
+				<div class="form-row py-3">
+					<div class="form-group col-lg-12 m-0">
+						<h2 class="title m-0 pb-3">Задача 5</h2>
+						<div class="input-group  mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									Введите число
+								</span>
+							</div>
+							<input class="form__input form-control" id="palindrom" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+							<div class="input-group-append">
+								<button type="submit" value="Проверить" class="form__button btn btn-primary" id="palindrom__button">Определить</button>
+							</div>
+						</div>
+						<p class="form__out m-0" id="palindrom__out">...</p>
+					</div>
+				</div>
+
+				<div class="form-row py-3">
+					<div class="form-group col-lg-12 m-0">
+						<h2 class="title m-0 pb-3">Задача 6</h2>
+						<div class="input-group  mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									Введите сумму в USD
+								</span>
+							</div>
+							<input class="form__input form-control" id="moneySum" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+							<div class="input-group-append">
+								<button type="submit" class="form__button btn btn-primary" id="money__button">Конвертировать</button>
+							</div>
+						</div>
+						<div class="form-inline mb-3">
+							<div class="form-check">
+								<input type="radio" class="form-check-input form__radio" id="  EUR" name="money" value="0.91">
+								<label class="form-check-label mr-3" for="EUR">EUR</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" class="form-check-input form__radio" id="   UAH" name="money" value="23.95">
+								<label class="form-check-label" for="UAH">UAH</label>
+							</div>
+						</div>
+						<p class="form__out m-0" id="money__out">...</p>
+					</div>
+				</div>
+
+				<div class="form-row py-3">
+					<div class="form-group col-lg-12 m-0">
+						<h2 class="title m-0 pb-3">Задача 7</h2>
+						<div class="input-group  mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									Введите сумму покупки
+								</span>
+							</div>
+							<input class="form__input form-control" id="sum" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+							<div class="input-group-append">
+								<button type="submit" value="Проверить" class="form__button btn btn-primary" id="sum__button">Рассчитать</button>
+							</div>
+						</div>
+						<p class="form__out " id="discount__out">...</p>
+						<p class="form__out m-0" id="sum__out">...</p>
+					</div>
+				</div>
+
+				<div class="form-row py-3">
+					<div class="form-group col-lg-12 m-0">
+						<h2 class="title m-0 pb-3">Задача 8</h2>
+						<div class="input-group  mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									Введите длинну окружности
+								</span>
+							</div>
+							<input class="form__input form-control" id="circleLength" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									Введите периметр квадрата
+								</span>
+							</div>
+							<input class="form__input form-control" id="squarePer" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+							<div class="input-group-append">
+								<button type="submit" value="Вывести сумму" class="form__button btn btn-primary" id="figure__button">Определить</button>
+							</div>
+						</div>
+						<p class="form__out m-0" id="figure__out">...</p>
+					</div>
+				</div>
+
+				<div class="form-row py-3">
+					<div class="form-group col-lg-12 m-0">
+						<h2 class="title m-0 pb-3">Задача 9</h2>
+						<div class="input-group mb-3">
+
+							<div class="input-group-prepend">
+								<label class="input-group-text" for="inputGroupSelect01">Сколько будет 2+2?</label>
+							</div>
+							<select class="custom-select" id="inputGroupSelect01">
+								<option selected>Выбрать...</option>
+								<option value="4" id="four" name="question1">4</option>
+								<option value="3" id="three" name="question1">3</option>
+								<option value="5" id="five" name="question1">5</option>
+							</select>
+						</div>
+
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<label class="input-group-text" for="inputGroupSelect01">
+									Столица США?
+								</label>
+							</div>
+							<select class="custom-select" id="inputGroupSelect01">
+								<option selected>Выбрать...</option>
+								<option name="question2" value="Washington" id="WA">
+									Вашингтон
+								</option>
+								<option name="question2" value="New York" id="NY">
+									Нью Йорк
+								</option>
+								<option name="question2" value="Chicago" id="CH">
+									Чикаго
+								</option>
+							</select>
+						</div>
+
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<label class="input-group-text" for="inputGroupSelect01">
+									Денежная единица Польши?
+								</label>
+							</div>
+							<select class="custom-select" id="inputGroupSelect01">
+								<option selected>Выбрать...</option>
+								<option name="question3" value="dollar" id="dollar">
+									Доллар
+								</option>
+								<option name="question3" value="euro" id="euro">
+									Евро
+								</option>
+								<option ame="question3" value="zloty" id="zloty">
+									Злотый
+								</option>
+							</select>
+						</div>
+						<div class="input-group-append py-2">
+							<button type="submit" value="Узнать результат" class="form__button btn btn-primary " id="question__button">Узнать результат</button>
+						</div>
+						<p class="form__out m-0" id="question__out">...</p>
+					</div>
+				</div>
+
+
+				<div class="form-row py-3">
+					<div class="form-group col-lg-12 m-0">
+						<h2 class="title m-0 pb-3">Задача 10</h2>
+						<div class="input-group  mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									Введите дату
+								</span>
+							</div>
+							<input type="date" class="form__input form-control" id="date1" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+							<div class="input-group-append">
+								<button type="submit" value="Следующая дата" class="form__button btn btn-primary" id="date__button">Следующая дата</button>
+							</div>
+						</div>
+						<p class="form__out m-0" id="date__out">...</p>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/bundle.js"></script>
+</body>
+</html>
