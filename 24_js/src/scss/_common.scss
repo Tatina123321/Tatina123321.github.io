@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-size: 100%;
+	background-color: $bg-quote;
+	color: $dark;
+	padding-top: 100px;
+
+}
+
+.title {
+	font-weight: 600;
+}
+
+.text {
+	border: 1px solid $dark-light;
+	border-radius: 5px;
+	padding: 10px 20px;
+}
