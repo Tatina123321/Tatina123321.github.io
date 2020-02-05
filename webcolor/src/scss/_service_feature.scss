@@ -1,0 +1,34 @@
+/* Service Feature */
+.service_feature{
+    border-bottom: 1px solid #bbbec1;
+    padding-top: 100px;
+    overflow: hidden;
+    .feature_inner{
+        margin-bottom: -50px;
+        .feature_item{
+            margin-bottom: 50px;
+            .more_btn{
+                opacity: 1;
+                background: transparent;
+                border-color: transparent;
+                background-image: linear-gradient(left, #6ebdfe, #9b8aff);
+                color:transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                @include transition;
+                background-size: 200% auto;
+            }
+            &:hover{
+                .more_btn{
+                    color: #fff;
+                    background-image: linear-gradient(to right, #70bafe 0%, #998dff 51%, #70bafe 100%);
+                    border-color: rgba(204, 241, 255, .5);
+                    background-clip: inherit;
+                }
+            }
+        }
+    }
+}
+
+
+/* End Service Feature*/

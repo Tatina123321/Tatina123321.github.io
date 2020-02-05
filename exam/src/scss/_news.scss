@@ -1,0 +1,19 @@
+.news {
+	background-color: #388ddb;
+	min-height: 100vh;
+	color: $white_color;
+	.section-title {
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 100px;
+			height: 2px;
+			background-color: $white_color;
+			top: -30px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}

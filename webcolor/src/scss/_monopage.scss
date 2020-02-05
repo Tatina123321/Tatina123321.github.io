@@ -1,0 +1,65 @@
+/* MonoPage Area */
+.monopage{
+    overflow: hidden;
+    padding: 90px 20px 90px;
+}
+.monopage-wrap{
+    padding-bottom: 30px;
+
+    &-title {
+
+       text-align: center;
+       padding-bottom: 40px;
+
+
+       &__img {
+         padding-bottom: 30px;
+     }
+
+     &__title {
+        font-size: 35px;
+        color: $dip;
+        font-family: $rob;
+        font-weight: 500;
+    }
+}
+    &__descr{
+         font-family: $rob;
+        color: $pfont;
+         font-size: 18px;
+         line-height: 28px;
+        font-weight: 500;
+         padding-bottom: 20px;
+}
+&__list{
+    padding-bottom: 20px;
+}
+&__item{
+    position: relative;
+    padding-left: 20px;
+    color: $pfont;
+    font-size: 18px;
+
+    &:before{
+        content: "";
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background: #a6d7ff;
+        position: absolute; 
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        @include transition;
+    }
+
+}
+
+&__item:last-child{
+    margin-bottom: 0px;
+}
+
+
+}
+
+/* End MonoPage Area */

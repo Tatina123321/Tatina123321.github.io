@@ -1,0 +1,48 @@
+body {
+  background: #F1F3FA;
+}
+
+.resume {
+  padding: 50px;
+
+  .profile-sidebar {
+    background: #039be5;
+
+    &__userpic {
+     max-width: 100%;
+     height: auto;
+     margin: 0 auto;
+   }
+
+   &__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  &__occupation {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+}
+}
+
+
+
+/* Profile container */
+// .profile {
+//   margin: 20px 0;
+// }
+
+/* Profile sidebar */
+
+
+.profile-userpic {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  border-radius: 50% !important;
+}
+

@@ -1,0 +1,98 @@
+/* Get In Touch Area*/
+.get_in_touch_area{
+    padding-top: 100px;
+}
+.get_touch_inner{
+
+}
+.contact_us_form{
+    margin-top: 100px;
+    .form-group{
+        margin-bottom: 5px;
+        input{
+            border: none;
+            height: 50px;
+            border-bottom: 2px solid #e1e1e1;
+            border-radius: 0px;
+            padding: 0px;
+            outline: none;
+            box-shadow: none;
+            font-size: 13px;
+            font-family: $open; 
+            font-style: italic;
+            color: #a5bbd0;
+            @include placeholder{
+                font-size: 13px;
+                font-family: $open; 
+                font-style: italic;
+                color: #a5bbd0;
+            }
+            &:focus{
+                border-image: linear-gradient( 0deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
+                border-image: linear-gradient( 0deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
+                border-image: linear-gradient( 0deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
+                border-image-slice: 1;
+            }
+        }
+        textarea{
+            height: 200px;
+            border: none;
+            border-bottom: 2px solid #e1e1e1;
+            border-radius: 0px;
+            padding: 15px 0px;
+            outline: none;
+            box-shadow: none;
+            font-size: 13px;
+            font-family: $open; 
+            font-style: italic;
+            color: #a5bbd0;
+            resize: none;
+            @include placeholder{
+                font-size: 13px;
+                font-family: $open; 
+                font-style: italic;
+                color: #a5bbd0;
+            }
+            &:focus{
+                border-image: linear-gradient( 0deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
+                border-image: linear-gradient( 0deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
+                border-image: linear-gradient( 0deg, rgb(110,189,254) 0%, rgb(155,138,255) 100%);
+                border-image-slice: 1;
+            }
+        }
+        &:last-child{
+            margin-top: 40px;
+        }
+    }
+}
+.touch_details{
+    margin-left: 90px;
+    &__link {
+        display: block;
+    }
+
+    &__descr{
+        font-size: 15px;
+        line-height: 28px;
+        font-family: $rob;
+        color: #7c8d93;
+    }
+    &__heading{
+        font-size: 18px;
+        color: #97ccfe;
+        font-family: $rob;
+        font-weight: 500;
+        display: block;
+        padding: 50px 0px 20px 0px;
+    }
+    &__phone{
+        font-size: 30px;
+        color: #0b1033;
+        font-family: $rob;
+        font-weight: 500;
+    }
+    &__title {
+       font-size: 28px;
+   }
+}
+/* End Get In Touch Area */

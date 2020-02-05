@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Title</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<form action="./libs/contact.php" method="post">
+		<div class="elem-group">
+			<label for="name">Your Name</label>
+			<input type="text" id="name" name="visitor_name"  pattern=[A-Z\sa-z]{3,20} required>
+		</div>
+		<div class="elem-group">
+			<label for="email">Your E-mail</label>
+			<input type="email" id="email" name="visitor_email"  required>
+		</div>
+		<div class="elem-group">
+			<label for="department-selection">Choose Concerned Department</label>
+			<select id="department-selection" name="concerned_department" required>
+				<option value="">Select a Department</option>
+				<option value="billing">Billing</option>
+				<option value="marketing">Marketing</option>
+				<option value="technical support">Technical Support</option>
+			</select>
+		</div>
+		<div class="elem-group">
+			<label for="title">Reason For Contacting Us</label>
+			<input type="text" id="title" name="email_title" required  pattern=[A-Za-z0-9\s]{8,60}>
+		</div>
+		<div class="elem-group">
+			<label for="message">Write your message</label>
+			<textarea id="message" name="visitor_message"  required></textarea>
+		</div>
+		<button type="submit">Send Message</button>
+	</form>
+
+	<script src="js/bundle.js"></script>
+</body>
+</html>

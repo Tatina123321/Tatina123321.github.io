@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>WebColor Studio</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.png">
+
+	<!-- Icon css link -->
+	<link href="assets/libs/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/e90636d2ad.js" crossorigin="anonymous"></script>
+	<!-- Bootstrap -->
+	<link href="assets/libs/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Extra plugin css -->
+	<link href="assets/libs/vendors/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/libs/css/animate.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link href="assets/libs/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Preloader -->
+	<div id="preloader" class="preloader-wrap">
+		<div class="preloader-inside">
+			<div class="preloader">
+				<div class="preloader-inner box1"></div>
+				<div class="preloader-inner box2"></div>
+				<div class="preloader-inner box3"></div>
+			</div>
+		</div>
+	</div>
+	<!-- End Preloader -->
+
+	<!--Header Menu Area -->
+	<header class="main_menu_area">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+				<img src="img/logo.png" alt="logo">
+				<div class="logo-text">
+					<span class="logo-text__wc">WebColor</span>
+					<span class="logo-text__s">Studio</span>
+				</div>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Главная</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about-us.html">О нас</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="service.html">Услуги</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="portfolio.html">Портфолио</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Контакты</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!--End Header Menu Area -->
+
+	<!--carousel Area -->
+	<section class="carousel" id="carousel">
+		<div class="container-fluid px-0">
+			<div class="row no-gutters justify-content-center">
+				<div class="col-md-12">
+					<div id="demo" class="carousel slide" data-ride="carousel">
+
+						<!-- Indicators -->
+						<ul class="carousel-indicators">
+							<li class="carousel-indicators__item" data-target="#demo" data-slide-to="0" class="active"></li>
+							<li class="carousel-indicators__item "data-target="#demo" data-slide-to="1"></li>
+							<li class="carousel-indicators__item" data-target="#demo" data-slide-to="2"></li>
+						</ul>
+
+						<!-- The slideshow -->
+						<div class="carousel-inner">
+							<div class="carousel-item active img-first">
+								<div class="overlay"></div>
+								<div class="container">
+									<div class="row slider-text px-4 d-flex align-items-center justify-content-flex-start">
+										<div class="col-md-9 text w-100 text-left">
+											<h2 class="carousel-item__title mb-4 wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".2s">Разработка и продвижение эффективных сайтов</h2>
+											<p class="carousel-item__subtitle wow fadeInLeft" data-wow-duration="3s" data-wow-delay=".3s">Создание продающего сайта — самый короткий путь к вашей аудитории. Мы разрабатываем сайты для стартапов, среднего бизнеса и создаем сложные решения для промышленных компаний.</p>
+											<a class="more_btn wow fadeInLeft" data-wow-duration="4s" data-wow-delay=".4s" href="tel:+380988989911">Получить консультацию</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item img-second">
+								<div class="overlay"></div>
+								<div class="container">
+									<div class="row slider-text px-4 d-flex align-items-center justify-content-flex-start">
+										<div class="col-md-8 text w-100 text-left">
+											<h2 class="carousel-item__title w-text mb-4 wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".1s">Выберите яркий дизайн для своего стартапа</h2>
+											<p class="carousel-item__subtitle w-text wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".2s">Если вам нужен качественный и конкурентный сайт, его веб-дизайн можно смело заказать в нашей компании. Лучшие UX и UI специалисты с большим энтузиазмом возьмутся делать для вас маленький или большой шедевр, в зависимости от ваших целей и амбиций.</p>
+											<a class="more_btn wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".3s" href="tel:+380988989911">Получить консультацию</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item img-third">
+								<div class="overlay"></div>
+								<div class="container">
+									<div class="row slider-text px-4 d-flex align-items-center justify-content-flex-start">
+										<div class="col-md-8 text w-100 text-left">
+											<h2 class="carousel-item__title mb-4 wow fadeInLeft" data-wow-duration="3s" data-wow-delay=".1s">SEO оптимизация. Продвижение вашего сайта в сети</h2>
+											<p class="carousel-item__subtitle wow fadeInLeft" data-wow-duration="3s" data-wow-delay=".2s">Мы разработаем комплексную стратегию продвижения вашего сайта. Приведем целевую аудиторию из поисковых систем, устраним технические ошибки на сайте, сделаем его удобнее для пользователей и наполним увлекательным, полезным контентом.</p>
+											<a class="more_btn wow fadeInLeft" data-wow-duration="3s" data-wow-delay=".3s" href="tel:+380988989911">Получить консультацию</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="carousel-control-prev" href="#demo" data-slide="prev">
+							<i class="fas fa-chevron-left"></i>
+						</a>
+						<a class="carousel-control-next" href="#demo" data-slide="next">
+							<i class="fas fa-chevron-right"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End carousel Area-->
+
+	<!--Mileston Area -->
+	<section class="mileston_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<div class="mileston__item">
+						<h4 class="mileston__item-title"><span class="counter">1</span>K</h4>
+						<h5 class="mileston__item-subtitle">Подписчиков</h5>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<div class="mileston__item">
+						<h4 class="mileston__item-title"><span class="counter">50</span>+</h4>
+						<h5 class="mileston__item-subtitle">Клиентов</h5>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<div class="mileston__item">
+						<h4 class="mileston__item-title"><span class="counter">100</span>+</h4>
+						<h5 class="mileston__item-subtitle">Проектов</h5>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<div class="mileston__item">
+						<h4 class="mileston__item-title"><span class="counter">10</span>+</h4>
+						<h5 class="mileston__item-subtitle">Лет опыта</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End Mileston Area -->
+
+	<!--Feature Area -->
+	<section class="feature_area">
+		<div class="container">
+			<div class="c_title wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
+				<img class="c_title__img" src="img/icon/title-icon.png" alt="">
+				<h6 class="c_title__subtitle">НАШИ ПРЕИМУЩЕСТВА</h6>
+				<h2 class="c_title__title">Ваш старт в интернете</h2>
+			</div>
+			<div class="row feature_inner">
+				<div class="col-lg-4 col-sm-6">
+					<div class="feature_item  wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".2s">
+						<div class="f_icon">
+							<img src="img/icon/f-icon-1.png" alt="">
+						</div>
+						<h4 class="feature_item__title">Разработка</h4>
+						<p class="feature_item__text">Предлагаем полный комплекс работ: от веб-разработки до комплексного долгосрочного продвижения проекта. </p>
+						<a class="more_btn" href="service.html" target="_blank">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="feature_item wow fadeInDown" data-wow-duration="2s" data-wow-delay=".2s">
+						<div class="f_icon">
+							<img src="img/icon/f-icon-2.png" alt="">
+						</div>
+						<h4 class="feature_item__title">SEO</h4>
+						<p class="feature_item__text">При разработке сайтов учитываем требования поисковых систем и проводим базовую SEO-оптимизацию.</p>
+						<a class="more_btn" href="service.html" target="_blank">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6">
+					<div class="feature_item wow fadeInRight" data-wow-duration="1s" data-wow-delay=".1s">
+						<div class="f_icon">
+							<img src="img/icon/f-icon-3.png" alt="">
+						</div>
+						<h4 class="feature_item__title">Команда</h4>
+						<p class="feature_item__text">Над проектом работает команда разработчиков, каждый из которых выполняет свой круг задач. </p>
+						<a class="more_btn" href="service.html" target="_blank">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End Feature Area-->
+
+	<!--The best slider Area-->
+	<section class="best_3d_area">
+		<div class="left_3d wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".2s">
+			<div class="shap_slider_inner owl-carousel">
+				<div class="item">
+					<h4 class="item__title">“They are the best”</h4>
+					<p class="item__text">Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus.</p>
+					<div class="media">
+						<img class="media__img" src="img/team/people/people-5.jpg" alt="">
+						<div class="media-body">
+							<h5 class="media-body__name">Chriss Turner</h5>
+							<h6 class="media-body__position">CEO Enterprise</h6>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<h4 class="item__title">“They are the best”</h4>
+					<p class="item__text">Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus.</p>
+					<div class="media">
+						<img class="media__img" src="img/team/people/people-5.jpg" alt="">
+						<div class="media-body">
+							<h5 class="media-body__name">Turner Chriss</h5>
+							<h6 class="media-body__position">CEO Enterprise</h6>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<h4 class="item__title">“They are the best”</h4>
+					<p class="item__text">Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus.</p>
+					<div class="media">
+						<img class="media__img" src="img/team/people/people-5.jpg" alt="">
+						<div class="media-body">
+							<h5 class="media-body__name">Chriss Turner</h5>
+							<h6 class="media-body__position">CEO Enterprise</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="right_text wow fadeInRight" data-wow-duration="2s" data-wow-delay=".2s">
+			<div class="right_text_inner">
+				<div class="text_3d">
+					<div class="l_title">
+						<img class="l_title__img" src="img/icon/title-icon.png" alt="">
+						<h6 class="l_title__subtitle">Принципы работы компании</h6>
+						<h2 class="l_title__title">Качество услуг превыше всего</h2>
+					</div>
+					<p class="text_3d__text">Все наши усилия направлены только в одну сторону – в сторону непрерывного повышения качества услуг. Мы уверены, что от этого зависит удовлетворенность клиентов и наша репутация. Поэтому мы не беремся за заказы, если не можем гарантировать оговоренный результат. И, конечно же, нам важно, чтобы качество ценили клиенты. </p>
+				</div>
+				<div class="shap_mobile">
+					<img src="img/iphone4.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End The best slider Area -->
+
+	<!--Team People Area-->
+	<section class="team_people_area mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="team_people_text wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".2s">
+						<div class="l_title">
+							<img class="l_title__img" src="img/icon/title-icon.png" alt="">
+							<h6 class="l_title__subtitle">Разработка сайтов под ключ</h6>
+							<h2 class="l_title__title">Что такое разработка эффективного сайта?</h2>
+						</div>
+						<p class="team_people_text__descr">Едва ли сегодня найдется компания, которая не имеет своего представительства в интернете. Крупный бизнес создает мультидоменные кластеры, предприниматели помельче ограничиваются одностраничниками или простыми онлайн-магазинами. Но не важно, сколько денег вы потратили на создание сайта, он не будет продавать, если не соответствует основным требованиям:</p>
+						<ul class="team_people_text__list">
+							<li class="team_people_text__item">
+								<a class="team_people_text__link" href="service.html" target="_blank">Адаптивный дизайн</a>
+							</li>
+							<li class="team_people_text__item">
+								<a class="team_people_text__link" href="service.html" target="_blank">Эффективное продвижение</a>
+							</li>
+							<li class="team_people_text__item">
+								<a class="team_people_text__link" href="service.html" target="_blank">Простой и понятный интерфейс</a>
+							</li>
+							<li class="team_people_text__item">
+								<a class="team_people_text__link" href="service.html" target="_blank">Оптимизированый код</a>
+							</li>
+							<li class="team_people_text__item">
+								<a class="team_people_text__link" href="service.html" target="_blank">Контекстная реклама</a>
+							</li>
+							<li class="team_people_text__item">
+								<a class="team_people_text__link" href="service.html" target="_blank">Поддержка 24/7</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="team_img_inner wow fadeInRight" data-wow-duration="2s" data-wow-delay=".2s">
+						<div class="row">
+							<div class="col-lg-6 col-6">
+								<div class="team_img_item">
+									<img src="img/team/people/people-1.jpg" alt="">
+								</div>
+							</div>
+							<div class="col-lg-6 col-6">
+								<div class="team_img_item">
+									<img src="img/team/people/people-2.jpg" alt="">
+								</div>
+							</div>
+							<div class="col-lg-6 col-6">
+								<div class="team_img_item">
+									<img src="img/team/people/people-3.jpg" alt="">
+								</div>
+							</div>
+							<div class="col-lg-6 col-6">
+								<div class="team_img_item">
+									<img src="img/team/people/people-4.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End Team People Area-->
+
+	<!--Service Solution Area -->
+	<section class="service_solution_area p_100">
+		<div class="container">
+			<div class="row s_solution_inner">
+				<div class="col-lg-7">
+					<div class="s_solution_item">
+						<div class="l_title  wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".2s">
+							<img class="l_title__img" src="img/icon/title-icon.png" alt="">
+							<h6 class="l_title__subtitle">ПРИНЦИПЫ РАБОТЫ КОМПАНИИ</h6>
+							<h2 class="l_title__title">Процесс разработки</h2>
+						</div>
+						<p class="l_title__text wow fadeInLeft" data-wow-duration="3s" data-wow-delay=".4s">От объема задач, напрямую зависит стоимость проекта и размер команды. В каждом проекте есть задача которую необходимо решить, иногда она простая, иногда сложная.  Сайт необходимо спроектировать и нарисовать, продумать механики работы элементов и взаимодействия ваших клиентов с ним — это львиная доля проекта. От того как сайт будет спроектирован, зависит то, как аудитория будет им пользоваться, удобно ли им будет? Вернуться ли они снова? Так или иначе, хорошо спроектированный интерфейс сделает ваших клиентов более лояльными к вам, ну а вас чуть более успешными, ну или значительно успешными.</p>
+						<div id="accordion" role="tablist" class="solution_collaps wow fadeInLeft" data-wow-duration="4s" data-wow-delay=".6s">
+							<div class="card">
+								<div class="card-header" role="tab" id="headingOne">
+									<h5 class="card-header__title mb-0">
+										<a class="card-header__title-link" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											Обсуждение и утверждение технического задания
+											<i class="minus">-</i>
+											<i class="plus">+</i>
+										</a>
+									</h5>
+								</div>
+
+								<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+									<div class="card-body">
+										<p class="card-body__text">Первым этапом разработки сайта будет обсуждение технического задания и определение целей и задач, которые будет решать разрабатываемый ресурс.</p>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" role="tab" id="headingTwo">
+									<h5 class="card-header__title mb-0">
+										<a class="card-header__title-link collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											Подготовка прототипа и его корректировка
+											<i class="minus">-</i>
+											<i class="plus">+</i>
+										</a>
+									</h5>
+								</div>
+								<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+									<div class="card-body">
+										<p class="card-body__text">На втором этапе наши специалисты подготовят тестовый прототип дизайна будущего сайта, который в дальнейшем будет откорректирован совместно с заказчиком.</p>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" role="tab" id="headingThree">
+									<h5 class="card-header__title mb-0">
+										<a class="card-header__title-link collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											Наполнение сайта контентом
+											<i class="minus">-</i>
+											<i class="plus">+</i>
+										</a>
+									</h5>
+								</div>
+								<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+									<div class="card-body">
+										<p class="card-body__text">Третьим этапом будет наполнение страниц сайта контентом (фотографиями, фонами, видео и текстами). Если у вас нет подготовленных материалов, наш отдел Контент-маркетинга поможет вам огранизовать фотосьемку, а так же напишем одходящие тексты и статьи под ваш ресурс.</p>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" role="tab" id="headingFour">
+									<h5 class="card-header__title mb-0">
+										<a class="card-header__title-link collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+											Размещение сайта в сети
+											<i class="minus">-</i>
+											<i class="plus">+</i>
+										</a>
+									</h5>
+								</div>
+								<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+									<div class="card-body">
+										<p class="card-body__text">На четвертом этапе наши специалисты перенесут сайт с тестового домена на основной домен заказчика. Так же можем оказать услугу в подборе и покупке доменного имени и подобрать хостинг.</p>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" role="tab" id="headingFive">
+									<h5 class="card-header__title mb-0">
+										<a class="card-header__title-link collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+											Тестирование и сдача проекта
+											<i class="minus">-</i>
+											<i class="plus">+</i>
+										</a>
+									</h5>
+								</div>
+								<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+									<div class="card-body">
+										<p class="card-body__text">Пятым и завершающим этапом будут тестирование разработанного сайта и передача его заказчику. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End Service Solution Area -->
+
+	<!--Get in Touch Area-->
+	<section class="get_in_touch_area wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
+		<div class="container">
+			<div class="row get_touch_inner">
+				<div class="col-lg-6">
+					<form class="contact_us_form row" action="#" method="#" id="contactForm" novalidate="novalidate">
+						<div class="form-group col-lg-6">
+							<input type="text" class="form-control" id="name" name="name" placeholder="Имя" required>
+						</div>
+						<div class="form-group col-lg-6">
+							<input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+						</div>
+						<div class="form-group col-lg-12">
+							<input type="text" class="form-control" id="subject" name="subject" placeholder="Тема*" required>
+						</div>
+						<div class="form-group col-lg-12">
+							<textarea class="form-control" name="message" id="message" rows="1" placeholder="Сообщение" required></textarea>
+						</div>
+						<div class="form-group col-lg-12">
+							<button type="submit" value="submit" class="btn submit_btn form-control">Отправить</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-6">
+					<div class="touch_details">
+						<div class="l_title">
+							<img class="l_title__img" src="img/icon/title-icon.png" alt="">
+							<h6 class="l_title__subtitle">Давайте знакомиться</h6>
+							<h2 class="touch_details__title">У вас есть задача для нас?</br> Пришлите заявку, обсудим и решим!</h2>
+						</div>
+						<p class="touch_details__descr">Если у вас возникли любые вопросы, мы с радостью на них ответим. Укажите номер телефона и адрес электронной почты, и мы свяжемся с вами в течение рабочего дня.</p>
+						<p class="touch_details__descr">Мы понимаем цели каждого клиента и подбираем инструменты для их достижения.</p>
+						<h5 class="touch_details__heading">Позвоните нам сейчас</h5>
+						<a href="tel:+380988989911"><h4 class="touch_details__phone">+38 098 898 99 11</h4></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End Get in Touch Area -->
+
+	<!--Map Area -->
+	<section class="world_map_area p_100 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
+		<div class="container">
+			<div class="world_map_inner">
+				<img class="img-fluid" src="img/world-map.png" alt="">
+				<div class="bd-callout">
+					<h3 class="bd-callout__title">WebColor Studio</h3>
+					<p class="bd-callout__adres">ул. Небесной Сотни, 17а <br /> г. Кременчуг <br /> Украина</p>
+					<h4 class="bd-callout__details"><a href="tel:+380988989911">+38 098 898 99 11</a> <a href="mailto:webcolor.studio@gmail.com">webcolor.studio@gmail.com</a></h4>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End Map Area-->
+
+	<!--Footer Area-->
+	<footer class="footr_area">
+		<div class="footer_widget_area">
+			<div class="container">
+				<div class="row footer_widget_inner">
+					<div class="col-lg-4 col-sm-12">
+						<aside class="f_about_widget mb-5">
+							<h5 class="f_about_widget__title">Разработка и продвижение
+							эффективных сайтов</h5>
+							<p class="f_about_widget__text">Создание продающего сайта — самый короткий путь к вашей аудитории. Мы разрабатываем сайты для стартапов, среднего бизнеса и создаем сложные решения для промышленных компаний.</p>
+						</aside>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<aside class="f_insta_widget">
+							<h3 class="f_title">Instagram</h3>
+							<ul>
+								<li><a href="https://www.instagram.com/webcolor.studio/?hl=ru" target="_blank"><img src="img/instagram/ins-1.jpg" alt=""></a></li>
+								<li><a href="https://www.instagram.com/webcolor.studio/?hl=ru" target="_blank"><img src="img/instagram/ins-2.jpg" alt=""></a></li>
+								<li><a href="https://www.instagram.com/webcolor.studio/?hl=ru" target="_blank"><img src="img/instagram/ins-3.jpg" alt=""></a></li>
+								<li><a href="https://www.instagram.com/webcolor.studio/?hl=ru" target="_blank"><img src="img/instagram/ins-4.jpg" alt=""></a></li>
+								<li><a href="https://www.instagram.com/webcolor.studio/?hl=ru" target="_blank"><img src="img/instagram/ins-5.jpg" alt=""></a></li>
+								<li><a href="https://www.instagram.com/webcolor.studio/?hl=ru" target="_blank"><img src="img/instagram/ins-6.jpg" alt=""></a></li>
+								<li><a href="https://www.instagram.com/webcolor.studio/?hl=ru" target="_blank"><img src="img/instagram/ins-7.jpg" alt=""></a></li>
+								<li><a href="https://www.instagram.com/webcolor.studio/?hl=ru" target="_blank"><img src="img/instagram/ins-8.jpg" alt=""></a></li>
+							</ul>
+						</aside>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<aside class="f_subs_widget">
+							<h3 class="f_title">Наши партнёры</h3>
+							<div class="row">
+								<div class="col-lg-12">
+									<h4 class="f_subs_widget__partners-title">
+										<a class="f_subs_widget__partners-link" href="https://iteam-service.com/" target="_blank">ITeam Service&nbsp;</a>
+									</h4>
+									<p class="f_subs_widget__partners-text"> - лучший IT аутсорсинг для вас!</p>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_copyright">
+			<div class="container">
+				<div class="float-sm-left">
+					<h5 class="float-sm-left__text">Copyright &copy; All rights reserved | This site is made with <i class="fa fa-heart-o text-danger" aria-hidden="true"></i> by <a href="https://webcolor.studio" target="_blank">WebColor Studio</a></h5>
+				</div>
+				<div class="float-md-right socials">
+					<ul class="socials__list">
+						<li class="socials__item">
+							<a class="socials__link" href="#">
+								<i class="fab fa-pinterest"></i>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link" href="#">
+								<i class="fab fa-facebook"></i>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link" href="#">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link" href="#">
+								<i class="fab fa-dribbble"></i>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link" href="#">
+								<i class="fab fa-behance"></i>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link" href="#">
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--End Footer Area-->
+
+
+
+	<!-- jQuery Bootstrap Pooper -->
+	<script src="assets/libs/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/libs/js/popper.min.js"></script>
+	<script src="assets/libs/js/bootstrap.min.js"></script>
+	<!-- Extra plugin js -->
+	<script src="assets/libs/vendors/counterup/jquery.waypoints.min.js"></script>
+	<script src="assets/libs/vendors/counterup/jquery.counterup.min.js"></script>
+	<script src="assets/libs/vendors/counterup/apear.js"></script>
+	<script src="assets/libs/vendors/counterup/countto.js"></script>
+	<script src="assets/libs/vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="assets/libs/vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
+	<script src="assets/libs/js/smoothscroll.js"></script>
+	<!-- wow -->
+	<script src="assets/libs/js/wow.min.js"></script>
+
+	<script src="js/bundle.js"></script>
+</body>
+</html>

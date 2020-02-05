@@ -1,0 +1,31 @@
+.mileston_area{
+    padding: 100px 0 100px;
+    border-bottom: 1px solid #bbbec1;
+    .elements_title{
+        padding-bottom: 65px;
+    }
+    .col-lg-3{
+        text-align: center;
+    }
+}
+.mileston__item{
+    display: inline-block;
+    text-align: left;
+    &-title {
+        font-size: 72px;
+        font-family: $rob;
+        font-weight: 500;
+        background: linear-gradient(left, #6ebcfe 0%, #997aff 100%); /* FF3.6-15 */
+        background: linear-gradient(left, #6ebcfe 0%,#997aff 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #6ebcfe 0%,#997aff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ebcfe', endColorstr='#997aff',GradientType=1 ); /* IE6-9 */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &-subtitle{
+        font-size: 14px;
+        font-family: $rob;
+        font-weight: 500;
+        color: $dip;
+    }
+}

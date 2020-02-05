@@ -1,0 +1,96 @@
+/* Service Solution */
+.service_solution_area{
+    background: url(../img/service-bg.jpg) no-repeat fixed center right;
+    background-size: cover;
+    position: relative;
+    z-index: 3;
+    &:before{
+        content: "";
+        background: rgba(255, 255, 255, .7);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0;
+    }
+}
+.s_solution_inner{
+
+}
+.s_solution_item{
+    .l_title{
+
+
+        &__text{
+            font-size: 15px;
+            line-height: 28px;
+            font-family: $rob;
+            font-weight: 500;
+            color: $pfont;
+
+        }
+    }
+}
+.solution_collaps{
+    margin-top: 60px;
+    .card{
+        margin-bottom: 25px;
+        border: none;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        .card-header{
+            padding: 0px;
+            border: none;
+            background-color: transparent;
+            &__title{
+                &-link {
+                    background: #79ccff; 
+                    background: -moz-linear-gradient(left, #79ccff 0%, #9b75ff 100%);
+                    background: -webkit-linear-gradient(left, #79ccff 0%,#9b75ff 100%); 
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79ccff', endColorstr='#9b75ff',GradientType=1 );
+                    display: block;
+                    color: #fff;
+                    font-size: 16px;
+                    font-family: $rob;
+                    font-weight: 500;
+                    padding: 11px 25px 11px 20px;
+                    line-height: 26px;
+                    position: relative;
+                    i{
+                        display: inline-block;
+                        font-style: normal;
+                        position: absolute;
+                        right: 20px;
+                        line-height: 30px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        & + i{
+                            display: none;
+                        }
+                    }
+                }
+                .collapsed{
+                    i{
+                        display: none;
+                        & + i{
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+        .card-body{
+            &__text{
+                font-size: 15px;
+                line-height: 28px;
+                font-family: $rob;
+                font-weight: normal;
+                color: $pfont;
+            }
+        }
+    }
+}
+/* End Service Solution*/

@@ -1,0 +1,80 @@
+/* Team People Area */
+.team_people_area{
+    overflow: hidden;
+    padding-top: 90px;
+}
+.team_people_text{
+    max-width: 540px;
+    float: right;
+    &__descr{
+        font-family: $rob;
+        color: $pfont;
+        font-size: 15px;
+        line-height: 28px;
+        font-weight: 500;
+        padding-bottom: 45px;
+    }
+    &__list{
+        padding-left: 20px;
+    }
+    &__item{
+        width: calc(100% / 2);
+        float: left;
+        margin-bottom: 15px;
+    }
+    &__link{
+        padding-left: 18px;
+        font-family: $rob;
+        color: $pfont;
+        font-size: 15px;
+        line-height: 28px;
+        font-weight: 500;
+        position: relative;
+        @include transition;
+        &:before{
+            content: "";
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            background: #a6d7ff;
+            position: absolute; 
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            @include transition;
+        }
+    }
+    &__item:nth-child(even){
+        padding-left: 22px;
+    }
+    &__item:last-child{
+        margin-bottom: 0px;
+    }
+    &__item:hover{
+        a{
+            color: #a6d7ff;
+            &:before{
+                left: 4px;
+            }
+        }
+    }
+
+}
+.team_img_inner{
+    max-width: 591px;
+    margin-bottom: -20px;
+    margin-left: 150px;
+    .row{
+        margin-left: -10px;
+        margin-right: -10px;
+        .col-lg-6{
+            padding: 0px 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+    }
+    .team_img_item{
+        overflow: hidden;
+    }
+}
+/* End Team People Area */

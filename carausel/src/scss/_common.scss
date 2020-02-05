@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-size: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.angle {
+	width: 100%;
+	max-width: 500px;
+	color: cyan;
+	border-top: 5px solid currentColor;
+	position: relative;
+
+	&::before {
+		content: "";
+		border: 10px solid transparent;
+		border-top-color: currentColor;
+		border-right-color: currentColor;
+		position: absolute;
+		right: 0;
+	}
+
+}
+

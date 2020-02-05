@@ -1,0 +1,45 @@
+@font-face {
+	font-family: "Gotham-Medium";
+	src: url(../assets/fonts/GothamMedium.ttf);
+}
+
+@font-face {
+	font-family: "Gotham-Book";
+	src: url(../assets/fonts/GothamBook.ttf);
+}
+
+@font-face {
+	font-family: "Gotham-Bold";
+	src: url(../assets/fonts/gothambold1.ttf);
+}
+
+
+
+// COLORS
+
+$white_color: #fff;
+$black_color: #000;
+$menu_color: #2a2a2a;
+$icon_color: #ff7e5f;
+$span_color: #0a0a0a;
+$media_border: #e9ecee;
+
+$link-border: #a28bfb;
+
+
+//FONTS
+$menu-font: "Gotham-Book";
+$title-font: "Gotham-Bold";
+$main-font: "Gotham-Medium";
+
+$base-size: 16px;
+
+$medium_device : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$tab_device:'only screen and (min-width: 768px) and (max-width: 991px)';
+$large_mobile: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$small_mobile:'(max-width: 576px)';
+$xs_mobile:'(max-width: 420px)';
+$tab:'(max-width: 991px)';
+$sm_mobile:'only screen and (min-width: 421px) and (max-width: 575px)';
+$big_screen:'only screen and (min-width: 1200px) and (max-width: 1440px)';
+$extra_big_screen: '(min-width: 1200px)';

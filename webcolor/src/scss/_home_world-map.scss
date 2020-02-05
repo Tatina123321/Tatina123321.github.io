@@ -1,0 +1,62 @@
+/* World Map Area  */
+.world_map_area{
+
+}
+.world_map_inner{
+    text-align: center;
+    position: relative;
+}
+.bd-callout{
+    text-align: left;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 550px;
+    width: 100%;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 46px 15px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 46px 15px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 46px 15px rgba(0,0,0,0.15);
+    border-left: 8px;
+    border-style: solid;
+    border-image: linear-gradient(top, #9b8aff 0%, #6ebcfe 100%);
+    border-image:  linear-gradient(top, #9b8aff 0%,#6ebcfe 100%);
+    border-image: linear-gradient(to bottom, #9b8aff 0%,#6ebcfe 100%);
+    border-image-slice: 1;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    padding-left: 70px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    &__title{
+        font-size: 15px;
+        color: $dip;
+        font-family: $rob;
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+    &__adres{
+        color: $pfont;
+        font-size: 15px;
+        font-family: $rob;
+        font-weight: 500;
+        line-height: 28px;
+        display: inline-block;
+    }
+   &__details{
+        display: inline-block;
+        padding-left: 50px;
+        a{
+            display: block;
+            color: $pfont;
+            font-size: 15px;
+            font-family: $rob;
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
+}
+
+/* End World Map  */

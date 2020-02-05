@@ -1,0 +1,33 @@
+@import "vars";
+@import "mixins";
+@import "common";
+
+@import "header";
+
+@import "home_carousel";
+@import "home_mileston";
+@import "home_best-3d";
+@import "home_team-people";
+@import "home_get-in-touch";
+@import "home_world-map";
+
+@import "button";
+// @import "contact"; /* modal*/
+// @import "portfolio";
+// @import "blog";
+@import "footer";
+
+@import "about-us_challange";
+@import "about-us_testimonials";
+@import "about-us_we-company";
+@import "about-us_talk";
+
+@import "service_feature";
+@import "service_circle-chart";
+@import "service_solution";
+
+@import "monopage";
+
+@import "portfolio_portfolio-area";
+
+@import "contact_map";

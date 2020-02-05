@@ -1,0 +1,70 @@
+.projects {
+
+	.section-title {
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 100px;
+			height: 2px;
+			background-color: $black_color;
+			top: -30px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&__img-left {
+
+		// &-bg {
+		// 	width: 100%;
+		// 	max-width: 50%;
+		// 	padding-top: 714px;
+		// 	position: relative;
+		// 	top: -25%;
+		// }
+
+		&-pic {
+			position: absolute;
+			right: 0;
+			top: 25%;
+			transform: translateY(-50%);
+			z-index: 2;
+		}
+
+		&-pic::before {
+			content: "";
+			width: 580px;
+			height: 400px;
+			position: relative;
+			top: 300px;
+			left: -150px;
+			display: block;
+			background-color: #55b7ff;
+			z-index: 0;
+		}
+
+	}
+
+	&__wrap {
+		padding: 30px 0;
+	}
+
+	&__span {
+		font-family: $menu-font;
+		font-size: 22px;
+	}
+
+	&__client {
+		font-family: $title-font;
+		font-size: 44px;
+
+		&-text {
+			font-size: 18px;
+		}
+	}
+
+
+
+}

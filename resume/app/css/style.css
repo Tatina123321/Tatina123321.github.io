@@ -1,0 +1,37 @@
+body {
+	background: #f1f3fa;
+}
+
+.resume {
+	padding: 50px;
+}
+.resume .profile-sidebar {
+	background: #039be5;
+}
+.resume .profile-sidebar__userpic {
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+.resume .profile-sidebar__title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+.resume .profile-sidebar__occupation {
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+/* Profile container */
+/* Profile sidebar */
+.profile-userpic {
+	float: none;
+	margin: 0 auto;
+	width: 50%;
+	height: 50%;
+	border-radius: 50% !important;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9jb21tb24uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG1CQUFtQixFQUFBOztBQUdyQjtFQUNFLGFBQWEsRUFBQTtFQURmO0lBSUksbUJBQW1CLEVBQUE7SUFKdkI7TUFPSyxlQUFlO01BQ2YsWUFBWTtNQUNaLGNBQWMsRUFBQTtJQVRuQjtNQWFJLGtCQUFrQjtNQUNsQixpQkFBaUI7TUFDakIsZUFBZSxFQUFBO0lBZm5CO01BbUJJLGtCQUFrQjtNQUNsQixlQUFlO01BQ2YseUJBQXlCLEVBQUE7O0FBTzdCLHNCQUFBO0FBS0Esb0JBQUE7QUFHQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2QsVUFBVTtFQUNWLFdBQVc7RUFDWCw2QkFBNkIsRUFBQSIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5IHtcclxuICBiYWNrZ3JvdW5kOiAjRjFGM0ZBO1xyXG59XHJcblxyXG4ucmVzdW1lIHtcclxuICBwYWRkaW5nOiA1MHB4O1xyXG5cclxuICAucHJvZmlsZS1zaWRlYmFyIHtcclxuICAgIGJhY2tncm91bmQ6ICMwMzliZTU7XHJcblxyXG4gICAgJl9fdXNlcnBpYyB7XHJcbiAgICAgbWF4LXdpZHRoOiAxMDAlO1xyXG4gICAgIGhlaWdodDogYXV0bztcclxuICAgICBtYXJnaW46IDAgYXV0bztcclxuICAgfVxyXG5cclxuICAgJl9fdGl0bGUge1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICBmb250LXNpemU6IDMwcHg7XHJcbiAgfVxyXG5cclxuICAmX19vY2N1cGF0aW9uIHtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcbiAgfVxyXG59XHJcbn1cclxuXHJcblxyXG5cclxuLyogUHJvZmlsZSBjb250YWluZXIgKi9cclxuLy8gLnByb2ZpbGUge1xyXG4vLyAgIG1hcmdpbjogMjBweCAwO1xyXG4vLyB9XHJcblxyXG4vKiBQcm9maWxlIHNpZGViYXIgKi9cclxuXHJcblxyXG4ucHJvZmlsZS11c2VycGljIHtcclxuICBmbG9hdDogbm9uZTtcclxuICBtYXJnaW46IDAgYXV0bztcclxuICB3aWR0aDogNTAlO1xyXG4gIGhlaWdodDogNTAlO1xyXG4gIGJvcmRlci1yYWRpdXM6IDUwJSAhaW1wb3J0YW50O1xyXG59XHJcblxyXG4iXX0= */

@@ -1,0 +1,102 @@
+// Start Recent Project Area //
+
+.projects {
+
+
+    &__inner {
+        margin-bottom: 40px;
+    }
+
+
+    &__item {
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+
+        &:before {
+            content: "";
+            background: rgba(63, 172, 228, 0.68);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: all 300ms ease;
+            cursor: pointer;
+        }
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%));
+            @include transition();
+            cursor: pointer;
+            img {
+                opacity: 0;
+                @include transition();
+            }
+        }
+        &:hover {
+            &:before {
+                opacity: 1;
+            }
+            .icon {
+                img {
+                    opacity: 1;
+                }
+            }
+            &__text {
+                h4 {
+                    background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    }
+
+    &__text {
+        text-align: center;
+        margin-top: 15px;
+        &-title {
+            font-size: 21px;
+            font-weight: 100;
+            margin-bottom: 5px;
+            @include transition;
+            text-transform: capitalize;
+            cursor: pointer;
+            a {
+                color: $black;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+        p {
+            margin-bottom: 0px;
+            font-size: 14px;
+        }
+    }
+}
+
+//--------- End Recent Project Area -------------//
+
+//--------- modal Project Area -------------//
+
+.modal.show .modal-dialog {
+    transform: translatey(15%);
+}
+
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+//--------- End modal Project Area -------------//
+
+

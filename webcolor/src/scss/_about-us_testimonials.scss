@@ -1,0 +1,89 @@
+/* Testimonials Slider */
+.testimonials_area{
+    padding-top: 190px;
+    padding-bottom: 130px;
+    border-bottom: 1px solid #bbbec1;
+}
+.testimonials_slider{
+    position: relative;
+    &:before{
+        content: "";
+        background: url(../img/3d-shap.png) no-repeat scroll center center;
+        height: 600px;
+        max-width: 524px;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: -210px;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    .owl-item.center{
+        color: #fff;
+        h3{
+            color: #fff;
+        }
+        p{
+            color: #fff;
+        }
+        .media{
+            .media-body{
+                h5{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .testi_item{
+        &__title{
+            font-size: 24px;
+            font-family: $rob;
+            font-weight: bold;
+            color: $dip;
+        }
+        &__text{
+            font-size: 15px;
+            color: $pfont;
+            line-height: 28px;
+            font-weight: normal;
+            padding: 20px 0px 55px 0px;
+        }
+        .media{
+            .d-flex{
+                padding-right: 20px;
+            }
+            .media-body{
+             &__name {
+                font-size: 15px;
+                font-family: $rob;
+                font-weight: 500;
+                color: $dip;
+                padding-bottom: 8px;
+            }
+            &__position {
+                font-family: $rob;
+                color: $pfont;
+                font-weight: 500;
+                font-size: 12px;
+            }
+        }
+    }
+}
+.owl-dots{
+    text-align: center;
+    z-index: 4;
+    margin-top: 50px;
+    .owl-dot{
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background: #fff;
+        display: inline-block;
+        margin-right: 8px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+}
+}
+/* End Testimonials Slider */

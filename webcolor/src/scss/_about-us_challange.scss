@@ -1,0 +1,36 @@
+/* Challange Area  */
+.challange_area{
+    overflow: hidden;
+}
+.challange_text_inner{
+    max-width: 545px;
+    float: right;
+    p{
+        font-size: 15px;
+        line-height: 28px;
+        color: #7c8d93;
+        font-family: $rob;
+        font-weight: 500;
+        padding-right: 25px;
+    }
+    .c_video{
+        padding-top: 35px;
+        a{
+            font-size: 18px;
+            font-family: $rob;
+            font-weight: 500;
+            color: $dip;
+            img{
+                padding-right: 15px;
+            }
+        }
+    }
+}
+.challange_img{
+    display: flex;
+    .challange_img_inner{
+        align-self: center;
+        box-shadow: 0px 27px 68px 0px rgba(0, 0, 0, 0.4);
+    }
+}
+/* End Challange Area */
