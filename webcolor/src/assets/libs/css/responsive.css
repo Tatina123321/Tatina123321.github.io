@@ -94,20 +94,20 @@
     .navbar-light .navbar-brand {
         padding: 20px 0px 20px 15px;
     }
-    .main_menu_area .navbar .navbar-nav li {
+    .main_menu_area .navbar .navbar-nav .nav-item {
         display: block;
         margin-right: 0px;
     }
-    .main_menu_area .navbar .navbar-nav li a {
+    .main_menu_area .navbar .navbar-nav .nav-link {
         display: block;
         line-height: 50px;
         padding: 0px 15px;
         border-bottom: 1px solid rgba(255, 255, 255, .05);
     }
-    .main_menu_area .navbar .navbar-nav li:hover a, .main_menu_area .navbar .navbar-nav li.active a {
+    .main_menu_area .navbar .navbar-nav .nav-item:hover .nav-link, .main_menu_area .navbar .navbar-nav .nav-item.active .nav-link {
         color: #97ccfe;
     }
-    .main_menu_area .navbar .navbar-nav li a:focus{
+    .main_menu_area .navbar .navbar-nav .nav-link:focus{
         color: #97ccfe;
     }
     .main_menu_area .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
