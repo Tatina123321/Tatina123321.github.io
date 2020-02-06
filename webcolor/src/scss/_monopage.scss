@@ -8,28 +8,28 @@
 
     &-title {
 
-       text-align: center;
-       padding-bottom: 40px;
+     text-align: center;
+     padding-bottom: 40px;
 
 
-       &__img {
-         padding-bottom: 30px;
-     }
+     &__img {
+       padding-bottom: 30px;
+   }
 
-     &__title {
-        font-size: 35px;
-        color: $dip;
-        font-family: $rob;
-        font-weight: 500;
-    }
+   &__title {
+    font-size: 35px;
+    color: $dip;
+    font-family: $rob;
+    font-weight: 500;
 }
-    &__descr{
-         font-family: $rob;
-        color: $pfont;
-         font-size: 18px;
-         line-height: 28px;
-        font-weight: 500;
-         padding-bottom: 20px;
+}
+&__descr{
+   font-family: $rob;
+   color: $pfont;
+   font-size: 18px;
+   line-height: 28px;
+   font-weight: 500;
+   padding-bottom: 20px;
 }
 &__list{
     padding-bottom: 20px;
@@ -43,6 +43,7 @@
 
     & span {
         font-weight: 800;
+        color: $dip;
     }
 
     &:before{
@@ -65,6 +66,84 @@
 }
 
 
+}
+
+
+/* Tariff Area  */
+.tariff_area{
+    padding: 70px 0 70px;
+    .container {
+        width: 100%;
+        max-width: 1400px;
+    }
+}
+.tariff_item {
+    text-align: center;
+    border-radius: 20px;
+    padding: 40px 20px 60px 20px;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.1);
+    @include transition;
+    .f_icon{
+        min-height: 91px;
+        position: relative;
+        img{
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__title{
+        color: $dip;
+        font-family: $rob;
+        font-weight: bold;
+        font-size: 26px;
+        padding: 45px 0px 20px 0px;
+    }
+
+    &__subtitle {
+        color: $dip;
+        font-family: $rob;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    &__text{
+        text-align: justify;
+        font-size: 15px;
+        line-height: 28px;
+        font-family: $rob;
+        color: $pfont;
+        font-weight: 500;
+        width: auto;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $gray;
+    }
+
+    &:hover{
+        box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    &__list {
+        text-align: left;
+        width: auto;
+        font-size: 15px;
+        font-family: $rob;
+        color: $pfont;
+        padding-bottom: 40px;
+
+    }
+
+    &__item {
+        padding: 10px;
+    }
+
+    &__item:not(:last-child) {
+        border-bottom: 1px solid $gray;
+        padding: 10px;
+
+    }
 }
 
 /* End MonoPage Area */
