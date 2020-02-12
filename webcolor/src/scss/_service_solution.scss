@@ -13,7 +13,7 @@
         width: 100%;
         height: 100%;
         z-index: -1;
-        opacity: 0;
+        opacity: 1;
     }
 }
 .s_solution_inner{
@@ -28,7 +28,7 @@
             line-height: 28px;
             font-family: $rob;
             font-weight: 500;
-            color: $pfont;
+            color: $dip-light;
 
         }
     }
@@ -88,7 +88,7 @@
                 line-height: 28px;
                 font-family: $rob;
                 font-weight: normal;
-                color: $pfont;
+                color: $dip-light;
             }
         }
     }

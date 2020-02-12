@@ -1,38 +1,6 @@
-/* Contact Map */
-.contact_map_area{
-    position: relative;
-    overflow: hidden;
-    .mapBox1{
-        min-height: 670px;
-    }
-    .map_location_box{
-        position: absolute;
-        left: 30px;
-        top: 160px;
-        width: 100%;
-        .bd-callout{
-            position: relative;
-            top: 0px;
-            left: 0px;
-            transform: translateY(0);
-            &:before{
-                content: "";
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 22px 14px 0 0;
-                border-color: #fff transparent transparent transparent;
-                position: absolute;
-                right: -14px;
-                top: 0px;
-            }
-        }
-    }
-}
-/* End Contact Map Area  */
-
-
 #map {
-    height: 100%;
-    min-height: 670px;
+  width: 100%;
+  height: 100%;
+  min-height: 670px;
+
 }

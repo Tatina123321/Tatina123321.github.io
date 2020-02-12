@@ -12,9 +12,9 @@ ul{
 a{
     text-decoration:none;
     &:hover, &:focus{
-       text-decoration:none;
-       outline: none;
-   }
+     text-decoration:none;
+     outline: none;
+ }
 }
 
 /*-- Pre Loader Style START--*/
@@ -99,6 +99,7 @@ i{
         font-weight: 500;
     }
 }
+
 .l_title{
     padding-bottom: 40px;
     &__img{
@@ -113,24 +114,13 @@ i{
         padding-bottom: 10px;
     }
     &__title{
-        font-size: 48px;
+        font-size: 40px;
         color: $dip;
         font-family: $rob;
         font-weight: 500;
         span{
             font-style: italic;
-            color: #6fbbfe;
-        }
-    }
-
-    h3{
-        font-size: 35px;
-        color: $dip;
-        font-family: $rob;
-        font-weight: 500;
-        span{
-            font-style: italic;
-            color: #6fbbfe;
+            color: #4d60d2;
         }
     }
 }
@@ -141,6 +131,8 @@ i{
     padding: 70px 0 70px;
 }
 .feature_item {
+    height: 100%;
+    min-height: 350px;
     text-align: center;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -162,8 +154,17 @@ i{
         font-family: $rob;
         font-weight: bold;
         font-size: 24px;
-        padding: 45px 0px 20px 0px;
+        padding: 30px 0px 10px 0px;
     }
+
+    &__subtitle{
+        color: $dip;
+        font-family: $rob;
+        font-weight: normal;
+        font-size: 18px;
+        padding: 10px 0px 10px 0px;
+    }
+
     &__text{
         font-size: 15px;
         line-height: 28px;
@@ -171,8 +172,17 @@ i{
         color: $pfont;
         font-weight: 500;
         max-width: 290px;
+        // min-height: 250px;
         margin: auto;
         padding-bottom: 60px;
+    }
+
+    .dop-250 {
+        min-height: 250px;
+    }
+
+    .dop-200 {
+        min-height: 150px;
     }
 
     &:hover{
@@ -191,26 +201,16 @@ i{
 
 .banner_area{
     position: relative;
-    z-index: 3;
-    overflow: hidden;
-    &:before{
-        content: "";
-        background: url(../img/banner/banner-bg.png) no-repeat scroll center right;
-        position: absolute;
-        right: 0px;
-        top: -62px;
-        height: 100%;
-        max-width: 1233px;
-        width: 100%;
-    }
+    background: linear-gradient(top, #9e9cff 0%, #fff 95%);
 }
 .banner_inner_text{
-    padding-top: 200px;
+    padding-top: 150px;
     position: relative;
     padding-bottom: 95px;
     &:before{
         content: "";
-        width: 213px;
+        width: 100%;
+        max-width: 650px;
         height: 1px;
         position: absolute;
         background: #ced0e0;
@@ -218,7 +218,7 @@ i{
         bottom: 0px;
     }
     &__title {
-        font-size: 72px;
+        font-size: 62px;
         color: $dip;
         font-family: $rob;
         font-weight: normal;
@@ -258,3 +258,4 @@ i{
         padding: 50px 0px;
     }
 }
+

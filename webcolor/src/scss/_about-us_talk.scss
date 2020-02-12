@@ -33,6 +33,7 @@
 
         &:hover {
             color: $pfont;
+            @include transition;
         }
     }
 }

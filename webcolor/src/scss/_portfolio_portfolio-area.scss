@@ -47,7 +47,7 @@
                 }
             }
             &__text {
-                h4 {
+                &-title {
                     background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
@@ -64,7 +64,7 @@
             font-weight: 100;
             margin-bottom: 5px;
             @include transition;
-            text-transform: capitalize;
+            // text-transform: capitalize;
             cursor: pointer;
             a {
                 color: $black;
@@ -80,9 +80,9 @@
     }
 }
 
-//--------- End Recent Project Area -------------//
+// End Recent Project Area //
 
-//--------- modal Project Area -------------//
+// modal Project Area//
 
 .modal.show .modal-dialog {
     transform: translatey(15%);
@@ -97,6 +97,6 @@
   display: block;
 }
 
-//--------- End modal Project Area -------------//
+// End modal Project Area //
 
 

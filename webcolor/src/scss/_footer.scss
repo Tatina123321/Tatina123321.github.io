@@ -1,122 +1,51 @@
  /*Footer Area */
  .footr_area{
-
- }
- .footer_widget_area{
-    background: url(../img/footer-bg.jpg) no-repeat scroll center center;
-    background-size: cover;
-    padding: 80px 0px 60px 0px;
+    background:  linear-gradient(top, #9b8aff 0%, #094f8a 100%);
+}
+.footer_widget_area{
+    padding: 40px 0px 30px 0px;
 
 }
 .footer_widget_inner{
  margin: 0;
 }
 
-.f_title{
-    padding-bottom: 45px;
-    font-size: 16px;
-    color: #fff;
-    font-family: $rob;
-    font-weight: 500;
-}
-
 .f_about_widget{
-    padding-right: 35px;
-    img{
-     padding-bottom: 55px;
- }
 
- &__title {
-    color: #fff;
-    line-height: 35px;
-    margin-bottom: 15px;
-}
-&__text{
-    font-size: 15px;
-    line-height: 20px;
-    color: #fff;
-    font-family: $rob;
-    font-weight: 400;
-}
-}
-.f_insta_widget{
-    ul{
-        overflow: hidden;
-        margin: -1px;
-        li{
-            width: calc(100% / 4);
-            float: left;
-            a{
-                display: inline-block;
-                padding: 1px;
-                img{
-                    width: 100%;
-                }
-            }
-        }
+    &__title {
+        color: $dip-light;
+        font-size: 18px;
+        font-family: $rob;
+        font-weight: 500;
+        line-height: 25px;
+        margin-bottom: 15px;
     }
-}
-.f_subs_widget {
-
-    &__partners {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        &-link {
-            // display: flex;
-            color: $dip-light;
-            line-height: 35px;
-            font-size: 17px;
-            font-family: $rob;
-            font-weight: 500;
-        }
-
-        &-text {
-            font-size: 15px;
-            line-height: 35px;
-            color: #fff;
-        }
+    &__text{
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+        font-family: $rob;
+        font-weight: 400;
+        margin-bottom: 10px;
     }
 
-    &_form {
-
-        .input-group{
-            display: block;
-            input{
-                display: block;
-                width: 100%;
-                border-radius: 15px;
-                border: none;
-                height: 32px;
-                padding: 0px 30px;
-                font-size: 12px;
-                font-family: $rob;
-                font-style: italic;
-                color: #9b9b9b;
-                @include placeholder{
-                    font-size: 12px;
-                    font-family: $rob;
-                    font-style: italic;
-                    color: #9b9b9b;
-                }
-            }
-
-            .submit_btn{
-                margin-left: 0px;
-                border-radius: 35px !important;
-                &:hover{
-                    border-color: #8cc4fb;
-                }
-            }
-        }
+    &__link {
+        color: $dip-light;
+        font-size: 15px;
+        font-family: $rob;
+        font-weight: 500;
+        cursor: pointer;
     }
 
+    &__link:hover {
+        color: #fff;
+        @include transition;
+    }
 }
+
 .footer_copyright{
     overflow: hidden;
-    background: #11173b;
-    padding: 35px 0px;
+    padding: 20px 0px;
     .float-sm-left{
         &__text{
             font-size: 14px;
@@ -146,6 +75,7 @@
         &__item:hover{
             a{
                 color: #fff;
+                @include transition;
             }
         }
 

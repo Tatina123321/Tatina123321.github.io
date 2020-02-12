@@ -1,6 +1,6 @@
 <?php
 
-    $to = "webcolor.studio@gmail.com";
+    $to = "info@webcolor.studio";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];

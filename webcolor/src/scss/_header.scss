@@ -6,12 +6,11 @@
     width: 100%;
     z-index: 30;
     padding: 0px 45px;
+background: rgba(0, 0, 0, .5);
     .navbar{
         padding: 0px;
         border-radius: 0px;
         background-color: transparent !important;
-
-
 
         .navbar-toggler{
             border: none;
@@ -43,11 +42,11 @@
                 margin-right: 55px;
                 padding-left: 10px;
                 .nav-link {
-                    font-size: 15px;
+                    font-size: 16px;
                     font-family: $rob;
                     font-weight: bold;
                     text-transform: uppercase;
-                    color: #fff;
+                    color: $white;
                     letter-spacing: .65px;
                     padding: 0px;
                     line-height: 50px;
@@ -70,6 +69,7 @@
                 &:hover, &.active{
                     a{
                         color: $dip;
+                        line-height: 50px;
                     }
                 }
             }
@@ -82,7 +82,7 @@
         left: 0;
         right: 0;
         border-bottom: solid 1px #b334fa;
-        background: rgba(0, 0, 0, .6);
+        background: rgba(0, 0, 0, .7);
         transform: translateY(70px);
         transition: transform 500ms ease, background 500ms ease;
         -webkit-transition: transform 500ms ease, background 500ms ease;
@@ -97,6 +97,17 @@
                 .nav-item{
                     .nav-link{
                         line-height: 50px;
+                        color: $white;
+                    }
+
+                    &:hover, &.active{
+                        a{
+                            line-height: 50px;
+                            color: $dip;
+                            font-weight: 900;
+                            text-shadow: 1px 1px 2px $white,0 0 0.5em $white;
+                            // border-bottom: 2px solid $white;
+                        }
                     }
                 }
             }
@@ -107,28 +118,28 @@
 
 /* End Main Menu Area */
 
-        .navbar-brand {
-            display: flex;
-            align-items: center;
+.navbar-brand {
+    display: flex;
+    align-items: center;
 
-            .logo-text {
-                display: flex;
-                flex-direction: column;
-                padding-left: 15px;
-                line-height: 1.2;
+    .logo-text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        line-height: 1.2;
 
-                &__wc {
-                    font-size: 25px;
-                    color: $dip;
-                    font-weight: 900;
-                    letter-spacing: 2px;
-                }
-
-                &__s {
-                    text-transform: uppercase;
-                    font-size: 12px;
-                    font-weight: 700;
-                    letter-spacing: 16px;
-                }
-            }
+        &__wc {
+            font-size: 25px;
+            color: $dip;
+            font-weight: 900;
+            letter-spacing: 2px;
         }
+
+        &__s {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 16px;
+        }
+    }
+}
