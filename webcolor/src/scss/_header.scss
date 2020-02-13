@@ -6,7 +6,7 @@
     width: 100%;
     z-index: 30;
     padding: 0px 45px;
-background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .5);
     .navbar{
         padding: 0px;
         border-radius: 0px;
@@ -89,23 +89,30 @@ background: rgba(0, 0, 0, .5);
         z-index: 999999;
         .navbar{
 
-            .logo-text__wc,
-            .logo-text__s {
-                color: $white;
-            }
-            .navbar-nav{
-                .nav-item{
-                    .nav-link{
-                        line-height: 50px;
-                        color: $white;
-                    }
+            .navbar-toggler{
+             
+                span{
+                 background: $white;
+                 
+             }
+         }
+         .logo-text__wc,
+         .logo-text__s {
+            color: $white;
+        }
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    line-height: 50px;
+                    color: $white;
+                }
 
-                    &:hover, &.active{
-                        a{
-                            line-height: 50px;
-                            color: $dip;
-                            font-weight: 900;
-                            text-shadow: 1px 1px 2px $white,0 0 0.5em $white;
+                &:hover, &.active{
+                    a{
+                        line-height: 50px;
+                        color: $dip;
+                        font-weight: 900;
+                        text-shadow: 1px 1px 2px $white,0 0 0.5em $white;
                             // border-bottom: 2px solid $white;
                         }
                     }
